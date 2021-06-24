@@ -4,6 +4,10 @@
   "main": "index.js",
   "license": "GPL",
   "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   }
