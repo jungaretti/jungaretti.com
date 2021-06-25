@@ -5,10 +5,12 @@
   "license": "GPL",
   "private": true,
   "scripts": {
+    "format": "prettier --write src README.md",
     "build": "eleventy",
     "dev": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "prettier": "2.3.1"
   }
 }
