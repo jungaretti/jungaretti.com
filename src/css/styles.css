@@ -1,5 +1,7 @@
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #4d7298;
 }
 h1,
 h2,
@@ -28,9 +30,13 @@ a {
   text-decoration: underline;
 }
 .container {
-  max-width: 780px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 8px;
   padding-left: 8px;
+}
+#welcome {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
