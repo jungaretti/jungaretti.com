@@ -13,28 +13,37 @@
       content="I'm a software enginer with Microsoft, an amateur photographer, and a cheese curd connoisseur."
     />
   </head>
-  <body>
+  <body class="text-base font-regular">
+    <header>
+      <div class="container">
+        <p>Header</p>
+      </div>
+    </header>
     <main>
-      <section id="welcome">
-        <div class="container">
-          <h1>Ciao, I'm JP.</h1>
-          <p>
-            I'm a software enginer with Microsoft, an amateur photographer, and
-            a cheese curd connoisseur. Welcome to my corner of the Internet,
-            thanks for stopping by!
-          </p>
-          <div>
-            <span>
-              <a href="mailto:hello@jungaretti.com">hello@jungaretti.com</a>
-            </span>
-            <span>
-              <a href="https://github.com/jungaretti/" target="_blank">
-                GitHub
-              </a>
-            </span>
-          </div>
+      <div class="container py-lg">
+        <h1 class="text-2xl font-bold">Ciao, I'm JP.</h1>
+        <p class="text-lg font-medium mb-2">
+          I'm a software enginer with Microsoft, an amateur photographer, and a
+          cheese curd connoisseur. Welcome to my corner of the Internet, thanks
+          for stopping by!
+        </p>
+        <div class="flex">
+          <a href="mailto:hello@jungaretti.com" class="link-bubble mr-1">
+            hello@jungaretti.com
+          </a>
+          <a
+            href="https://github.com/jungaretti/"
+            target="_blank"
+            class="link-bubble"
+          >
+            GitHub
+          </a>
         </div>
-      </section>
+      </div>
+      <div class="container">
+        <p>Projects</p>
+        <p>Photos</p>
+      </div>
     </main>
   </body>
 </html>
