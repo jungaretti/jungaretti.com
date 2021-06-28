@@ -1,6 +1,8 @@
 /* Smarter Defaults */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 a {
   color: inherit;
@@ -153,7 +155,6 @@ a {
 /* Components */
 .container {
   max-width: 760px;
-
   margin-left: auto;
   margin-right: auto;
   padding-right: 16px;
@@ -163,7 +164,6 @@ a {
   background-color: #4d7298;
   color: #ffffff;
   text-decoration: none;
-
   display: block;
   border-radius: 16px;
   padding: 2px 12px;
