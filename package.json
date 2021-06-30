@@ -7,8 +7,8 @@
   "scripts": {
     "format": "prettier --write src README.md",
     "clean": "rimraf build",
-    "build:tailwind": "tailwindcss -i src/css/styles.css -o build/css/styles.css -m",
     "build:eleventy": "eleventy",
+    "build:tailwind": "tailwindcss -i src/css/styles.css -o build/css/styles.css -m",
     "build": "NODE_ENV=production npm-run-all clean build:*",
     "dev:eleventy": "eleventy --serve",
     "dev:tailwind": "tailwindcss -i src/css/styles.css -o build/css/styles.css -w",
