@@ -1,83 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/icons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/assets/icons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta
-      name="msapplication-config"
-      content="/assets/icons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Useful Meta -->
-    <title>JP Ungaretti</title>
-    <meta
-      name="description"
-      content="I'm a software enginer with Microsoft, an amateur photographer, and a cheese curd connoisseur."
-    />
-    <!-- Style -->
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container flex items-center my-4">
-        <div class="flex-grow">
-          <span class="text-2xl">🐬</span>
-        </div>
-        <div>
-          <a href="/">Home</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container my-8">
-        <div class="mb-4">
-          <h1 class="text-4xl font-bold">Ciao, I'm JP</h1>
-          <p class="text-lg">
-            I'm a software enginer with Microsoft, an amateur photographer, and
-            a cheese curd connoisseur. Welcome to my corner of the Internet,
-            thanks for stopping by!
-          </p>
-        </div>
-        <div class="flex space-x-2">
-          <a href="mailto:hello@jungaretti.com" class="link-bubble">
-            hello@jungaretti.com
-          </a>
-          <a
-            href="https://github.com/jungaretti/"
-            target="_blank"
-            class="link-bubble"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </main>
-  </body>
-</html>
+---
+layout: base.njk
+title: JP Ungaretti
+description: I'm a software enginer with Microsoft, an amateur photographer, and a cheese curd connoisseur. Welcome to my corner of the Internet!
+---
+
+<div class="container my-8">
+  <div class="mb-4">
+    <h1 class="text-4xl font-bold">Ciao, I'm JP</h1>
+    <p class="text-lg">
+      I'm a software enginer with Microsoft, an amateur photographer, and a
+      cheese curd connoisseur. Welcome to my corner of the Internet, thanks for
+      stopping by!
+    </p>
+  </div>
+  <div class="flex space-x-2">
+    <a href="mailto:hello@jungaretti.com" class="link-bubble">
+      hello@jungaretti.com
+    </a>
+    <a
+      href="https://github.com/jungaretti/"
+      target="_blank"
+      class="link-bubble"
+    >
+      GitHub
+    </a>
+  </div>
+</div>

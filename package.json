@@ -5,7 +5,7 @@
   "license": "GPL",
   "private": true,
   "scripts": {
-    "format": "prettier --write src README.md",
+    "format": "prettier --write src src/**/*.njk README.md",
     "clean": "rimraf build",
     "build:eleventy": "eleventy",
     "build:tailwind": "tailwindcss -i src/css/styles.css -o build/css/styles.css -m",
