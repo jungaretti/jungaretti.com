@@ -1,4 +1,6 @@
 ---
+import iconReference from "../../public/assets/logo.svg"
+
 let title="JP Ungaretti"
 ---
 
@@ -11,8 +13,44 @@ let title="JP Ungaretti"
     <link rel="stylesheet" href="/style/global.css" />
   </head>
   <body>
+    <header>
+      <div class="container flex items-center my-6">
+        <div class="flex-grow">
+          <img
+            src={iconReference}
+            alt="🐬"
+            height="48px"
+            width="48px"
+          />
+        </div>
+        <div>
+          <a href="/">Home</a>
+        </div>
+      </div>
+    </header>
     <main>
-        <h1>Hello world!</h1>
+      <div class="container my-8">
+        <div class="mb-4">
+          <h1 class="text-4xl font-bold">Ciao, I'm JP</h1>
+          <p class="text-lg">
+            I'm a software enginer with Microsoft, an amateur photographer, and
+            a cheese curd connoisseur. Welcome to my corner of the Internet,
+            thanks for stopping by!
+          </p>
+        </div>
+        <div class="flex space-x-2">
+          <a href="mailto:hello@jungaretti.com" class="link-bubble">
+            hello@jungaretti.com
+          </a>
+          <a
+            href="https://github.com/jungaretti/"
+            target="_blank"
+            class="link-bubble"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
