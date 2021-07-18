@@ -1,6 +1,6 @@
 {
-  "name": "@example/starter",
-  "version": "0.0.1",
+  "name": "jungaretti.com",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "format": "prettier --write src/**/*.astro",
