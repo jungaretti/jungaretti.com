@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "format": "prettier --write src/**/*.astro",
+    "format": "prettier --write README.md",
     "start": "astro dev",
     "build": "astro build"
   },

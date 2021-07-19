@@ -1,10 +1,1 @@
-{
-  "overrides": [
-    {
-      "files": "*.astro",
-      "options": {
-        "parser": "html"
-      }
-    }
-  ]
-}
+{}
