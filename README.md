@@ -1,40 +1,24 @@
-# Welcome to [Astro](https://astro.build)
+# Personal Website
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+My corner of the Internet, built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com/).
 
-## 🚀 Project Structure
+## Getting Started
 
-Inside of your Astro project, you'll see the following folders and files:
+"For a technology built on top of three different languages, the modern web seems to focus an awful lot on JavaScript."
 
+```bash
+# Clone the repo
+gh clone jungaretti/jungaretti.com
+cd jungaretti.com
+
+# Install dependencies
+npm install
+
+# Start local dev server
+npm run start
 ```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Built With
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm run start` | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+- [Astro](https://astro.build)
+- [Tailwind CSS](https://tailwindcss.com/)
