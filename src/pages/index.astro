@@ -15,7 +15,7 @@ import Header from "../components/Header.astro"
     />
     <!-- Style -->
     <link rel="stylesheet" href="/assets/inter/inter.css" />
-    <link rel="stylesheet" href="/assets/style/global.css" />
+    <link rel="stylesheet" href={Astro.resolve("../style/global.css")} />
   </head>
   <body>
     <Header />

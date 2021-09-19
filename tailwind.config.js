@@ -1,7 +1,7 @@
 const {fontFamily} = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  // mode: "jit",
+  mode: "jit",
   purge: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
   theme: {
     extend: {
