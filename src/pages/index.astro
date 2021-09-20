@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro"
+import Navbar from "../components/Navbar.astro"
 ---
 
 <html lang="en">
@@ -18,7 +18,11 @@ import Header from "../components/Header.astro"
     <link rel="stylesheet" href={Astro.resolve("../style/global.css")} />
   </head>
   <body>
-    <Header />
+    <header>
+      <div class="container my-6">
+        <Navbar />
+      </div>
+    </header>
     <main>
       <div class="container my-8">
         <div class="mb-4">
