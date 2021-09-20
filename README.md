@@ -1,7 +1,5 @@
 # Personal Website
 
-[![Netlify status](https://api.netlify.com/api/v1/badges/3b22a621-b59a-4363-bb21-956aee3d48de/deploy-status)](https://app.netlify.com/sites/jungaretti/deploys)
-
 My corner of the Internet, built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
