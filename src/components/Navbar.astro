@@ -1,12 +1,15 @@
 ---
-import iconReference from "../../public/assets/logo.svg";
+import logoRef from "../../public/assets/logo.svg";
+import NavbarLink from "./NavbarLink.astro";
 ---
 
 <div class="flex items-center">
   <div class="flex-grow">
-    <img src={iconReference} alt="JP's face" height="48px" width="48px" />
+    <a href="/">
+      <img src={logoRef} alt="JP's face" height="48px" width="48px" />
+    </a>
   </div>
-  <div>
-    <a href="/" class="font-medium">Home</a>
+  <div class="flex space-x-4">
+    <NavbarLink text="Home" href="/" />
   </div>
 </div>
