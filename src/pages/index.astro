@@ -2,7 +2,7 @@
 import { photos } from "../data/photos.js";
 import Navbar from "../components/Navbar.astro";
 import LinkBubble from "../components/LinkBubble.astro";
-import PhotoFrame from "../components/PhotoFrame.astro";
+import PhotoGallery from "../components/PhotoGallery.astro";
 ---
 
 <!DOCTYPE html>
@@ -40,21 +40,7 @@ import PhotoFrame from "../components/PhotoFrame.astro";
       </div>
       <div class="container my-4">
         <h2 class="text-3xl font-bold mb-3">Favorite Photos</h2>
-        <div class="space-y-3">
-          <PhotoFrame
-            src="https://badgerville.blob.core.windows.net/journal/sunset-sailing-web.jpg"
-            alt="Sailboat underneath a beautiful sunset"
-            title="New Horizons"
-            location="Seattle, WA"
-            date="August 2021" />
-          <PhotoFrame
-            src="https://badgerville.blob.core.windows.net/journal/cascadian-stars-web.jpg"
-            alt="Incredible stars over a silhouetted mountain"
-            title="Sotto le Stelle"
-            description="E quindi uscimmo a riveder le stelle"
-            location="North Cascades National Park"
-            date="September 2021" />
-        </div>
+        <PhotoGallery photos={photos.filter((p) => p.meta.favorite)} />
       </div>
     </main>
   </body>

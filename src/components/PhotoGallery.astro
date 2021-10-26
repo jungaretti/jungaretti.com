@@ -1,5 +1,8 @@
 ---
 const { photos } = Astro.props;
+import PhotoFrame from "./PhotoFrame.astro";
 ---
 
-<div></div>
+<div class="space-y-3">
+  {photos.map( (p) => <PhotoFrame src={p.image.compressedUrl} alt={p.image.alt} title={p.meta.title} location={p.meta.location} date={p.meta.date} /> )}
+</div>
