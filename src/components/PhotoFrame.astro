@@ -9,9 +9,9 @@ const { photo } = Astro.props;
       alt={photo.image.alt}
       class="rounded-xl" />
   </div>
-  <div class="mt-2">
-    <h3 class="font-bold mb-0">{photo.meta.title}</h3>
+  <div class="mt-1">
+    <h3 class="font-bold text-lg mb-0">{photo.meta.title}</h3>
     <p class="italic">{photo.meta.description}</p>
-    <p class="">{photo.meta.location}</p>
+    <p class="text-sm">{photo.meta.location}</p>
   </div>
 </div>
