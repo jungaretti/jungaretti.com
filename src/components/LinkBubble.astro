@@ -1,7 +1,7 @@
 ---
-const { text, href } = Astro.props;
+const { text, href, className } = Astro.props;
 ---
 
-<div class="bg-blue-300 text-black font-medium rounded-full py-1 px-3">
+<div class="bg-gray-800 text-gray-50 font-medium rounded-full py-1 px-3">
   <a {href} target="_blank">{text}</a>
 </div>

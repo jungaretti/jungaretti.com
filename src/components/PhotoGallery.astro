@@ -3,6 +3,7 @@ const { photos } = Astro.props;
 import PhotoFrame from "./PhotoFrame.astro";
 ---
 
-<div class="space-y-3">
-  {photos.map( (p) => <PhotoFrame src={p.image.compressedUrl} alt={p.image.alt} title={p.meta.title} location={p.meta.location} date={p.meta.date} /> )}
+<!-- <div class="space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4"> -->
+<div class="space-y-4 md:space-y-4">
+  {photos.map((p) => <PhotoFrame photo={p} />)}
 </div>

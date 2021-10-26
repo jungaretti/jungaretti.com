@@ -1,15 +1,17 @@
 ---
-const { src, alt, title, description, location, date } = Astro.props;
+const { photo } = Astro.props;
 ---
 
-<div class="md:flex">
-  <div class="md:flex-grow">
-    <img {src} {alt} class="rounded-xl" />
+<div>
+  <div>
+    <img
+      src={photo.image.compressedUrl}
+      alt={photo.image.alt}
+      class="rounded-xl" />
   </div>
-  <div class="md:flex-none md:w-40 mt-1 md:mt-0 md:ml-3">
-    <h3 class="font-bold">{title}</h3>
-    <p class="text-sm italic">{description}</p>
-    <p class="text-sm">{location}</p>
-    <p class="text-sm">{date}</p>
+  <div class="mt-2">
+    <h3 class="font-bold mb-0">{photo.meta.title}</h3>
+    <p class="italic">{photo.meta.description}</p>
+    <p class="">{photo.meta.location}</p>
   </div>
 </div>

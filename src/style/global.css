@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 .container {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 16px;
-  padding-left: 16px;
+  @apply max-w-screen-md;
+  @apply mx-auto;
+  @apply px-4;
 }
