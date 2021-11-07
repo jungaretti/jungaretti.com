@@ -21,17 +21,21 @@ import PhotoGallery from "../components/PhotoGallery.astro";
     <link rel="stylesheet" href="/assets/inter/inter.css" />
     <link rel="stylesheet" href={Astro.resolve("../style/global.css")} />
   </head>
-  <body class="bg-gray-50 text-gray-800">
+  <body class="bg-gray-900 text-white">
     <header>
       <div class="container my-4 md:my-8">
         <Navbar />
       </div>
     </header>
     <main>
-      <div class="container my-8 md:mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold">JP Ungaretti</h1>
-        <p class="text-lg mt-1">Software Engineer and Photographer</p>
-        <div class="flex space-x-2 mt-4 text-sm">
+      <div class="container my-8 md:my-12">
+        <h1 class="text-4xl text-center font-black md:text-5xl">
+          JP Ungaretti
+        </h1>
+        <p class="text-lg text-center leading-snug font-medium md:text-xl">
+          Software Engineer and Photographer
+        </p>
+        <div class="flex flex-row flex-wrap justify-center space-x-2 mt-4">
           <LinkBubble
             text="hello@jungaretti.com"
             href="mailto:hello@jungaretti.com" />
