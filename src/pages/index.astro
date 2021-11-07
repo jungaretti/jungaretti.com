@@ -42,9 +42,9 @@ import PhotoGallery from "../components/PhotoGallery.astro";
           <LinkBubble text="GitHub" href="https://github.com/jungaretti" />
         </div>
       </div>
-      <div class="bg-gray-800 text-gray-50">
-        <div class="container py-6">
-          <h2 class="text-3xl font-bold mb-2">Camera Roll</h2>
+      <div class="container my-8">
+        <h2 class="text-3xl font-bold">Favorite Photos</h2>
+        <div class="mt-2">
           <PhotoGallery photos={photos.filter((p) => p.meta.favorite)} />
         </div>
       </div>

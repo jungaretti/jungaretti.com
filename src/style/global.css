@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-screen-md;
+  @apply max-w-screen-xl;
   @apply mx-auto;
   @apply px-4;
 }

@@ -1,9 +1,8 @@
 ---
 const { photos } = Astro.props;
-import PhotoFrame from "./PhotoFrame.astro";
+import PhotoPreview from "./PhotoPreview.astro";
 ---
 
-<!-- <div class="space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4"> -->
-<div class="space-y-6">
-  {photos.map((p) => <PhotoFrame photo={p} />)}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+  {photos.map((p) => <PhotoPreview photo={p} />)}
 </div>
