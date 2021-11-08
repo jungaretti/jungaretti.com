@@ -5,7 +5,7 @@ export const photos = [
         "https://badgerville.blob.core.windows.net/journal/new-horizons-small.jpg",
       fullSizedUrl:
         "https://badgerville.blob.core.windows.net/journal/new-horizons.jpg",
-      alt: null,
+      alt: "Boat sailing in front of sunset over the Olympic Mountains",
     },
     meta: {
       title: "New Horizons",
@@ -21,7 +21,7 @@ export const photos = [
         "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle-small.jpg",
       fullSizedUrl:
         "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle.jpg",
-      alt: null,
+      alt: "Glimpse of the Milky Way hovering over the Cascades",
     },
     meta: {
       title: "Riveder le Stelle",
@@ -37,7 +37,7 @@ export const photos = [
         "https://badgerville.blob.core.windows.net/journal/4960-miles-small.jpg",
       fullSizedUrl:
         "https://badgerville.blob.core.windows.net/journal/4960-miles.jpg",
-      alt: null,
+      alt: "Friends standing underneat an arch at Bryce Canyon National Park",
     },
     meta: {
       title: "4960 Miles",
@@ -53,7 +53,7 @@ export const photos = [
         "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars-small.jpg",
       fullSizedUrl:
         "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars.jpg",
-      alt: null,
+      alt: "Silhouette of friends standing atop a rocky hill",
     },
     meta: {
       title: "Sheepshead and Stars",
