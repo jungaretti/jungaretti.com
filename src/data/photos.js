@@ -31,4 +31,36 @@ export const photos = [
       favorite: true,
     },
   },
+  {
+    image: {
+      compressedUrl:
+        "https://badgerville.blob.core.windows.net/journal/20210119-DSC00527-Preview.jpg",
+      fullSizedUrl:
+        "https://badgerville.blob.core.windows.net/journal/20210119-DSC00527.jpg",
+      alt: null,
+    },
+    meta: {
+      title: "4960 Miles",
+      description: null,
+      location: "Bryce Canyon National Park",
+      date: "January 2021",
+      favorite: true,
+    },
+  },
+  {
+    image: {
+      compressedUrl:
+        "https://badgerville.blob.core.windows.net/journal/20210114-DSC00334-Preview.jpg",
+      fullSizedUrl:
+        "https://badgerville.blob.core.windows.net/journal/20210114-DSC00334.jpg",
+      alt: null,
+    },
+    meta: {
+      title: "Sheepshead Under the Stars",
+      description: null,
+      location: "Lake Powell",
+      date: "January 2021",
+      favorite: true,
+    },
+  },
 ];
