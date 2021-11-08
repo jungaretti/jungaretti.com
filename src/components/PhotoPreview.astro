@@ -7,11 +7,10 @@ const { photo } = Astro.props;
     <img
       src={photo.image.compressedUrl}
       alt={photo.image.alt}
-      class="rounded-xl" />
+      class="w-full rounded-xl" />
   </div>
-  <div class="mt-1">
+  <div class="mt-2">
     <h3 class="font-bold text-lg leading-tight mb-0">{photo.meta.title}</h3>
-    <p class="italic">{photo.meta.description}</p>
-    <p class="text-sm">{photo.meta.location}</p>
+    <p class="text-sm leading-tight">{photo.meta.location}</p>
   </div>
 </div>

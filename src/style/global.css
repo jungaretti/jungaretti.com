@@ -6,4 +6,5 @@
   @apply max-w-screen-xl;
   @apply mx-auto;
   @apply px-4;
+  @apply md:px-6;
 }
