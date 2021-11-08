@@ -1,6 +1,7 @@
 ---
 import { photos } from "../data/photos.js";
-import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import LinkBubble from "../components/LinkBubble.astro";
 import PhotoGallery from "../components/PhotoGallery.astro";
 ---
@@ -22,11 +23,7 @@ import PhotoGallery from "../components/PhotoGallery.astro";
     <link rel="stylesheet" href={Astro.resolve("../style/global.css")} />
   </head>
   <body class="bg-gray-800 text-white">
-    <header>
-      <div class="container my-4 md:my-8">
-        <Navbar />
-      </div>
-    </header>
+    <Header />
     <main>
       <div class="container my-16 md:my-24">
         <h1 class="text-4xl text-center font-black md:text-5xl">
@@ -49,10 +46,6 @@ import PhotoGallery from "../components/PhotoGallery.astro";
         </div>
       </div>
     </main>
-    <footer>
-      <div class="container text-center my-4">
-        <p>© 2021 James Ungaretti</p>
-      </div>
-    </footer>
+    <Footer />
   </body>
 </html>
