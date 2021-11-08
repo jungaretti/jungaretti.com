@@ -2,9 +2,9 @@ export const photos = [
   {
     image: {
       compressedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210924-DSC08115-Preview.jpg",
+        "https://badgerville.blob.core.windows.net/journal/new-horizons-small.jpg",
       fullSizedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210924-DSC08115.jpg",
+        "https://badgerville.blob.core.windows.net/journal/new-horizons.jpg",
       alt: null,
     },
     meta: {
@@ -18,9 +18,9 @@ export const photos = [
   {
     image: {
       compressedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210903-DSC08091-Preview.jpg",
+        "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle-small.jpg",
       fullSizedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210903-DSC08091.jpg",
+        "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle.jpg",
       alt: null,
     },
     meta: {
@@ -34,9 +34,9 @@ export const photos = [
   {
     image: {
       compressedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210119-DSC00527-Preview.jpg",
+        "https://badgerville.blob.core.windows.net/journal/4960-miles-small.jpg",
       fullSizedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210119-DSC00527.jpg",
+        "https://badgerville.blob.core.windows.net/journal/4960-miles.jpg",
       alt: null,
     },
     meta: {
@@ -50,9 +50,9 @@ export const photos = [
   {
     image: {
       compressedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210114-DSC00334-Preview.jpg",
+        "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars-small.jpg",
       fullSizedUrl:
-        "https://badgerville.blob.core.windows.net/journal/20210114-DSC00334.jpg",
+        "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars.jpg",
       alt: null,
     },
     meta: {
