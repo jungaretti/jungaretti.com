@@ -56,7 +56,7 @@ export const photos = [
       alt: null,
     },
     meta: {
-      title: "Sheepshead Under the Stars",
+      title: "Sheepshead and Stars",
       description: null,
       location: "Lake Powell",
       date: "January 2021",
