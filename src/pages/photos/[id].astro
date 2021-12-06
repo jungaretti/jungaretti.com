@@ -11,6 +11,7 @@ export const getStaticPaths = async () => {
 
 <BaseLayout
   title={photo.meta.title}
+  description={photo.meta.location}
   permalink={`https://www.jungaretti.com/photos/${photo.id}`}
   image={photo.src.compressed}
 >
