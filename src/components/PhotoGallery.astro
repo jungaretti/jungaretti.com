@@ -6,7 +6,7 @@ const { photos } = Astro.props;
 <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
   {photos.map((p) => (
     <div>
-      <PhotoPreview photo={p} />
+      <PhotoPreview photo={p} link={`/photos/${p.id}`} />
     </div>
   ))}
 </div>

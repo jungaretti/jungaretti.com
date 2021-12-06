@@ -1,6 +1,7 @@
 ---
 import { photos } from "../../data/photos.js";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PhotoPreview from "../../components/PhotoPreview.astro";
 const { photo } = Astro.props;
 export const getStaticPaths = async () => {
   return photos.map((p) => {
@@ -11,6 +12,6 @@ export const getStaticPaths = async () => {
 
 <BaseLayout>
   <div class="container">
-    <p>{photo.id}</p>
+    <PhotoPreview {photo} />
   </div>
 </BaseLayout>
