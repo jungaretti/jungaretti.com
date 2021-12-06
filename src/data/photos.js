@@ -1,12 +1,13 @@
 export const photos = [
   {
-    image: {
-      compressedUrl:
+    id: "new-horizons",
+    src: {
+      compressed:
         "https://badgerville.blob.core.windows.net/journal/new-horizons-small.jpg",
-      fullSizedUrl:
+      original:
         "https://badgerville.blob.core.windows.net/journal/new-horizons.jpg",
-      alt: "Boat sailing in front of sunset over the Olympic Mountains",
     },
+    alt: "Boat sailing in front of sunset over the Olympic Mountains",
     meta: {
       title: "New Horizons",
       description: null,
@@ -16,13 +17,14 @@ export const photos = [
     },
   },
   {
-    image: {
-      compressedUrl:
+    id: "riveder-le-stelle",
+    src: {
+      compressed:
         "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle-small.jpg",
-      fullSizedUrl:
+      original:
         "https://badgerville.blob.core.windows.net/journal/riveder-le-stelle.jpg",
-      alt: "Glimpse of the Milky Way hovering over the Cascades",
     },
+    alt: "Glimpse of the Milky Way hovering over the Cascades",
     meta: {
       title: "Riveder le Stelle",
       description: null,
@@ -32,13 +34,14 @@ export const photos = [
     },
   },
   {
-    image: {
-      compressedUrl:
+    id: "4960-miles",
+    src: {
+      compressed:
         "https://badgerville.blob.core.windows.net/journal/4960-miles-small.jpg",
-      fullSizedUrl:
+      original:
         "https://badgerville.blob.core.windows.net/journal/4960-miles.jpg",
-      alt: "Friends standing underneat an arch at Bryce Canyon National Park",
     },
+    alt: "Friends standing underneat an arch at Bryce Canyon National Park",
     meta: {
       title: "4960 Miles",
       description: null,
@@ -48,13 +51,14 @@ export const photos = [
     },
   },
   {
-    image: {
-      compressedUrl:
+    id: "sheepshead-and-stars",
+    src: {
+      compressed:
         "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars-small.jpg",
-      fullSizedUrl:
+      original:
         "https://badgerville.blob.core.windows.net/journal/sheepshead-and-stars.jpg",
-      alt: "Silhouette of friends standing atop a rocky hill",
     },
+    alt: "Silhouette of friends standing atop a rocky hill",
     meta: {
       title: "Sheepshead and Stars",
       description: null,

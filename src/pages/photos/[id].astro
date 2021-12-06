@@ -1,0 +1,16 @@
+---
+import { photos } from "../../data/photos.js";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const { photo } = Astro.props;
+export const getStaticPaths = async () => {
+  return photos.map((p) => {
+    return { params: { id: p.id }, props: { photo: p } };
+  });
+};
+---
+
+<BaseLayout>
+  <div class="container">
+    <p>{photo.id}</p>
+  </div>
+</BaseLayout>

@@ -3,7 +3,7 @@ const defaultTitle = "JP Ungaretti";
 const defaultDescription =
   "I'm a software engineer, photographer, and cheese curd connoisseur. Check out my recent photos or get in touch with me.";
 const defaultPermalink = "https://www.jungaretti.com/";
-const { title, description, permalink } = Astro.props;
+const { title, description, permalink, image } = Astro.props;
 ---
 
 <meta charset="utf-8" />
@@ -16,6 +16,7 @@ const { title, description, permalink } = Astro.props;
 <meta property="og:type" content="website" />
 <meta property="og:url" content={permalink || defaultPermalink} />
 <meta property="og:description" content={description || defaultDescription} />
+{image && <meta property="og:image" content={image} />}
 <!-- Icons -->
 <link rel="icon" href="/favicon.ico" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
