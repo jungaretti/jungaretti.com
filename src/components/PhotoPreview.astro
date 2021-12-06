@@ -1,10 +1,10 @@
 ---
-const { photo, link } = Astro.props;
+const { photo } = Astro.props;
 ---
 
 <div>
   <div>
-    <a href={link}>
+    <a href={`/photos/${photo.id}`}>
       <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
       />
     </a>
