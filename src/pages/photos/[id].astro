@@ -9,20 +9,26 @@ export const getStaticPaths = async () => {
 };
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={photo.meta.title}
+  permalink={`https://www.jungaretti.com/photos/${photo.id}`}
+  image={photo.src.compressed}
+>
   <div class="container">
     <div>
       <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
       />
     </div>
     <div class="mt-2">
-      <div class="flex flex-row">
+      <div class="md:flex md:flex-row">
         <div class="flex-auto">
           <h2 class="font-bold leading-tight text-2xl">{photo.meta.title}</h2>
           <p class="leading-tight">{photo.meta.location}</p>
         </div>
         <div>
-          <a href={photo.src.original} class="underline">Download Original</a>
+          <p class="text-sm">
+            <a href={photo.src.original} class="underline">Download Original</a>
+          </p>
         </div>
       </div>
     </div>
