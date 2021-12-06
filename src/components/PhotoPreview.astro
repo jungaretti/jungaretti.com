@@ -4,11 +4,8 @@ const { photo } = Astro.props;
 
 <div>
   <div>
-    <a href={photo.image.fullSizedUrl}>
-      <img
-        src={photo.image.compressedUrl}
-        alt={photo.image.alt}
-        class="w-full rounded-xl"
+    <a href={`/photos/${photo.id}`}>
+      <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
       />
     </a>
   </div>
