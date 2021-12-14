@@ -1,7 +1,6 @@
 ---
 import BaseHead from "./BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 const { title, description, permalink, image } = Astro.props;
 ---
 
@@ -11,10 +10,40 @@ const { title, description, permalink, image } = Astro.props;
     <BaseHead {title} {description} {permalink} {image} />
   </head>
   <body class="bg-gray-800 text-white">
-    <Header />
+    <header>
+      <div class="container my-4 md:my-8">
+        <Navbar />
+      </div>
+    </header>
     <main>
       <slot />
     </main>
-    <Footer />
+    <footer>
+      <div class="container my-4 md:my-8">
+        <hr class="text-gray-600 mb-4" />
+        <div
+          class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4"
+        >
+          <div>
+            <h5 class="font-bold">Here</h5>
+            <ul>
+              <a href="/">Home</a>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold">There</h5>
+            <ul>
+              <li>
+                <a href="https://github.com/jungaretti">GitHub</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold">Everywhere</h5>
+            <p>Photography © 2021 JP Ungaretti.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
