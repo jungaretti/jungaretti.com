@@ -3,8 +3,19 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-screen-xl;
+  @apply max-w-screen-lg;
   @apply mx-auto;
   @apply px-4;
   @apply md:px-6;
+}
+.bg-star {
+  background-image: url("https://badgerville.blob.core.windows.net/journal/riveder-le-stelle-small.jpg");
+  background-color: black;
+  background-position: 65% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h-banner {
+  height: 60vh;
+  max-height: 720px;
 }
