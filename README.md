@@ -1,22 +1,10 @@
 # Personal Website
 
-My corner of the Internet, built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com/).
+My corner of the Internet. Built with [Astro](https://astro.build), styled with [Tailwind CSS](https://tailwindcss.com/), and deployed with [Azure](https://azure.microsoft.com/en-us/services/app-service/static/).
 
 ## Getting Started
 
-"For a technology built on top of three different languages, the modern web seems to focus an awful lot on JavaScript."
-
-```bash
-# Clone the repo
-gh clone jungaretti/jungaretti.com
-cd jungaretti.com
-
-# Install dependencies
-npm install
-
-# Start local dev server
-npm run start
-```
+Clone this repo, install its dependencies, and start a local dev server!
 
 ## Built With
 
