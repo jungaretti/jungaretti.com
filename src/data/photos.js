@@ -1,10 +1,17 @@
+const blobBase = "https://badger.blob.core.windows.net/photos";
+const cdnBase = "https://badgercdn.azureedge.net/photos";
+
+const blobUri = (id) => `${blobBase}/${id}.jpg`;
+const blobPreviewUri = (id) => `${blobBase}/${id}-preview.jpg`;
+const cdnUri = (id) => `${cdnBase}/${id}.jpg`;
+const cdnPreviewUri = (id) => `${cdnBase}/${id}-preview.jpg`;
+
 export const photos = [
   {
     id: "new-horizons",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/photos/new-horizons-preview.jpg",
-      original: "https://badger.blob.core.windows.net/photos/new-horizons.jpg",
+      compressed: cdnPreviewUri("new-horizons"),
+      original: blobUri("new-horizons"),
     },
     alt: "Boat sailing in front of sunset over the Olympic Mountains",
     meta: {
@@ -18,10 +25,8 @@ export const photos = [
   {
     id: "riveder-le-stelle",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/photos/riveder-le-stelle-preview.jpg",
-      original:
-        "https://badger.blob.core.windows.net/photos/riveder-le-stelle.jpg",
+      compressed: cdnPreviewUri("riveder-le-stelle"),
+      original: blobUri("riveder-le-stelle"),
     },
     alt: "Glimpse of the Milky Way hovering over the Cascades",
     meta: {
@@ -35,9 +40,8 @@ export const photos = [
   {
     id: "george",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/photos/george-preview.jpg",
-      original: "https://badger.blob.core.windows.net/photos/george.jpg",
+      compressed: cdnPreviewUri("george"),
+      original: blobUri("george"),
     },
     alt: "Orange and white cat",
     meta: {
@@ -51,9 +55,8 @@ export const photos = [
   {
     id: "flames",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/photos/flames-preview.jpg",
-      original: "https://badger.blob.core.windows.net/photos/flames.jpg",
+      compressed: cdnPreviewUri("flames"),
+      original: blobUri("flames"),
     },
     alt: "Buttery-smooth bonfire flames",
     meta: {
