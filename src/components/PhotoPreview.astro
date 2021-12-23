@@ -3,14 +3,7 @@ const { photo } = Astro.props;
 ---
 
 <div>
-  <div>
-    <a href={`/photos/${photo.id}`}>
-      <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
-      />
-    </a>
-  </div>
-  <div class="mt-2">
-    <h3 class="font-bold text-lg leading-tight mb-0">{photo.meta.title}</h3>
-    <p class="text-sm leading-tight">{photo.meta.location}</p>
-  </div>
+  <a href={`/photos/${photo.id}`}>
+    <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-lg" />
+  </a>
 </div>
