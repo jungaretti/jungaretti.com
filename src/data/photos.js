@@ -3,14 +3,12 @@ const cdnBase = "https://badgercdn.azureedge.net/photos";
 
 const blobUri = (id) => `${blobBase}/${id}.jpg`;
 const blobPreviewUri = (id) => `${blobBase}/${id}-preview.jpg`;
-const cdnUri = (id) => `${cdnBase}/${id}.jpg`;
-const cdnPreviewUri = (id) => `${cdnBase}/${id}-preview.jpg`;
 
 export const photos = [
   {
     id: "new-horizons",
     src: {
-      compressed: cdnPreviewUri("new-horizons"),
+      compressed: blobPreviewUri("new-horizons"),
       original: blobUri("new-horizons"),
     },
     alt: "Boat sailing in front of sunset over the Olympic Mountains",
@@ -25,7 +23,7 @@ export const photos = [
   {
     id: "riveder-le-stelle",
     src: {
-      compressed: cdnPreviewUri("riveder-le-stelle"),
+      compressed: blobPreviewUri("riveder-le-stelle"),
       original: blobUri("riveder-le-stelle"),
     },
     alt: "Glimpse of the Milky Way hovering over the Cascades",
@@ -40,7 +38,7 @@ export const photos = [
   {
     id: "george",
     src: {
-      compressed: cdnPreviewUri("george"),
+      compressed: blobPreviewUri("george"),
       original: blobUri("george"),
     },
     alt: "Orange and white cat",
@@ -55,7 +53,7 @@ export const photos = [
   {
     id: "flames",
     src: {
-      compressed: cdnPreviewUri("flames"),
+      compressed: blobPreviewUri("flames"),
       original: blobUri("flames"),
     },
     alt: "Buttery-smooth bonfire flames",
