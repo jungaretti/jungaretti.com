@@ -1,5 +1,4 @@
 const blobBase = "https://badger.blob.core.windows.net/photos";
-const cdnBase = "https://badgercdn.azureedge.net/photos";
 
 const blobUri = (id) => `${blobBase}/${id}.jpg`;
 const blobPreviewUri = (id) => `${blobBase}/${id}-preview.jpg`;
