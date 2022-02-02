@@ -4,8 +4,8 @@ function buildPhoto({ id, alt, meta }) {
   return {
     id,
     src: {
-      compressed: `${blobBase}/${id}.jpg`,
-      original: `${blobBase}/${id}-preview.jpg`,
+      compressed: `${blobBase}/${id}-preview.jpg`,
+      original: `${blobBase}/${id}.jpg`,
     },
     alt,
     meta,
