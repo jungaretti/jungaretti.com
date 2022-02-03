@@ -1,4 +1,4 @@
-const blobBase = "https://badger.blob.core.windows.net/photos";
+const blobBase = "https://badger.blob.core.windows.net/journal";
 
 function buildPhoto({ id, alt, meta }) {
   return {
