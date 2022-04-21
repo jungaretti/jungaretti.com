@@ -1,7 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Deploy Azure Functions
+name: Deploy to Azure Functions
 
 on:
   push:
@@ -16,25 +13,26 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    name: Build and Deploy
     steps:
-      - name: "Checkout GitHub Action"
-        uses: actions/checkout@v2
-
-      - name: Setup Node ${{ env.NODE_VERSION }} Environment
+      - uses: actions/checkout@v2
+      - name: Configure Node ${{ env.NODE_VERSION }} Environment
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      - name: "Resolve Project Dependencies Using Npm"
+      - name: npm install
         shell: bash
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm install
-          npm run build --if-present
-          npm run test --if-present
           popd
-
-      - name: "Run Azure Functions Action"
+      - name: npm build
+        shell: bash
+        run: |
+          pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+          npm run build --if-present
+          popd
+      - name: Deploy Functions
         uses: Azure/functions-action@v1
         id: fa
         with:
