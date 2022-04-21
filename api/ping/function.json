@@ -15,6 +15,5 @@
       "direction": "out",
       "name": "res"
     }
-  ],
-  "scriptFile": "../dist/ping/index.js"
+  ]
 }

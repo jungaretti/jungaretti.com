@@ -1,17 +1,11 @@
 {
-  "name": "api",
+  "name": "jungaretti-api",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "prestart": "npm run build",
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {},
-  "devDependencies": {
-    "@azure/functions": "^3.0.0",
-    "typescript": "^4.0.0"
-  }
+  "devDependencies": {}
 }
