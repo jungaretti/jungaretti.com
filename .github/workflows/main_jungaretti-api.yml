@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy
     steps:
       - uses: actions/checkout@v2
-      - name: Configure Node ${{ env.NODE_VERSION }} Environment
+      - name: Configure node ${{ env.NODE_VERSION }} environment
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -32,7 +32,7 @@ jobs:
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
           npm run build --if-present
           popd
-      - name: Deploy Functions
+      - name: Deploy functions
         uses: Azure/functions-action@v1
         id: fa
         with:

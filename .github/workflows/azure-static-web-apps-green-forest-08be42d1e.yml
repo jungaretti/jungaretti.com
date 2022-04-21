@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build And Deploy
+      - name: Build and deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -33,9 +33,9 @@ jobs:
   cleanup-pull-request:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Cleanup Pull Request
+    name: Close pull request
     steps:
-      - name: Cleanup Pull Request
+      - name: Close pull request
         uses: Azure/static-web-apps-deploy@v1
         id: closepullrequest
         with:
