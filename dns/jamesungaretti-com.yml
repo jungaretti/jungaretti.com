@@ -5,7 +5,7 @@ records:
     content: uixie.porkbun.com
     ttl: 600
   - type: CNAME
-    host: "*.jungaretti.com"
+    host: "*.jamesungaretti.com"
     content: uixie.porkbun.com
     ttl: 600
   - type: TXT
