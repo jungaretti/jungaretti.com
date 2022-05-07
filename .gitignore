@@ -2,6 +2,7 @@
 
 # build output
 dist
+bin
 
 # dependencies
 node_modules/
