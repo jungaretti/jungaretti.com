@@ -1,6 +1,6 @@
 domain: jungaretti.com
 records:
-  # Porkbun
+  # Porkbun SSL
   - type: TXT
     host: _acme-challenge.jungaretti.com
     content: Kb6-nJirHoqvIqzbzKklBaXrbmqxbLav77qO0o1BFPY
