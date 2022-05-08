@@ -1,0 +1,28 @@
+name: Preview DNS Records
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jungaretti/bacon-deploy-action@v0.1-beta
+        name: Deploy jungaretti.com
+        with:
+          api-key: ${{ secrets.PORKBUN_API_KEY }}
+          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
+          config: dns/jungaretti.com.yml
+          create: false
+          delete: false
+      - uses: jungaretti/bacon-deploy-action@v0.1-beta
+        name: Deploy jamesungaretti.com
+        with:
+          api-key: ${{ secrets.PORKBUN_API_KEY }}
+          secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
+          config: dns/jamesungaretti.com.yml
+          create: false
+          delete: false

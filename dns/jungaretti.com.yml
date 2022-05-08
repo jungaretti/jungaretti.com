@@ -1,0 +1,66 @@
+domain: jungaretti.com
+records:
+  # Porkbun SSL
+  - type: TXT
+    host: _acme-challenge.jungaretti.com
+    content: Kb6-nJirHoqvIqzbzKklBaXrbmqxbLav77qO0o1BFPY
+    ttl: 300
+  - type: TXT
+    host: _acme-challenge.jungaretti.com
+    content: J4Qs_IAv-pH5RMFZ64pI50SL-t21Tq6WHkycp6BExjc
+    ttl: 300
+  # Google Search Console
+  - type: TXT
+    host: jungaretti.com
+    content: google-site-verification=Jmb9KsqosrJktEYPAFSKF0SJYPHgsQikLSpxTmnU1bY
+    ttl: 600
+  # Azure Static Web App
+  - type: ALIAS
+    host: jungaretti.com
+    content: green-forest-08be42d1e.azurestaticapps.net
+    ttl: 600
+  - type: CNAME
+    host: www.jungaretti.com
+    content: green-forest-08be42d1e.azurestaticapps.net
+    ttl: 600
+  - type: TXT
+    host: jungaretti.com
+    content: 730r9mqm3x2pms2m1y00zg8gfzy7vs63
+    ttl: 600
+  # Fastmail
+  - type: CNAME
+    host: fm1._domainkey.jungaretti.com
+    content: fm1.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: CNAME
+    host: fm2._domainkey.jungaretti.com
+    content: fm2.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: CNAME
+    host: fm3._domainkey.jungaretti.com
+    content: fm3.jungaretti.com.dkim.fmhosted.com
+    ttl: 600
+  - type: MX
+    host: jungaretti.com
+    content: in1-smtp.messagingengine.com
+    ttl: 600
+    priority: 10
+  - type: MX
+    host: jungaretti.com
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+    priority: 20
+  - type: MX
+    host: "*.jungaretti.com"
+    content: in1-smtp.messagingengine.com
+    ttl: 600
+    priority: 10
+  - type: MX
+    host: "*.jungaretti.com"
+    content: in2-smtp.messagingengine.com
+    ttl: 600
+    priority: 20
+  - type: TXT
+    host: jungaretti.com
+    content: v=spf1 include:spf.messagingengine.com ?all
+    ttl: 600
