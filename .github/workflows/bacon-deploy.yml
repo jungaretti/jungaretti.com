@@ -15,7 +15,7 @@ jobs:
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jungaretti-com.yml
+          config: dns/jungaretti.com.yml
           create: true
           delete: true
       - uses: jungaretti/bacon-deploy-action@v0.1-beta
@@ -23,6 +23,6 @@ jobs:
         with:
           api-key: ${{ secrets.PORKBUN_API_KEY }}
           secret-key: ${{ secrets.PORKBUN_SECRET_KEY }}
-          config: dns/jamesungaretti-com.yml
+          config: dns/jamesungaretti.com.yml
           create: true
           delete: true
