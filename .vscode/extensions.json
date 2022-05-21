@@ -1,5 +1,4 @@
 {
-  "recommendations": [
-    "ms-azuretools.vscode-azurefunctions"
-  ]
+  "recommendations": ["astro-build.astro-vscode"],
+  "unwantedRecommendations": []
 }

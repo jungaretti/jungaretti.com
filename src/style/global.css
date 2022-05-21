@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+.frame {
   @apply max-w-screen-lg;
   @apply mx-auto;
   @apply px-4;

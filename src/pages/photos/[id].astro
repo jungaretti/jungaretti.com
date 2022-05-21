@@ -15,7 +15,7 @@ export const getStaticPaths = async () => {
   permalink={`https://www.jungaretti.com/photos/${photo.id}`}
   image={photo.src.compressed}
 >
-  <div class="container">
+  <div class="frame">
     <div>
       <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
       />

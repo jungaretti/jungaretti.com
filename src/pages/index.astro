@@ -5,7 +5,7 @@ import PhotoGallery from "../components/PhotoGallery.astro";
 ---
 
 <BaseLayout>
-  <div class="container my-16 md:my-28">
+  <div class="frame my-16 md:my-28">
     <div class="text-left">
       <h1 class="font-black text-4xl md:text-5xl">JP Ungaretti</h1>
       <p class="sfont-medium leading-tight text-lg md:text-2xl">
@@ -13,7 +13,7 @@ import PhotoGallery from "../components/PhotoGallery.astro";
       </p>
     </div>
   </div>
-  <div class="container my-4">
+  <div class="frame my-4">
     <h2 class="text-3xl font-bold">My Photos</h2>
     <div class="mt-3">
       <PhotoGallery photos={photos.filter((p) => p.meta.favorite)} />
