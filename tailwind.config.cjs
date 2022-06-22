@@ -1,7 +1,8 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       colors: {
