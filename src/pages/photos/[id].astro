@@ -6,9 +6,11 @@ export interface Props {
   photo: Photo;
 }
 
-export const getStaticPaths = async () => photos.map((p) => {
-  return { params: { id: p.id }, props: { photo: p } as Props }
-});
+export const getStaticPaths = async () => {
+  return photos.map((p) => {
+    return { params: { id: p.id }, props: { photo: p } as Props };
+  });
+};
 const { photo } = Astro.props as Props;
 ---
 
@@ -20,7 +22,10 @@ const { photo } = Astro.props as Props;
 >
   <div class="frame">
     <div>
-      <img src={photo.src.compressed.toString()} alt={photo.alt} class="w-full rounded-xl"
+      <img
+        src={photo.src.compressed.toString()}
+        alt={photo.alt}
+        class="w-full rounded-xl"
       />
     </div>
     <div class="mt-2">
@@ -31,7 +36,9 @@ const { photo } = Astro.props as Props;
         </div>
         <div>
           <p class="text-sm">
-            <a href={photo.src.original.toString()} class="underline">Download Original</a>
+            <a href={photo.src.original.toString()} class="underline">
+              Download Original
+            </a>
           </p>
         </div>
       </div>
