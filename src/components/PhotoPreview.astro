@@ -9,10 +9,6 @@ const { photo } = Astro.props as Props;
 
 <div>
   <a href={`/photos/${photo.id}`}>
-    <img
-      src={photo.src.compressed.toString()}
-      alt={photo.alt}
-      class="w-full rounded-lg"
-    />
+    <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-lg" />
   </a>
 </div>

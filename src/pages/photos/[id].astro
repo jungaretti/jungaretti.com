@@ -22,10 +22,7 @@ export const getStaticPaths = async () => {
 >
   <div class="frame">
     <div>
-      <img
-        src={photo.src.compressed.toString()}
-        alt={photo.alt}
-        class="w-full rounded-xl"
+      <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
       />
     </div>
     <div class="mt-2">
@@ -36,7 +33,7 @@ export const getStaticPaths = async () => {
         </div>
         <div>
           <p class="text-sm">
-            <a href={photo.src.original.toString()} class="underline">
+            <a href={photo.src.original} class="underline">
               Download Original
             </a>
           </p>
