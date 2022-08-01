@@ -5,13 +5,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 export interface Props {
   photo: Photo;
 }
+const { photo } = Astro.props as Props;
 
 export const getStaticPaths = async () => {
   return photos.map((p) => {
     return { params: { id: p.id }, props: { photo: p } as Props };
   });
 };
-const { photo } = Astro.props as Props;
 ---
 
 <BaseLayout

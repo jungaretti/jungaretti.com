@@ -1,7 +1,11 @@
 ---
+import { Photo } from "../data/photos";
 import PhotoPreview from "./PhotoPreview.astro";
 
-const { photos } = Astro.props;
+export interface Props {
+  photos: Photo[];
+}
+const { photos } = Astro.props as Props;
 ---
 
 <div class="grid gap-3 grid-cols-1 md:grid-cols-2">

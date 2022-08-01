@@ -2,10 +2,16 @@
 import "../style/global.css";
 import { defaults } from "../data/defaults";
 
+export interface Props {
+  title?: string;
+  description?: string;
+  permalink?: string;
+  image?: string;
+}
 const defaultTitle = defaults.title;
 const defaultDescription = defaults.description;
 const defaultPermalink = defaults.permalink;
-const { title, description, permalink, image } = Astro.props;
+const { title, description, permalink, image } = Astro.props as Props;
 ---
 
 <meta charset="utf-8" />

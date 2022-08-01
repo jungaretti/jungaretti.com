@@ -1,14 +1,19 @@
 ---
-import BaseHead from "./BaseHead.astro";
+import BaseHead, { Props as BaseHeadProps } from "./BaseHead.astro";
 import Navbar from "../components/Navbar.astro";
 
-const { title, description, permalink, image } = Astro.props;
+const { title, description, permalink, image } = Astro.props as BaseHeadProps;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead {title} {description} {permalink} {image} />
+    <BaseHead
+      title={title}
+      description={description}
+      permalink={permalink}
+      image={image}
+    />
   </head>
   <body class="bg-lowmess text-cultured">
     <header>
