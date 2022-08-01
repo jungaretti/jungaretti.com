@@ -4,11 +4,11 @@ records:
   - type: TXT
     host: _acme-challenge.jungaretti.com
     content: Kb6-nJirHoqvIqzbzKklBaXrbmqxbLav77qO0o1BFPY
-    ttl: 300
+    ttl: 600
   - type: TXT
     host: _acme-challenge.jungaretti.com
     content: J4Qs_IAv-pH5RMFZ64pI50SL-t21Tq6WHkycp6BExjc
-    ttl: 300
+    ttl: 600
   # Google Search Console
   - type: TXT
     host: jungaretti.com
