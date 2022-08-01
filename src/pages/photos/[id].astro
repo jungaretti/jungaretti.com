@@ -1,17 +1,22 @@
 ---
-import { photos } from "../../data/photos.js";
+import { Photo, photos } from "../../data/photos";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const { photo } = Astro.props;
+
+export interface Props {
+  photo: Photo;
+}
+const { photo } = Astro.props as Props;
+
 export const getStaticPaths = async () => {
   return photos.map((p) => {
-    return { params: { id: p.id }, props: { photo: p } };
+    return { params: { id: p.id }, props: { photo: p } as Props };
   });
 };
 ---
 
 <BaseLayout
-  title={photo.meta.title}
-  description={photo.meta.location}
+  title={photo.title}
+  description={photo.location}
   permalink={`https://www.jungaretti.com/photos/${photo.id}`}
   image={photo.src.compressed}
 >
@@ -23,12 +28,14 @@ export const getStaticPaths = async () => {
     <div class="mt-2">
       <div class="md:flex md:flex-row">
         <div class="flex-auto">
-          <h2 class="font-bold leading-tight text-2xl">{photo.meta.title}</h2>
-          <p class="leading-tight">{photo.meta.location}</p>
+          <h2 class="font-bold leading-tight text-2xl">{photo.title}</h2>
+          <p class="leading-tight">{photo.location}</p>
         </div>
         <div>
           <p class="text-sm">
-            <a href={photo.src.original} class="underline">Download Original</a>
+            <a href={photo.src.original} class="underline">
+              Download Original
+            </a>
           </p>
         </div>
       </div>

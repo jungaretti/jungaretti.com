@@ -1,7 +1,9 @@
 ---
-import { photos } from "../data/photos.js";
+import { photos } from "../data/photos";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/PhotoGallery.astro";
+
+const favoritePhotos = photos.filter((p) => p.isFavorite);
 ---
 
 <BaseLayout>
@@ -16,7 +18,7 @@ import PhotoGallery from "../components/PhotoGallery.astro";
   <div class="frame my-4">
     <h2 class="text-3xl font-bold">My Photos</h2>
     <div class="mt-3">
-      <PhotoGallery photos={photos.filter((p) => p.meta.favorite)} />
+      <PhotoGallery photos={favoritePhotos} />
     </div>
   </div>
 </BaseLayout>

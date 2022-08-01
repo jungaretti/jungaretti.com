@@ -1,5 +1,10 @@
 ---
-const { photo } = Astro.props;
+import { Photo } from "../data/photos";
+
+export interface Props {
+  photo: Photo;
+}
+const { photo } = Astro.props as Props;
 ---
 
 <div>
