@@ -25,16 +25,17 @@ export class Photo {
 
 export const photos: Photo[] = [
   {
-    id: "lone-moose",
-    alt: "Mountain peak in Grand Teton National Park",
+    id: "raggi-del-pianeta",
+    alt: "Golden sunset over a snowy mountain",
     src: {
       compressed:
-        "https://badger.blob.core.windows.net/images/lone-moose-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/lone-moose.jpg",
+        "https://badger.blob.core.windows.net/images/raggi-del-pianeta-preview.jpg",
+      original:
+        "https://badger.blob.core.windows.net/images/raggi-del-pianeta.jpg",
     },
-    title: "Lone Moose",
-    location: "Grand Teton National Park",
-    date: new Date("2022-07-03"),
+    title: "Raggi del Pianeta",
+    location: "North Cascades National Park",
+    date: new Date("2022-01-09"),
   },
   {
     id: "wide-awake",
@@ -49,19 +50,6 @@ export const photos: Photo[] = [
     date: new Date("2022-07-03"),
   },
   {
-    id: "raggi-del-pianeta",
-    alt: "Golden sunset over a snowy mountain",
-    src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/raggi-del-pianeta-preview.jpg",
-      original:
-        "https://badger.blob.core.windows.net/images/raggi-del-pianeta.jpg",
-    },
-    title: "Raggi del Pianeta",
-    location: "North Cascades National Park",
-    date: new Date("2022-01-09"),
-  },
-  {
     id: "new-horizons",
     alt: "Boat sailing in front of sunset over the Olympic Mountains",
     src: {
@@ -72,6 +60,18 @@ export const photos: Photo[] = [
     title: "New Horizons",
     location: "Golden Gardens Park",
     date: new Date("2021-09-24"),
+  },
+  {
+    id: "lone-moose",
+    alt: "Mountain peak in Grand Teton National Park",
+    src: {
+      compressed:
+        "https://badger.blob.core.windows.net/images/lone-moose-preview.jpg",
+      original: "https://badger.blob.core.windows.net/images/lone-moose.jpg",
+    },
+    title: "Lone Moose",
+    location: "Grand Teton National Park",
+    date: new Date("2022-07-03"),
   },
   {
     id: "riveder-le-stelle",
