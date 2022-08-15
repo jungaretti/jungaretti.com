@@ -38,7 +38,7 @@ export const photos: Photo[] = [
   },
   {
     id: "wide-awake",
-    alt: "Pristine view of our Galactric Center over Yellowstone National Park",
+    alt: "Pristine view of the Milky Way floating over Yellowstone National Park",
     src: {
       compressed:
         "https://badger.blob.core.windows.net/images/wide-awake-preview.jpg",
