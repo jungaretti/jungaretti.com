@@ -37,14 +37,14 @@ export const photos: Photo[] = [
     date: new Date("2022-07-03"),
   },
   {
-    id: "our-universe",
+    id: "wide-awake",
     alt: "Pristine view of our Galactric Center over Yellowstone National Park",
     src: {
       compressed:
-        "https://badger.blob.core.windows.net/images/our-universe-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/our-universe.jpg",
+        "https://badger.blob.core.windows.net/images/wide-awake-preview.jpg",
+      original: "https://badger.blob.core.windows.net/images/wide-awake.jpg",
     },
-    title: "Our Universe",
+    title: "Wide Awake",
     location: "Yellowstone National Park",
     date: new Date("2022-07-03"),
   },
