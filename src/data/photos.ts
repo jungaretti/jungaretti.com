@@ -11,7 +11,6 @@ export class Photo {
   public description?: string;
   public location?: string;
   public date?: Date;
-  public isFavorite?: boolean;
 }
 
 export const photos: Photo[] = [
@@ -27,7 +26,6 @@ export const photos: Photo[] = [
     title: "Raggi del Pianeta",
     location: "North Cascades National Park",
     date: new Date("2022-01-09"),
-    isFavorite: true,
   },
   {
     id: "new-horizons",
@@ -40,7 +38,6 @@ export const photos: Photo[] = [
     title: "New Horizons",
     location: "Golden Gardens Park",
     date: new Date("2021-09-24"),
-    isFavorite: true,
   },
   {
     id: "riveder-le-stelle",
@@ -54,7 +51,6 @@ export const photos: Photo[] = [
     title: "Riveder le Stelle",
     location: "North Cascades National Park",
     date: new Date("2021-09-03"),
-    isFavorite: true,
   },
   {
     id: "mio-gatto",
@@ -67,6 +63,5 @@ export const photos: Photo[] = [
     title: "Mio Gatto",
     location: "Under the Table",
     date: new Date("2015-03-02"),
-    isFavorite: true,
   },
 ];
