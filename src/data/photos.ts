@@ -1,6 +1,11 @@
 export class PhotoSource {
   public compressed: string;
   public original: string;
+
+  constructor(compressed: string, original: string) {
+    this.compressed = compressed;
+    this.original = original;
+  }
 }
 
 export class Photo {
@@ -11,6 +16,11 @@ export class Photo {
   public description?: string;
   public location?: string;
   public date?: Date;
+
+  constructor(id: string, src: PhotoSource) {
+    this.id = id;
+    this.src = src;
+  }
 }
 
 export const photos: Photo[] = [

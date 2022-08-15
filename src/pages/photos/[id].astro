@@ -32,8 +32,8 @@ export const getStaticPaths = async () => {
           <div>
             <p>{photo.location}</p>
             <p>
-              {photo.date.toLocaleString("en-US", { month: "long" })}
-              {photo.date.getFullYear()}
+              {photo.date?.toLocaleString("en-US", { month: "long" })}
+              {photo.date?.getFullYear()}
             </p>
           </div>
         </div>

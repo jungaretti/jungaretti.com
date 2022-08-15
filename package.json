@@ -7,11 +7,12 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "astro": "astro",
     "format": "prettier --write README.md src"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^0.2.1",
-    "astro": "^1.0.0-beta.47",
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.0.5",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.1.2"
   }
