@@ -1,6 +1,5 @@
 ---
 import "../style/global.css";
-import { defaults } from "../data/defaults";
 
 export interface Props {
   title?: string;
@@ -8,10 +7,12 @@ export interface Props {
   permalink?: string;
   image?: string;
 }
-const defaultTitle = defaults.title;
-const defaultDescription = defaults.description;
-const defaultPermalink = defaults.permalink;
 const { title, description, permalink, image } = Astro.props as Props;
+
+const defaultTitle = "JP Ungaretti";
+const defaultDescription =
+  "I'm a software engineer, photographer, and cheese curd connoisseur. Check out my recent photos or get in touch with me.";
+const defaultPermalink = "https://www.jungaretti.com/";
 ---
 
 <meta charset="utf-8" />

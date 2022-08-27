@@ -1,27 +1,4 @@
-export class PhotoSource {
-  public compressed: string;
-  public original: string;
-
-  constructor(compressed: string, original: string) {
-    this.compressed = compressed;
-    this.original = original;
-  }
-}
-
-export class Photo {
-  public id: string;
-  public src: PhotoSource;
-  public alt?: string;
-  public title?: string;
-  public description?: string;
-  public location?: string;
-  public date?: Date;
-
-  constructor(id: string, src: PhotoSource) {
-    this.id = id;
-    this.src = src;
-  }
-}
+import type { Photo } from "../types/Photo";
 
 export const photos: Photo[] = [
   {
