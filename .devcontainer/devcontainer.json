@@ -1,0 +1,11 @@
+{
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"astro-build.astro-vscode",
+				"csstools.postcss"
+			]
+		}
+        
+    }
+}
