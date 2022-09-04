@@ -11,8 +11,7 @@ const { title, description, permalink, image } = Astro.props as Props;
 
 const defaultTitle = "JP Ungaretti";
 const defaultDescription =
-  "I'm a software engineer, photographer, and cheese curd connoisseur. Check out my recent photos or get in touch with me.";
-const defaultPermalink = "https://www.jungaretti.com/";
+  "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.";
 ---
 
 <meta charset="utf-8" />
@@ -21,11 +20,11 @@ const defaultPermalink = "https://www.jungaretti.com/";
 <title>{title || defaultTitle}</title>
 <meta name="description" content={description || defaultDescription} />
 <!-- Social -->
-<meta property="og:title" content={title || defaultTitle} />
 <meta property="og:type" content="website" />
-<meta property="og:url" content={permalink || defaultPermalink} />
+<meta property="og:title" content={title || defaultTitle} />
 <meta property="og:description" content={description || defaultDescription} />
 {image && <meta property="og:image" content={image} />}
+{permalink && <meta property="og:url" content={permalink} />}
 <!-- Icons -->
 <link rel="icon" href="/favicon.ico" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
