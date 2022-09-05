@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         "griko": "#27292b",
         "cultured": "#f9f9f9",
-        "flash": "#ffca64"
+        "flash": "#ffcf74"
       },
       fontFamily: {
         sans: ["Inter", fontFamily.sans],
