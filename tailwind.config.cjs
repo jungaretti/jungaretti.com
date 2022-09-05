@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        griko: "#27292b",
-        cultured: "#F9F9F9",
+        "griko": "#27292b",
+        "cultured": "#f9f9f9",
+        "flash": "#ffca64"
       },
       fontFamily: {
         sans: ["Inter", fontFamily.sans],

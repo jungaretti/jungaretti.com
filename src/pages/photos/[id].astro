@@ -29,7 +29,9 @@ export const getStaticPaths = async () => {
     <div class="my-4">
       <div class="md:flex md:flex-row">
         <div class="flex-auto space-y-2">
-          <h2 class="font-bold leading-tight text-2xl">{photo.title}</h2>
+          <h2 class="font-bold text-flash leading-tight text-2xl">
+            {photo.title}
+          </h2>
           <div>
             <p>{photo.location}</p>
             <p>
