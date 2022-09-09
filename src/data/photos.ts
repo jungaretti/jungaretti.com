@@ -1,14 +1,15 @@
-import type { Photo } from "../types/Photo";
+import { azureBlob } from "./helper";
+import type { Photo } from "./types/Photo";
+
+const imageBlob = (file: string): string => azureBlob("badger", "images", file);
 
 export const photos: Photo[] = [
   {
     id: "raggi-del-pianeta",
     alt: "Golden sunset over a snowy mountain",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/raggi-del-pianeta-preview.jpg",
-      original:
-        "https://badger.blob.core.windows.net/images/raggi-del-pianeta.jpg",
+      compressed: imageBlob("raggi-del-pianeta-preview.jpg"),
+      original: imageBlob("raggi-del-pianeta.jpg"),
     },
     title: "Raggi del Pianeta",
     location: "North Cascades National Park",
@@ -18,9 +19,8 @@ export const photos: Photo[] = [
     id: "wide-awake",
     alt: "Pristine view of the Milky Way floating over Yellowstone National Park",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/wide-awake-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/wide-awake.jpg",
+      compressed: imageBlob("wide-awake-preview.jpg"),
+      original: imageBlob("wide-awake.jpg"),
     },
     title: "Wide Awake",
     location: "Yellowstone National Park",
@@ -30,9 +30,8 @@ export const photos: Photo[] = [
     id: "new-horizons",
     alt: "Boat sailing in front of sunset over the Olympic Mountains",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/new-horizons-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/new-horizons.jpg",
+      compressed: imageBlob("new-horizons-preview.jpg"),
+      original: imageBlob("new-horizons.jpg"),
     },
     title: "New Horizons",
     location: "Golden Gardens Park",
@@ -42,9 +41,8 @@ export const photos: Photo[] = [
     id: "lone-moose",
     alt: "Mountain peak in Grand Teton National Park",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/lone-moose-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/lone-moose.jpg",
+      compressed: imageBlob("lone-moose-preview.jpg"),
+      original: imageBlob("lone-moose.jpg"),
     },
     title: "Lone Moose",
     location: "Grand Teton National Park",
@@ -54,10 +52,8 @@ export const photos: Photo[] = [
     id: "riveder-le-stelle",
     alt: "Glimpse of the Milky Way hovering over the Cascades",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/riveder-le-stelle-preview.jpg",
-      original:
-        "https://badger.blob.core.windows.net/images/riveder-le-stelle.jpg",
+      compressed: imageBlob("riveder-le-stelle-preview.jpg"),
+      original: imageBlob("riveder-le-stelle.jpg"),
     },
     title: "Riveder le Stelle",
     location: "North Cascades National Park",
@@ -67,9 +63,8 @@ export const photos: Photo[] = [
     id: "mio-gatto",
     alt: "Orange and white cat",
     src: {
-      compressed:
-        "https://badger.blob.core.windows.net/images/mio-gatto-preview.jpg",
-      original: "https://badger.blob.core.windows.net/images/mio-gatto.jpg",
+      compressed: imageBlob("mio-gatto-preview.jpg"),
+      original: imageBlob("mio-gatto.jpg"),
     },
     title: "Mio Gatto",
     location: "Under the Table",
