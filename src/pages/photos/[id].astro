@@ -2,6 +2,7 @@
 import type { Photo } from "../../data/types/Photo";
 import { photos } from "../../data/photos";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { HeadMeta } from "../../data/types/HeadMeta";
 
 export interface Props {
   photo: Photo;
@@ -13,14 +14,15 @@ export const getStaticPaths = async () => {
     return { params: { id: p.id }, props: { photo: p } as Props };
   });
 };
+
+const meta = new HeadMeta(
+  photo.title || "Photo",
+  photo.location || "Taken by JP",
+  photo.src.compressed
+);
 ---
 
-<BaseLayout
-  title={photo.title}
-  description={photo.location}
-  permalink={`https://www.jungaretti.com/photos/${photo.id}`}
-  image={photo.src.compressed}
->
+<BaseLayout meta={meta}>
   <div class="frame">
     <div>
       <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"

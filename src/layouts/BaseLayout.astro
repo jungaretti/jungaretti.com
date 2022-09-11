@@ -1,25 +1,14 @@
 ---
-import BaseHead, { Props as BaseHeadProps } from "./BaseHead.astro";
 import Navbar from "../components/Navbar.astro";
-import BaseHeadNew, { Props as BaseHeadNewProps } from "./BaseHeadNew.astro";
-import { defaultHeadMeta } from "../data/types/HeadMeta";
+import BaseHeadNew, { Props as BaseHeadProps } from "./BaseHeadNew.astro";
 
-const { title, description, permalink, image } = Astro.props as BaseHeadProps;
-
-// Gen2 head component
-Astro.props.meta = Astro.props.meta ?? defaultHeadMeta;
-const { meta } = Astro.props as BaseHeadNewProps;
+export interface Props extends BaseHeadProps {}
+const { meta } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead
-      title={title}
-      description={description}
-      permalink={permalink}
-      image={image}
-    />
     <BaseHeadNew meta={meta} />
   </head>
   <body class="bg-griko text-cultured">

@@ -1,10 +1,13 @@
 ---
 import { photos } from "../data/photos";
+import { defaultHeadMeta } from "../data/types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/PhotoGallery.astro";
+
+const meta = defaultHeadMeta;
 ---
 
-<BaseLayout>
+<BaseLayout meta={meta}>
   <div class="frame my-16 md:my-28">
     <div class="text-left">
       <h1 class="font-black text-flash text-4xl md:text-5xl">JP Ungaretti</h1>
