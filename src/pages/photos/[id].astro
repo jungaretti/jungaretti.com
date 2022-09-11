@@ -15,11 +15,11 @@ export const getStaticPaths = async () => {
   });
 };
 
-const meta = new HeadMeta(
-  photo.title || "Photo",
-  photo.location || "Taken by JP",
-  photo.src.compressed
-);
+const meta = {
+  title: photo.title,
+  description: photo.description,
+  imageSrc: photo.src.compressed,
+};
 ---
 
 <BaseLayout meta={meta}>
