@@ -1,9 +1,9 @@
 import { azureBlob } from "./helper";
-import type { Photo } from "./types/Photo";
+import type { PhotoNew } from "./types/PhotoNew";
 
 const imageBlob = (file: string): string => azureBlob("badger", "images", file);
 
-export const photos: Photo[] = [
+export const photos: PhotoNew[] = [
   {
     id: "raggi-del-pianeta",
     alt: "Golden sunset over a snowy mountain",
@@ -12,28 +12,33 @@ export const photos: Photo[] = [
       original: imageBlob("raggi-del-pianeta.jpg"),
     },
     title: "Raggi del Pianeta",
+    description:
+      "Golden sunset over a snowy mountain at North Cascades National Park",
     location: "North Cascades National Park",
     date: new Date("2022-01-09"),
   },
   {
     id: "wide-awake",
-    alt: "Pristine view of the Milky Way floating over Yellowstone National Park",
+    alt: "The Milky Way floating over a lake at Yellowstone National Park",
     src: {
       compressed: imageBlob("wide-awake-preview.jpg"),
       original: imageBlob("wide-awake.jpg"),
     },
     title: "Wide Awake",
+    description:
+      "The Milky Way floating over a lake at Yellowstone National Park",
     location: "Yellowstone National Park",
     date: new Date("2022-07-03"),
   },
   {
     id: "new-horizons",
-    alt: "Boat sailing in front of sunset over the Olympic Mountains",
+    alt: "Boat sailing in front of sunset over the Olympic Peninsula",
     src: {
       compressed: imageBlob("new-horizons-preview.jpg"),
       original: imageBlob("new-horizons.jpg"),
     },
     title: "New Horizons",
+    description: "Boat sailing in front of sunset over the Olympic Peninsula",
     location: "Golden Gardens Park",
     date: new Date("2021-09-24"),
   },
@@ -45,6 +50,7 @@ export const photos: Photo[] = [
       original: imageBlob("lone-moose.jpg"),
     },
     title: "Lone Moose",
+    description: "Mountain peak in Grand Teton National Park",
     location: "Grand Teton National Park",
     date: new Date("2022-07-03"),
   },
@@ -56,6 +62,7 @@ export const photos: Photo[] = [
       original: imageBlob("riveder-le-stelle.jpg"),
     },
     title: "Riveder le Stelle",
+    description: "Glimpse of the Milky Way hovering over the Cascades",
     location: "North Cascades National Park",
     date: new Date("2021-09-03"),
   },
@@ -67,6 +74,7 @@ export const photos: Photo[] = [
       original: imageBlob("mio-gatto.jpg"),
     },
     title: "Mio Gatto",
+    description: "Orange and white cat sleeping under the table",
     location: "Under the Table",
     date: new Date("2015-03-02"),
   },
