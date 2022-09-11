@@ -1,7 +1,7 @@
-import { azureBlob } from "./helper";
 import type { Photo } from "./types/Photo";
 
-const imageBlob = (file: string): string => azureBlob("badger", "images", file);
+const imageBlob = (file: string): string =>
+  `https://badger.blob.core.windows.net/images/${file}`;
 
 export const photos: Photo[] = [
   {
