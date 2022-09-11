@@ -1,0 +1,29 @@
+---
+import type { HeadMeta } from "../data/types/HeadMeta";
+import "../style/global.css";
+
+export interface Props {
+  meta: HeadMeta;
+}
+const {
+  meta: { title, description, imageSrc, permalinkSrc },
+} = Astro.props as Props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{imageSrc && <meta property="og:image" content={imageSrc} />}
+{permalinkSrc && <meta property="og:url" content={permalinkSrc} />}
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<link rel="stylesheet" href="/assets/inter/inter.css" />
