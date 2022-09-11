@@ -1,8 +1,8 @@
-import type { PhotoSourceNew } from "./PhotoSourceNew";
+import type { PhotoSource } from "./PhotoSource";
 
-export interface PhotoNew {
+export interface Photo {
   id: string;
-  src: PhotoSourceNew;
+  src: PhotoSource;
   alt: string;
   title: string;
   description: string;

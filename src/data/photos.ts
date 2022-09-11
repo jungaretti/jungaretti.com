@@ -1,9 +1,9 @@
 import { azureBlob } from "./helper";
-import type { PhotoNew } from "./types/PhotoNew";
+import type { Photo } from "./types/Photo";
 
 const imageBlob = (file: string): string => azureBlob("badger", "images", file);
 
-export const photos: PhotoNew[] = [
+export const photos: Photo[] = [
   {
     id: "raggi-del-pianeta",
     alt: "Golden sunset over a snowy mountain",
