@@ -1,33 +1,29 @@
 ---
+import type { HeadMeta } from "../data/types/HeadMeta";
 import "../style/global.css";
 
 export interface Props {
-  title?: string;
-  description?: string;
-  permalink?: string;
-  image?: string;
+  meta: HeadMeta;
 }
-const { title, description, permalink, image } = Astro.props as Props;
-
-const defaultTitle = "JP Ungaretti";
-const defaultDescription =
-  "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.";
+const {
+  meta: { title, description, imageSrc, permalinkSrc },
+} = Astro.props as Props;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- Basic -->
-<title>{title || defaultTitle}</title>
-<meta name="description" content={description || defaultDescription} />
-<!-- Social -->
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
 <meta property="og:type" content="website" />
-<meta property="og:title" content={title || defaultTitle} />
-<meta property="og:description" content={description || defaultDescription} />
-{image && <meta property="og:image" content={image} />}
-{permalink && <meta property="og:url" content={permalink} />}
-<!-- Icons -->
-<link rel="icon" href="/favicon.ico" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{imageSrc && <meta property="og:image" content={imageSrc} />}
+{permalinkSrc && <meta property="og:url" content={permalinkSrc} />}
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<!-- Style -->
+
 <link rel="stylesheet" href="/assets/inter/inter.css" />

@@ -1,15 +1,15 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import BaseHeadNew, { Props as BaseHeadProps } from "./BaseHeadNew.astro";
+import BaseHead, { Props as BaseHeadProps } from "./BaseHead.astro";
 
 export interface Props extends BaseHeadProps {}
-const { meta } = Astro.props;
+const { meta } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHeadNew meta={meta} />
+    <BaseHead meta={meta} />
   </head>
   <body class="bg-griko text-cultured">
     <header>
