@@ -1,8 +1,8 @@
 ---
 import type { Photo } from "../../data/types/Photo";
+import type { HeadMeta } from "../../data/types/HeadMeta";
 import { photos } from "../../data/photos";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { HeadMeta } from "../../data/types/HeadMeta";
 
 export interface Props {
   photo: Photo;
@@ -15,7 +15,7 @@ export const getStaticPaths = async () => {
   });
 };
 
-const meta = {
+const meta: HeadMeta = {
   title: photo.title,
   description: photo.description,
   imageSrc: photo.src.compressed,

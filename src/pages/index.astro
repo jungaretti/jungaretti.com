@@ -1,10 +1,14 @@
 ---
+import type { HeadMeta } from "../data/types/HeadMeta";
 import { photos } from "../data/photos";
-import { defaultHeadMeta } from "../data/types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/PhotoGallery.astro";
 
-const meta = defaultHeadMeta;
+const meta: HeadMeta = {
+  title: "JP Ungaretti",
+  description:
+    "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.",
+};
 ---
 
 <BaseLayout meta={meta}>
