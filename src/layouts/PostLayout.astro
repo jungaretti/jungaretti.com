@@ -10,10 +10,26 @@ const meta: HeadMeta = {
 };
 ---
 
+<style is:global>
+  .post-container h2 {
+    @apply font-bold text-2xl;
+  }
+
+  .post-container h3 {
+    @apply font-bold text-xl;
+  }
+
+  .post-container h4,
+  .post-container h5,
+  .post-container h6 {
+    @apply text-xl;
+  }
+</style>
+
 <BaseLayout meta={meta}>
   <div class="frame">
     <h2 class="text-3xl text-flash font-bold">{frontmatter.title}</h2>
-    <div class="text-xl mt-3 space-y-4">
+    <div class="text-xl mt-3 space-y-4 post-container">
       <slot />
     </div>
   </div>
