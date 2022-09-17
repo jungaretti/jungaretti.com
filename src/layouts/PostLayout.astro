@@ -1,0 +1,20 @@
+---
+import type { HeadMeta } from "../data/types/HeadMeta";
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+
+const meta: HeadMeta = {
+  title: `${frontmatter.title} - JP Ungaretti`,
+  description: frontmatter.description,
+};
+---
+
+<BaseLayout meta={meta}>
+  <div class="frame">
+    <h2 class="text-3xl text-flash font-bold">{frontmatter.title}</h2>
+    <div class="text-xl mt-3 space-y-4">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
