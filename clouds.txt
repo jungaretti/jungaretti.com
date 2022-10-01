@@ -1,3 +1,0 @@
-I'm trying out DigitalOcean and Vercel
-
-How do they handle this deployment?
