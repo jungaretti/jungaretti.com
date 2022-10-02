@@ -1,4 +1,11 @@
 {
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+            "version": "17.1.0"
+        }
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
