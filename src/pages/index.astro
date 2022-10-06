@@ -3,6 +3,8 @@ import type { HeadMeta } from "../data/types/HeadMeta";
 import { photos } from "../data/photos";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PhotoGallery from "../components/PhotoGallery.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
@@ -12,18 +14,12 @@ const meta: HeadMeta = {
 ---
 
 <BaseLayout meta={meta}>
-  <div class="frame my-16 md:my-28">
-    <div class="text-left">
-      <h1 class="font-black text-flash text-4xl md:text-5xl">JP Ungaretti</h1>
-      <p class="sfont-medium leading-tight text-lg md:text-2xl">
-        Developer and Photographer
-      </p>
-    </div>
-  </div>
-  <div class="frame my-4">
-    <h2 class="text-3xl font-bold">My Photos</h2>
-    <div class="mt-3">
-      <PhotoGallery photos={photos} />
-    </div>
+  <div class="frame">
+    <Hero title="JP Ungaretti" detail="Developer and Photographer" />
+    <Section title="My Photos">
+      <div class="">
+        <PhotoGallery photos={photos} />
+      </div>
+    </Section>
   </div>
 </BaseLayout>

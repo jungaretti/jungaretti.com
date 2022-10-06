@@ -1,6 +1,8 @@
-# Personal Website
+# My Website
 
-My favorite photos and projects. Built with [Astro](https://astro.build), styled with [Tailwind CSS](https://tailwindcss.com/), and deployed with [Azure](https://azure.microsoft.com/en-us/services/app-service/static/).
+My favorite photos and projects.
+
+[![Deploy Azure Static Web App](https://github.com/jungaretti/jungaretti.com/actions/workflows/azure-static-web-apps.yml/badge.svg)](https://github.com/jungaretti/jungaretti.com/actions/workflows/azure-static-web-apps.yml)
 
 ## Getting Started
 
