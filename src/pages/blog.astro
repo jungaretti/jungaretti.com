@@ -1,0 +1,27 @@
+---
+import Section from "../components/Section.astro";
+import type { HeadMeta } from "../data/types/HeadMeta";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = await Astro.glob("./blog/*.md");
+
+const meta: HeadMeta = {
+  title: "JP Ungaretti",
+  description:
+    "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.",
+};
+---
+
+<BaseLayout meta={meta}>
+  <div class="frame">
+    <Section title="Recent Posts">
+      <ul>
+        {posts.map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  </div>
+</BaseLayout>
