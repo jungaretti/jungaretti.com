@@ -2,9 +2,9 @@
 import type { HeadMeta } from "../data/types/HeadMeta";
 import { photos } from "../data/photos";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import PhotoGallery from "../components/PhotoGallery.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
+import Columns from "../components/Columns.astro";
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
@@ -17,9 +17,19 @@ const meta: HeadMeta = {
   <div class="frame">
     <Hero title="JP Ungaretti" detail="Developer and Photographer" />
     <Section title="My Photos">
-      <div class="">
-        <PhotoGallery photos={photos} />
-      </div>
+      <Columns>
+        {photos.map((photo) => (
+          <div>
+            <a href={`/photos/${photo.id}`}>
+              <img
+                src={photo.src.compressed}
+                alt={photo.alt}
+                class="w-full rounded-lg"
+              />
+            </a>
+          </div>
+        ))}
+      </Columns>
     </Section>
   </div>
 </BaseLayout>
