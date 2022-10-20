@@ -3,6 +3,7 @@ import type { Photo } from "../../data/types/Photo";
 import type { HeadMeta } from "../../data/types/HeadMeta";
 import { photos } from "../../data/photos";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
 
 export interface Props {
   photo: Photo;
@@ -24,16 +25,16 @@ const meta: HeadMeta = {
 
 <BaseLayout meta={meta}>
   <div class="frame">
-    <div>
-      <img src={photo.src.compressed} alt={photo.alt} class="w-full rounded-xl"
-      />
-    </div>
-    <div class="my-4">
-      <div class="md:flex md:flex-row">
+    <Section title={photo.title}>
+      <div>
+        <img
+          src={photo.src.compressed}
+          alt={photo.alt}
+          class="w-full rounded-xl"
+        />
+      </div>
+      <div class="my-3 md:flex md:flex-row">
         <div class="flex-auto space-y-2">
-          <h2 class="font-bold text-flash leading-tight text-2xl">
-            {photo.title}
-          </h2>
           <div>
             <p>{photo.location}</p>
             <p>
@@ -42,7 +43,7 @@ const meta: HeadMeta = {
             </p>
           </div>
         </div>
-        <div class="mt-2 md:mt-0">
+        <div class="mt-3 md:mt-0">
           <p>
             <a href={photo.src.original} class="underline">
               Download Original
@@ -50,6 +51,6 @@ const meta: HeadMeta = {
           </p>
         </div>
       </div>
-    </div>
+    </Section>
   </div>
 </BaseLayout>

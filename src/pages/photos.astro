@@ -1,0 +1,24 @@
+---
+import Section from "../components/Section.astro";
+import type { HeadMeta } from "../data/types/HeadMeta";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { photos } from "../data/photos";
+import Columns from "../components/Columns.astro";
+import PhotoPreview from "../components/PhotoPreview.astro";
+
+const meta: HeadMeta = {
+  title: "Photos - JP Ungaretti",
+  description:
+    "Photos of mountains, the Milky Way, and my cat. Browse all of my photo.",
+};
+---
+
+<BaseLayout meta={meta}>
+  <div class="frame">
+    <Section title="My Photos">
+      <Columns>
+        {photos.map((photo) => <PhotoPreview photo={photo} />)}
+      </Columns>
+    </Section>
+  </div>
+</BaseLayout>
