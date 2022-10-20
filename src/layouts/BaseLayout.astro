@@ -13,7 +13,7 @@ const { meta } = Astro.props as Props;
   </head>
   <body class="bg-griko text-cultured">
     <header>
-      <div class="frame my-4 md:my-8">
+      <div class="frame my-8">
         <Navbar />
       </div>
     </header>
@@ -21,10 +21,10 @@ const { meta } = Astro.props as Props;
       <slot />
     </main>
     <footer>
-      <div class="frame my-4">
-        <hr class="opacity-20 mb-2" />
+      <div class="frame my-6 md:my-8">
+        <hr class="opacity-20 mb-3" />
         <div
-          class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4"
+          class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-6"
         >
           <div>
             <h5 class="font-bold">Here</h5>
