@@ -6,46 +6,53 @@ export interface Props extends BaseHeadProps {}
 const { meta } = Astro.props as Props;
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead meta={meta} />
-  </head>
-  <body class="bg-griko text-cultured">
-    <header>
-      <div class="frame my-8">
-        <Navbar />
-      </div>
-    </header>
-    <main>
-      <slot />
-    </main>
-    <footer>
-      <div class="frame my-6 md:my-8">
-        <hr class="opacity-20 mb-3" />
-        <div
-          class="flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-6"
-        >
-          <div>
-            <h5 class="font-bold">Here</h5>
-            <ul>
-              <a href="/">Home</a>
-            </ul>
-          </div>
-          <div>
-            <h5 class="font-bold">There</h5>
-            <ul>
-              <li>
-                <a href="https://github.com/jungaretti">GitHub</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h5 class="font-bold">Everywhere</h5>
-            <p>Photography © 2022 JP Ungaretti.</p>
-          </div>
+<style>
+  .footer-header {
+    @apply font-bold;
+  }
+  .footer-list {
+    @apply space-y-0.5;
+    @apply mt-0;
+  }
+</style>
+
+<BaseHead meta={meta} />
+
+<body class="bg-griko text-cultured">
+  <header>
+    <div class="frame my-8">
+      <Navbar />
+    </div>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <div class="frame my-6 md:my-8">
+      <hr class="opacity-20 mb-3" />
+      <div
+        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+      >
+        <div>
+          <h5 class="footer-header">Here</h5>
+          <ul class="footer-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/photos">Photos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-header">There</h5>
+          <ul class="footer-list">
+            <li><a href="https://github.com/jungaretti">GitHub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-header">Everywhere</h5>
+          <ul class="footer-list">
+            <li><p>Photography © 2022 JP Ungaretti.</p></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </footer>
+</body>
