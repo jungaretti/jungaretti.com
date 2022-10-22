@@ -2,8 +2,6 @@
 
 My favorite photos and projects.
 
-[![Deploy Azure Static Web App](https://github.com/jungaretti/jungaretti.com/actions/workflows/azure-static-web-apps.yml/badge.svg)](https://github.com/jungaretti/jungaretti.com/actions/workflows/azure-static-web-apps.yml)
-
 ## Getting Started
 
 Clone this repo, install its dependencies, and start a local dev server.
