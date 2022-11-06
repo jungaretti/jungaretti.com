@@ -1,14 +1,14 @@
 import type { Photo } from "./types/Photo";
 
-const imageBlob = (file: string): string =>
-  `https://badger.blob.core.windows.net/images/${file}`;
+const galleryBlob = (file: string): string =>
+  `https://badger.blob.core.windows.net/gallery/${file}`;
 
 const raggiDelPianeta: Photo = {
   id: "raggi-del-pianeta",
   alt: "Golden sunset over a snowy mountain",
   src: {
-    compressed: imageBlob("raggi-del-pianeta-preview.jpg"),
-    original: imageBlob("raggi-del-pianeta.jpg"),
+    compressed: galleryBlob("raggi-del-pianeta-preview.jpg"),
+    original: galleryBlob("raggi-del-pianeta.jpg"),
   },
   title: "Raggi del Pianeta",
   description:
@@ -21,8 +21,8 @@ const rivederLeStelle: Photo = {
   id: "riveder-le-stelle",
   alt: "Glimpse of the Milky Way hovering over the Cascades",
   src: {
-    compressed: imageBlob("riveder-le-stelle-preview.jpg"),
-    original: imageBlob("riveder-le-stelle.jpg"),
+    compressed: galleryBlob("riveder-le-stelle-preview.jpg"),
+    original: galleryBlob("riveder-le-stelle.jpg"),
   },
   title: "Riveder le Stelle",
   description: "Glimpse of the Milky Way hovering over the Cascades",
@@ -34,8 +34,8 @@ const newHorizons: Photo = {
   id: "new-horizons",
   alt: "Boat sailing in front of sunset over the Olympic Peninsula",
   src: {
-    compressed: imageBlob("new-horizons-preview.jpg"),
-    original: imageBlob("new-horizons.jpg"),
+    compressed: galleryBlob("new-horizons-preview.jpg"),
+    original: galleryBlob("new-horizons.jpg"),
   },
   title: "New Horizons",
   description: "Boat sailing in front of sunset over the Olympic Peninsula",
@@ -47,8 +47,8 @@ const loneMoose: Photo = {
   id: "lone-moose",
   alt: "Mountain peak in Grand Teton National Park",
   src: {
-    compressed: imageBlob("lone-moose-preview.jpg"),
-    original: imageBlob("lone-moose.jpg"),
+    compressed: galleryBlob("lone-moose-preview.jpg"),
+    original: galleryBlob("lone-moose.jpg"),
   },
   title: "Lone Moose",
   description: "Mountain peak in Grand Teton National Park",
@@ -60,8 +60,8 @@ const wideAwake: Photo = {
   id: "wide-awake",
   alt: "The Milky Way floating over a lake at Yellowstone National Park",
   src: {
-    compressed: imageBlob("wide-awake-preview.jpg"),
-    original: imageBlob("wide-awake.jpg"),
+    compressed: galleryBlob("wide-awake-preview.jpg"),
+    original: galleryBlob("wide-awake.jpg"),
   },
   title: "Wide Awake",
   description:
@@ -74,8 +74,8 @@ const mioGatto: Photo = {
   id: "mio-gatto",
   alt: "Orange and white cat",
   src: {
-    compressed: imageBlob("mio-gatto-preview.jpg"),
-    original: imageBlob("mio-gatto.jpg"),
+    compressed: galleryBlob("mio-gatto-preview.jpg"),
+    original: galleryBlob("mio-gatto.jpg"),
   },
   title: "Mio Gatto",
   description: "Orange and white cat sleeping under the table",
