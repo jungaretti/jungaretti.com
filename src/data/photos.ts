@@ -1,4 +1,4 @@
-import type { Photo } from "./types/Photo";
+import type { Photo } from "./types/Image";
 
 const galleryBlob = (file: string): string =>
   `https://badger.blob.core.windows.net/gallery/${file}`;
