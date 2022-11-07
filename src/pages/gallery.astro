@@ -23,9 +23,7 @@ const meta: HeadMeta = {
     </Section>
     <Section title="My Art">
       <Columns>
-        {art.map((art) => (
-          <ImagePreview image={art} href={`/gallery/${art.id}`} />
-        ))}
+        {art.map((art) => <ImagePreview image={art} />)}
       </Columns>
     </Section>
   </div>

@@ -3,13 +3,13 @@ import type { Image } from "../data/types/Image";
 
 export interface Props {
   image: Image;
-  href: string;
+  href?: string;
 }
 const { image, href } = Astro.props as Props;
 ---
 
 <div>
   <a href={href}>
-    <img src={image.src.original} alt={image.alt} class="w-full rounded-lg" />
+    <img src={image.src.compressed} alt={image.alt} class="w-full rounded-lg" />
   </a>
 </div>
