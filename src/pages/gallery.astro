@@ -2,7 +2,7 @@
 import Section from "../components/Section.astro";
 import type { HeadMeta } from "../data/types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { photos } from "../data/photos";
+import { art, photos } from "../data/photos";
 import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
@@ -22,7 +22,11 @@ const meta: HeadMeta = {
       </Columns>
     </Section>
     <Section title="My Art">
-      <Columns />
+      <Columns>
+        {art.map((art) => (
+          <ImagePreview image={art} href={`/gallery/${art.id}`} />
+        ))}
+      </Columns>
     </Section>
   </div>
 </BaseLayout>
