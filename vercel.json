@@ -5,7 +5,7 @@
   "devCommand": "npm run dev",
   "redirects": [
     {
-      "source": "/photos/(?<id>.*)",
+      "source": "/photos/:id",
       "destination": "/gallery/:id",
       "permanent": false
     }
