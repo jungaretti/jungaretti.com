@@ -2,5 +2,12 @@
   "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "devCommand": "npm run dev"
+  "devCommand": "npm run dev",
+  "redirects": [
+    {
+      "source": "/photos/:id",
+      "destination": "/gallery/:id",
+      "permanent": false
+    }
+  ]
 }

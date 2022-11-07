@@ -2,9 +2,9 @@
 import Section from "../components/Section.astro";
 import type { HeadMeta } from "../data/types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { photos } from "../data/photos";
+import { art, photos } from "../data/photos";
 import Columns from "../components/Columns.astro";
-import PhotoPreview from "../components/PhotoPreview.astro";
+import ImagePreview from "../components/ImagePreview.astro";
 
 const meta: HeadMeta = {
   title: "My Photos - JP Ungaretti",
@@ -13,10 +13,17 @@ const meta: HeadMeta = {
 ---
 
 <BaseLayout meta={meta}>
-  <div class="frame">
+  <div class="frame space-y-8">
     <Section title="My Photos">
       <Columns>
-        {photos.map((photo) => <PhotoPreview photo={photo} />)}
+        {photos.map((photo) => (
+          <ImagePreview image={photo} href={`/gallery/${photo.id}`} />
+        ))}
+      </Columns>
+    </Section>
+    <Section title="My Art">
+      <Columns>
+        {art.map((art) => <ImagePreview image={art} />)}
       </Columns>
     </Section>
   </div>

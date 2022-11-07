@@ -5,7 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import Columns from "../components/Columns.astro";
-import PhotoPreview from "../components/PhotoPreview.astro";
+import ImagePreview from "../components/ImagePreview.astro";
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
@@ -19,7 +19,9 @@ const meta: HeadMeta = {
     <Hero title="JP Ungaretti" detail="Developer and Photographer" />
     <Section title="Recent Photos">
       <Columns>
-        {photos.map((photo) => <PhotoPreview photo={photo} />)}
+        {photos.map((photo) => (
+          <ImagePreview image={photo} href={`/gallery/${photo.id}`} />
+        ))}
       </Columns>
     </Section>
   </div>

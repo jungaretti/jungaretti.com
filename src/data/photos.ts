@@ -1,4 +1,4 @@
-import type { Photo } from "./types/Photo";
+import type { Image, Photo } from "./types/Image";
 
 const galleryBlob = (file: string): string =>
   `https://badger.blob.core.windows.net/gallery/${file}`;
@@ -90,4 +90,23 @@ export const photos: Photo[] = [
   loneMoose,
   wideAwake,
   mioGatto,
+];
+
+export const art: Image[] = [
+  {
+    id: "close-encounters",
+    alt: "Ink drawing of UFOs",
+    src: {
+      compressed: galleryBlob("close-encounters-preview.jpg"),
+      original: galleryBlob("close-encounters.jpg"),
+    },
+  },
+  {
+    id: "mendota-mind",
+    alt: "A chilly night on Lake Mendota",
+    src: {
+      compressed: galleryBlob("mendota-mind-preview.jpg"),
+      original: galleryBlob("mendota-mind.jpg"),
+    },
+  },
 ];
