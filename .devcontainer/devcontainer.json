@@ -4,7 +4,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "17.1.0"
-        }
+		}
 	},
 	"postCreateCommand": "npm install",
 	"customizations": {
