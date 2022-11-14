@@ -17,7 +17,7 @@ const meta: HeadMeta = {
     <Section title="My Photos">
       <Columns>
         {photos.map((photo) => (
-          <ImagePreview image={photo} href={`/gallery/${photo.id}`} />
+          <ImagePreview image={photo} href={`/photos/${photo.id}`} />
         ))}
       </Columns>
     </Section>
