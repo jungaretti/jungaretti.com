@@ -2,13 +2,15 @@
 import Section from "../components/Section.astro";
 import type { HeadMeta } from "../data/types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { art, photos } from "../data/photos";
+import { artwork } from "../data/artwork";
+import { photos } from "../data/photos";
 import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const meta: HeadMeta = {
-  title: "My Photos - JP Ungaretti",
-  description: "Photos of mountains, sailboats, cats, stars, and more.",
+  title: "Gallery - JP Ungaretti",
+  description:
+    "My photos and artwork. Inspired by mountains, sailboats, stars, and more.",
 };
 ---
 
@@ -23,7 +25,7 @@ const meta: HeadMeta = {
     </Section>
     <Section title="My Art">
       <Columns>
-        {art.map((art) => <ImagePreview image={art} />)}
+        {artwork.map((art) => <ImagePreview image={art} />)}
       </Columns>
     </Section>
   </div>
