@@ -12,9 +12,9 @@
     "format": "prettier --write README.md src"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.5",
+    "@astrojs/tailwind": "^2.1.2",
+    "astro": "^1.6.10",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.1.2"
+    "prettier-plugin-astro": "^0.7.0"
   }
 }
