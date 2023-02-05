@@ -18,9 +18,11 @@ const meta: HeadMeta = {
   <div class="frame space-y-8">
     <Section title="My Photos">
       <Columns>
-        {photos.map((photo) => (
-          <ImagePreview image={photo} href={`/photos/${photo.id}`} />
-        ))}
+        {
+          photos.map((photo) => (
+            <ImagePreview image={photo} href={`/photos/${photo.id}`} />
+          ))
+        }
       </Columns>
     </Section>
     <Section title="My Art">

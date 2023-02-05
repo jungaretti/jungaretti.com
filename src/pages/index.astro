@@ -19,9 +19,11 @@ const meta: HeadMeta = {
     <Hero title="JP Ungaretti" detail="Developer and Photographer" />
     <Section title="Recent Photos">
       <Columns>
-        {photos.map((photo) => (
-          <ImagePreview image={photo} href={`/photos/${photo.id}`} />
-        ))}
+        {
+          photos.map((photo) => (
+            <ImagePreview image={photo} href={`/photos/${photo.id}`} />
+          ))
+        }
       </Columns>
     </Section>
   </div>
