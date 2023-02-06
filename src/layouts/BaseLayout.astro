@@ -2,8 +2,8 @@
 import Navbar from "../components/Navbar.astro";
 import BaseHead, { Props as BaseHeadProps } from "./BaseHead.astro";
 
-export interface Props extends BaseHeadProps {}
-const { meta } = Astro.props as Props;
+interface Props extends BaseHeadProps {}
+const { meta } = Astro.props;
 ---
 
 <style>
