@@ -1,15 +1,14 @@
 ---
-import type { Image } from "../data/types/Image";
-
-export interface Props {
-  image: Image;
+interface Props {
+  src: string;
+  alt: string;
   href?: string;
 }
-const { image, href } = Astro.props as Props;
+const { src, alt, href } = Astro.props;
 ---
 
 <div>
   <a href={href}>
-    <img src={image.src.compressed} alt={image.alt} class="w-full rounded-lg" />
+    <img src={src} alt={alt} class="w-full rounded-lg" />
   </a>
 </div>
