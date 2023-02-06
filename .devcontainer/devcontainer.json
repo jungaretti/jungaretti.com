@@ -3,7 +3,7 @@
     "remoteUser": "vscode",
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
-            "version": "17.1.0"
+            "version": "18.12.1"
         }
     },
     "postCreateCommand": "npm install",
