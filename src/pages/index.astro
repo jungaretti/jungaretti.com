@@ -8,6 +8,7 @@ import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const photos = await getCollection("photos");
+photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
