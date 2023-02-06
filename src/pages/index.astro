@@ -1,11 +1,13 @@
 ---
+import { getCollection } from "astro:content";
 import type { HeadMeta } from "../data/types/HeadMeta";
-import { photos } from "../data/photos";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
+
+const photos = await getCollection("photos");
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
@@ -21,7 +23,11 @@ const meta: HeadMeta = {
       <Columns>
         {
           photos.map((photo) => (
-            <ImagePreview image={photo} href={`/photos/${photo.id}`} />
+            <ImagePreview
+              src={photo.data.src.compressed}
+              alt={photo.data.alt}
+              href={`/photos/${photo.slug}`}
+            />
           ))
         }
       </Columns>

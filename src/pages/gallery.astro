@@ -1,11 +1,15 @@
 ---
-import Section from "../components/Section.astro";
+import { getCollection } from "astro:content";
 import type { HeadMeta } from "../data/types/HeadMeta";
+import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { artwork } from "../data/artwork";
-import { photos } from "../data/photos";
 import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
+
+const photos = await getCollection("photos");
+photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const art = await getCollection("art");
 
 const meta: HeadMeta = {
   title: "Gallery - JP Ungaretti",
@@ -20,14 +24,22 @@ const meta: HeadMeta = {
       <Columns>
         {
           photos.map((photo) => (
-            <ImagePreview image={photo} href={`/photos/${photo.id}`} />
+            <ImagePreview
+              src={photo.data.src.compressed}
+              alt={photo.data.alt}
+              href={`/photos/${photo.slug}`}
+            />
           ))
         }
       </Columns>
     </Section>
     <Section title="My Art">
       <Columns>
-        {artwork.map((art) => <ImagePreview image={art} />)}
+        {
+          art.map((a) => (
+            <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
+          ))
+        }
       </Columns>
     </Section>
   </div>
