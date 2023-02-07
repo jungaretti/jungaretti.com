@@ -1,12 +1,12 @@
 ---
-title: "New Horizons"
-description: "Boat sailing in front of sunset over the Olympic Peninsula"
-location: "Golden Gardens Park"
+title: New Horizons
+description: Boat sailing in front of sunset over the Olympic Peninsula
+location: Golden Gardens Park
 date: 2021-09-24
-alt: "Boat sailing in front of sunset over the Olympic Peninsula"
+alt: Boat sailing in front of sunset over the Olympic Peninsula
 src:
   {
-    compressed: "https://jungaretti.blob.core.windows.net/gallery/new-horizons-preview.jpg",
-    original: "https://jungaretti.blob.core.windows.net/gallery/new-horizons.jpg",
+    compressed: https://jungaretti.blob.core.windows.net/gallery/new-horizons-preview.jpg,
+    original: https://jungaretti.blob.core.windows.net/gallery/new-horizons.jpg,
   }
 ---

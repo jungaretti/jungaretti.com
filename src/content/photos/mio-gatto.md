@@ -1,12 +1,12 @@
 ---
-title: "Mio Gatto"
-description: "Orange and white cat sleeping under the table"
-location: "Under the Table"
+title: Mio Gatto
+description: Orange and white cat sleeping under the table
+location: Under the Table
 date: 2015-03-02
-alt: "Orange and white cat"
+alt: Orange and white cat
 src:
   {
-    compressed: "https://jungaretti.blob.core.windows.net/gallery/mio-gatto-preview.jpg",
-    original: "https://jungaretti.blob.core.windows.net/gallery/mio-gatto.jpg",
+    compressed: https://jungaretti.blob.core.windows.net/gallery/mio-gatto-preview.jpg,
+    original: https://jungaretti.blob.core.windows.net/gallery/mio-gatto.jpg,
   }
 ---
