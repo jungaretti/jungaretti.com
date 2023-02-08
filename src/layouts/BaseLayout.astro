@@ -1,8 +1,11 @@
 ---
+import type { HeadMeta } from "../types/HeadMeta";
 import Navbar from "../components/Navbar.astro";
-import BaseHead, { Props as BaseHeadProps } from "./BaseHead.astro";
+import BaseHead from "./BaseHead.astro";
 
-interface Props extends BaseHeadProps {}
+interface Props {
+  meta: HeadMeta;
+}
 const { meta } = Astro.props;
 ---
 
@@ -17,7 +20,6 @@ const { meta } = Astro.props;
 </style>
 
 <BaseHead meta={meta} />
-
 <body class="bg-griko text-cultured">
   <header>
     <div class="frame my-8">
