@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntryBySlug } from "astro:content";
 import type { HeadMeta } from "../types/HeadMeta";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
@@ -7,8 +7,14 @@ import Section from "../components/Section.astro";
 import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
-const photos = await getCollection("photos");
-photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const photos = await Promise.all([
+  getEntryBySlug("photos", "raggi-del-pianeta"),
+  getEntryBySlug("photos", "new-horizons"),
+  getEntryBySlug("photos", "riveder-le-stelle"),
+  getEntryBySlug("photos", "lone-moose"),
+  getEntryBySlug("photos", "mio-gatto"),
+  getEntryBySlug("photos", "wide-awake"),
+]);
 
 const meta: HeadMeta = {
   title: "JP Ungaretti",
