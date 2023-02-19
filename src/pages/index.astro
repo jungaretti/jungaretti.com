@@ -29,11 +29,11 @@ const meta: HeadMeta = {
     <Section title="Recent Photos">
       <Columns>
         {
-          photos.map((photo) => (
+          photos.map(({ data, slug }) => (
             <ImagePreview
-              src={photo.data.src.compressed}
-              alt={photo.data.alt}
-              href={`/photos/${photo.slug}`}
+              src={data.src.compressed}
+              alt={data.alt}
+              href={`/photos/${slug}`}
             />
           ))
         }
