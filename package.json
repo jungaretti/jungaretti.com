@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
     "quickstart": "fnm use && npm install && npm run dev",
     "build": "astro build",
     "preview": "astro preview",
