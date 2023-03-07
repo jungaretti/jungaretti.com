@@ -1,7 +1,6 @@
 ---
 import type { HeadMeta } from "../types/HeadMeta";
 import Navbar from "../components/Navbar.astro";
-import NavbarLink from "../components/NavbarLink.astro";
 import BaseHead from "./BaseHead.astro";
 
 interface Props {
@@ -24,10 +23,12 @@ const { meta } = Astro.props;
 <body class="bg-griko text-cultured">
   <header>
     <div class="frame my-8">
-      <Navbar>
-        <NavbarLink text="Home" href="/" />
-        <NavbarLink text="Galley" href="/gallery" />
-      </Navbar>
+      <Navbar
+        links={[
+          { text: "Home", href: "/" },
+          { text: "Gallery", href: "/gallery" },
+        ]}
+      />
     </div>
   </header>
   <main>
