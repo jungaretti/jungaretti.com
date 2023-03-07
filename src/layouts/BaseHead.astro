@@ -5,23 +5,21 @@ import "../global.css";
 interface Props {
   meta: HeadMeta;
 }
-const {
-  meta: { title, description, imageSrc, permalinkSrc },
-} = Astro.props;
+const { meta } = Astro.props;
 ---
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>{title}</title>
-  <meta name="description" content={description} />
+  <title>{meta.title}</title>
+  <meta name="description" content={meta.description} />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  {imageSrc && <meta property="og:image" content={imageSrc} />}
-  {permalinkSrc && <meta property="og:url" content={permalinkSrc} />}
+  <meta property="og:title" content={meta.title} />
+  <meta property="og:description" content={meta.description} />
+  {meta.imageSrc && <meta property="og:image" content={meta.imageSrc} />}
+  {meta.permalinkSrc && <meta property="og:url" content={meta.permalinkSrc} />}
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/favicon.ico" />
