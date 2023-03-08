@@ -7,7 +7,16 @@ interface Props {
 const { park } = Astro.props;
 ---
 
-<div>
+<style>
+  .visited {
+    @apply bg-gradient-to-r from-red-600 to-orange-500;
+  }
+  .unvisited {
+    @apply border-solid border-2 border-red-500;
+  }
+</style>
+
+<div class={`${park.visited ? "visited" : "unvisited"} rounded-lg p-2`}>
   <p class="text-lg font-bold">{park.name}</p>
   <p>{park.location}</p>
 </div>
