@@ -26,7 +26,23 @@ const photos = defineCollection({
   }),
 });
 
+const nationalParksSchema = z.object({
+  name: z.string(),
+  location: z.string(),
+  latitude: z.string(),
+  longitude: z.string(),
+  established: z.date(),
+  visited: z.boolean(),
+});
+
+const nationalParks = defineCollection({
+  schema: nationalParksSchema,
+});
+
+export type NationalPark = z.infer<typeof nationalParksSchema>;
+
 export const collections = {
   art,
   photos,
+  nationalParks,
 };

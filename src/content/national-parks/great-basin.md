@@ -1,0 +1,10 @@
+---
+name: Great Basin
+location: Nevada
+latitude: 38.98°N
+longitude: 114.30°W
+established: October 27, 1986
+visited: false
+---
+
+Based around Nevada's second tallest mountain, Wheeler Peak, Great Basin National Park protects 5,000-year-old bristlecone pines, a rock glacier, and the limestone Lehman Caves. Due to its remote location, the park is home to some of the country's darkest night skies. Wildlife includes the Townsend's big-eared bat, pronghorn, and Bonneville cutthroat trout.
