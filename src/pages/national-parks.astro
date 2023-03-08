@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import type { Metadata } from "../types/Metadata";
+import NationalPark from "../components/NationalPark.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const meta: Metadata = {
+  title: "National Parks - JP Ungaretti",
+  description: "",
+};
+
+const parks = await getCollection("national-parks");
+---
+
+<BaseLayout meta={meta}>
+  {
+    parks.map((park) => (
+      <div>
+        <NationalPark park={park.data} />
+      </div>
+    ))
+  }
+</BaseLayout>

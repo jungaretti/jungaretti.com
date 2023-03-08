@@ -1,0 +1,10 @@
+---
+import type { NationalPark } from "../content/config";
+
+interface Props {
+  park: NationalPark;
+}
+const { park } = Astro.props;
+---
+
+<p>{park.name}</p>
