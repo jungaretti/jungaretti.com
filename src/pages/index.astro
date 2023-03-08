@@ -1,6 +1,6 @@
 ---
 import { getEntryBySlug } from "astro:content";
-import type { HeadMeta } from "../types/HeadMeta";
+import type { Metadata } from "../types/Metadata";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
@@ -16,7 +16,7 @@ const photos = await Promise.all([
   getEntryBySlug("photos", "wide-awake"),
 ]);
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: "JP Ungaretti",
   description:
     "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.",

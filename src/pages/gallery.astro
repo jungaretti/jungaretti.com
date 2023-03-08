@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import type { HeadMeta } from "../types/HeadMeta";
+import type { Metadata } from "../types/Metadata";
 import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Columns from "../components/Columns.astro";
@@ -11,7 +11,7 @@ photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const art = await getCollection("art");
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: "Gallery - JP Ungaretti",
   description:
     "My photos and artwork. Inspired by mountains, sailboats, stars, and more.",

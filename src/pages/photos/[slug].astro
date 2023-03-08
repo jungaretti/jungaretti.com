@@ -1,6 +1,6 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
-import type { HeadMeta } from "../../types/HeadMeta";
+import type { Metadata } from "../../types/Metadata";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/Section.astro";
 
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: `${photo.data.title} - JP Ungaretti`,
   description: photo.data.description,
   imageSrc: photo.data.src.compressed,
