@@ -8,3 +8,8 @@
   @apply px-4;
   @apply md:px-6;
 }
+
+.grid-standard {
+  @apply grid;
+  @apply gap-3;
+}

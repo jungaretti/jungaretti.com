@@ -4,7 +4,6 @@ import type { Metadata } from "../types/Metadata";
 import NationalPark from "../components/NationalPark.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
-import Columns from "../components/Columns.astro";
 
 const meta: Metadata = {
   title: "National Parks - JP Ungaretti",
@@ -22,17 +21,17 @@ const unvisited = parks.filter((park) => park.data.visited === false);
       <div>
         <h3 class="text-xl font-bold">Visited</h3>
         <div class="mt-2">
-          <Columns>
+          <div class="grid-standard grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {visited.map(({ data }) => <NationalPark park={data} />)}
-          </Columns>
+          </div>
         </div>
       </div>
       <div>
         <h3 class="text-xl font-bold">Need to Visit</h3>
         <div class="mt-2">
-          <Columns>
+          <div class="grid-standard grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {unvisited.map(({ data }) => <NationalPark park={data} />)}
-          </Columns>
+          </div>
         </div>
       </div>
     </div>

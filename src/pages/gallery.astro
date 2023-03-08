@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import type { Metadata } from "../types/Metadata";
 import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const photos = await getCollection("photos");
@@ -21,7 +20,7 @@ const meta: Metadata = {
 <BaseLayout meta={meta}>
   <div class="space-y-8">
     <Section title="Recent Photos">
-      <Columns>
+      <div class="grid-standard grid-cols-1 md:grid-cols-2">
         {
           photos.map((photo) => (
             <ImagePreview
@@ -31,16 +30,16 @@ const meta: Metadata = {
             />
           ))
         }
-      </Columns>
+      </div>
     </Section>
     <Section title="My Art">
-      <Columns>
+      <div class="grid-standard grid-cols-1 md:grid-cols-2">
         {
           art.map((a) => (
             <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
           ))
         }
-      </Columns>
+      </div>
     </Section>
   </div>
 </BaseLayout>

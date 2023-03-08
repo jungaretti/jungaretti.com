@@ -4,7 +4,6 @@ import type { Metadata } from "../types/Metadata";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
-import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const photos = await Promise.all([
@@ -27,7 +26,7 @@ const meta: Metadata = {
   <div>
     <Hero title="JP Ungaretti" detail="Developer and Photographer" />
     <Section title="My Photos">
-      <Columns>
+      <div class="grid-standard grid-cols-1 md:grid-cols-2">
         {
           photos.map(({ data, slug }) => (
             <ImagePreview
@@ -37,7 +36,7 @@ const meta: Metadata = {
             />
           ))
         }
-      </Columns>
+      </div>
     </Section>
   </div>
 </BaseLayout>
