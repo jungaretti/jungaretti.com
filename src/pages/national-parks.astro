@@ -10,7 +10,7 @@ const meta: Metadata = {
   description: "",
 };
 
-const parks = await getCollection("national-parks");
+const parks = await getCollection("nationalParks");
 const visited = parks.filter((park) => park.data.visited);
 const unvisited = parks.filter((park) => park.data.visited === false);
 ---
