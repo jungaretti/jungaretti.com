@@ -38,8 +38,12 @@ const meta: Metadata = {
         <div>
           <p>{photo.data.location}</p>
           <p>
-            {photo.data.date.toLocaleString("en-US", { month: "long" })}
-            {photo.data.date.getFullYear()}
+            {
+              photo.data.date.toLocaleString("en-US", {
+                month: "long",
+                year: "numeric",
+              })
+            }
           </p>
         </div>
       </div>
