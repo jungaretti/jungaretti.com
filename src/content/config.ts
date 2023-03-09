@@ -33,6 +33,15 @@ const nationalParksSchema = z.object({
   longitude: z.string(),
   established: z.date(),
   visited: z.optional(z.date()),
+  category: z.union([
+    z.literal("pacific"),
+    z.literal("colorado"),
+    z.literal("desert"),
+    z.literal("rockies"),
+    z.literal("eastern"),
+    z.literal("alaska"),
+    z.literal("tropics"),
+  ]),
 });
 
 const nationalParks = defineCollection({
