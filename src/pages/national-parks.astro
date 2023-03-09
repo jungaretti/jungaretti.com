@@ -15,9 +15,48 @@ const parks = await getCollection("nationalParks");
 
 <BaseLayout meta={meta}>
   <Section title="National Parks">
-    <div class="mt-2">
+    <div class="grid-standard grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
       <div class="grid-standard lg:grid-cols-3">
-        {parks.map(({ data }) => <NationalParkCard park={data} />)}
+        {
+          parks
+            .filter(({ data }) => data.category === "desert")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
+      </div>
+      <div class="grid-standard lg:grid-cols-3">
+        {
+          parks
+            .filter(({ data }) => data.category === "mountains")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
+      </div>
+      <div class="grid-standard lg:grid-cols-3">
+        {
+          parks
+            .filter(({ data }) => data.category === "pacific")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
+      </div>
+      <div class="grid-standard lg:grid-cols-3">
+        {
+          parks
+            .filter(({ data }) => data.category === "eastern")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
+      </div>
+      <div class="grid-standard lg:grid-cols-3">
+        {
+          parks
+            .filter(({ data }) => data.category === "tropics")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
+      </div>
+      <div class="grid-standard lg:grid-cols-3">
+        {
+          parks
+            .filter(({ data }) => data.category === "alaska")
+            .map(({ data }) => <NationalParkCard park={data} />)
+        }
       </div>
     </div>
   </Section>
