@@ -10,54 +10,29 @@ const meta: Metadata = {
   description: "",
 };
 
-const parks = await getCollection("nationalParks");
+const visited = await getCollection(
+  "nationalParks",
+  (park) => park.data.visited
+);
+const toVisit = await getCollection(
+  "nationalParks",
+  (park) => !park.data.visited
+);
+const all = [...visited, ...toVisit];
 ---
 
 <BaseLayout meta={meta}>
   <Section title="National Parks">
-    <div class="space-y-3">
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "desert")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "mountains")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "pacific")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "eastern")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "alaska")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
-      <div class="grid-standard lg:grid-cols-3">
-        {
-          parks
-            .filter(({ data }) => data.category === "tropics")
-            .map(({ data }) => <NationalPark park={data} />)
-        }
-      </div>
+    <div
+      class="sm:flex sm:flex-row sm:flex-wrap gap-1.5 space-y-1.5 sm:space-y-0"
+    >
+      {
+        all.map(({ data }) => (
+          <div class="sm:flex-grow">
+            <NationalPark park={data} />
+          </div>
+        ))
+      }
     </div>
   </Section>
 </BaseLayout>

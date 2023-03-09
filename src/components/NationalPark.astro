@@ -33,11 +33,12 @@ const { park } = Astro.props;
     @apply border-fuchsia-700;
   }
   .card {
+    @apply text-center;
     @apply rounded-lg;
     @apply border-solid;
     @apply border-2;
     @apply py-1;
-    @apply px-2;
+    @apply px-3;
   }
   .visited {
     @apply border-transparent;
@@ -48,12 +49,12 @@ const { park } = Astro.props;
 </style>
 
 <div class={`card ${park.category} ${park.visited ? "visited" : "unvisited"}`}>
-  <p class="text-lg font-bold">{park.name}</p>
-  <p>
+  <p class="text-lg font-bold leading-snug">{park.name}</p>
+  <p class="text-sm leading-snug">
     {
       park.visited &&
         `Visited ${park.visited.toLocaleString("en-US", {
-          month: "long",
+          month: "short",
           year: "numeric",
         })},`
     }
