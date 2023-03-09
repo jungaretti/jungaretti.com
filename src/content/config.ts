@@ -35,12 +35,11 @@ const nationalParksSchema = z.object({
   visited: z.optional(z.date()),
   category: z.union([
     z.literal("pacific"),
-    z.literal("colorado"),
-    z.literal("desert"),
-    z.literal("rockies"),
     z.literal("eastern"),
-    z.literal("alaska"),
+    z.literal("desert"),
+    z.literal("mountains"),
     z.literal("tropics"),
+    z.literal("alaska"),
   ]),
 });
 
