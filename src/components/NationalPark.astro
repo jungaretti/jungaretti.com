@@ -8,15 +8,45 @@ const { park } = Astro.props;
 ---
 
 <style>
+  .pacific {
+    @apply bg-gradient-to-r from-cyan-700 to-cyan-600;
+    @apply border-cyan-400;
+  }
+  .eastern {
+    @apply bg-gradient-to-r from-green-700 to-green-600;
+    @apply border-green-400;
+  }
+  .desert {
+    @apply bg-gradient-to-r from-orange-700 to-orange-500;
+    @apply border-orange-400;
+  }
+  .mountains {
+    @apply bg-gradient-to-r from-slate-600 to-slate-500;
+    @apply border-slate-400;
+  }
+  .tropics {
+    @apply bg-gradient-to-r from-teal-700 to-teal-500;
+    @apply border-teal-300;
+  }
+  .alaska {
+    @apply bg-gradient-to-r from-purple-700 to-purple-600;
+    @apply border-purple-400;
+  }
   .visited {
-    @apply bg-gradient-to-r from-red-600 to-orange-500;
+    @apply border-transparent;
   }
   .unvisited {
-    @apply border-solid border-2 border-red-500;
+    @apply bg-none;
+    @apply border-solid;
+    @apply border-[3px];
   }
 </style>
 
-<div class={`${park.visited ? "visited" : "unvisited"} rounded-lg p-2`}>
+<div
+  class={`${park.category} ${
+    park.visited ? "visited" : "unvisited"
+  } rounded-lg p-2`}
+>
   <p class="text-lg font-bold">{park.name}</p>
   <p>{park.location}</p>
 </div>
