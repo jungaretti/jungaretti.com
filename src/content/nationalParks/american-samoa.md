@@ -3,7 +3,7 @@ name: American Samoa
 location: American Samoa
 latitude: 14.25°S
 longitude: 170.68°W
-established: October 31, 1988
+established: 1988-10-31
 visited: false
 ---
 

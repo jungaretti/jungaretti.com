@@ -3,7 +3,7 @@ name: Big Bend
 location: Texas
 latitude: 29.25°N
 longitude: 103.25°W
-established: June 12, 1944
+established: 1944-06-12
 visited: false
 ---
 

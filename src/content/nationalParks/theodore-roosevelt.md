@@ -3,7 +3,7 @@ name: Theodore Roosevelt
 location: North Dakota
 latitude: 46.97°N
 longitude: 103.45°W
-established: November 10, 1978
+established: 1978-11-10
 visited: false
 ---
 

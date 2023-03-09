@@ -3,7 +3,7 @@ name: Arches
 location: Utah
 latitude: 38.68°N
 longitude: 109.57°W
-established: November 12, 1971
+established: 1971-11-12
 visited: true
 ---
 

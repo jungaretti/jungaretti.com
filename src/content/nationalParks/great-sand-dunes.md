@@ -3,7 +3,7 @@ name: Great Sand Dunes
 location: Colorado
 latitude: 37.73°N
 longitude: 105.51°W
-established: September 24, 2004
+established: 2004-09-24
 visited: false
 ---
 

@@ -3,7 +3,7 @@ name: Congaree
 location: South Carolina
 latitude: 33.78°N
 longitude: 80.78°W
-established: November 10, 2003
+established: 2003-11-10
 visited: false
 ---
 

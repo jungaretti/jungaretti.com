@@ -3,7 +3,7 @@ name: Mammoth Cave
 location: Kentucky
 latitude: 37.18°N
 longitude: 86.10°W
-established: July 1, 1941
+established: 1941-07-01
 visited: false
 ---
 

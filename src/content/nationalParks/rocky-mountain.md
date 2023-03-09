@@ -3,7 +3,7 @@ name: Rocky Mountain
 location: Colorado
 latitude: 40.40°N
 longitude: 105.58°W
-established: January 26, 1915
+established: 1915-01-26
 visited: false
 ---
 

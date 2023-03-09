@@ -3,7 +3,7 @@ name: Saguaro
 location: Arizona
 latitude: 32.25°N
 longitude: 110.50°W
-established: October 14, 1994
+established: 1994-10-14
 visited: false
 ---
 

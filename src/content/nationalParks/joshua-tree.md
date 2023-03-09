@@ -3,7 +3,7 @@ name: Joshua Tree
 location: California
 latitude: 33.79°N
 longitude: 115.90°W
-established: October 31, 1994
+established: 1994-10-31
 visited: false
 ---
 

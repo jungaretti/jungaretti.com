@@ -3,7 +3,7 @@ name: Wind Cave
 location: South Dakota
 latitude: 43.57°N
 longitude: 103.48°W
-established: January 9, 1903
+established: 1903-01-09
 visited: false
 ---
 

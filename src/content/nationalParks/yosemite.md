@@ -3,7 +3,7 @@ name: Yosemite
 location: California
 latitude: 37.83°N
 longitude: 119.50°W
-established: October 1, 1890
+established: 1890-10-01
 visited: false
 ---
 

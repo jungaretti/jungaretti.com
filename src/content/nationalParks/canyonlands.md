@@ -3,7 +3,7 @@ name: Canyonlands
 location: Utah
 latitude: 38.2°N
 longitude: 109.93°W
-established: September 12, 1964
+established: 1964-09-12
 visited: true
 ---
 

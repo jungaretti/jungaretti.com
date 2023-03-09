@@ -3,7 +3,7 @@ name: New River Gorge
 location: West Virginia
 latitude: 38.07°N
 longitude: 81.08°W
-established: December 27, 2020
+established: 2020-12-27
 visited: false
 ---
 

@@ -3,7 +3,7 @@ name: Grand Canyon
 location: Arizona
 latitude: 36.06°N
 longitude: 112.14°W
-established: February 26, 1919
+established: 1919-02-26
 visited: true
 ---
 

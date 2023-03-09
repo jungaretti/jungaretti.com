@@ -3,7 +3,7 @@ name: Lassen Volcanic
 location: California
 latitude: 40.49°N
 longitude: 121.51°W
-established: August 9, 1916
+established: 1916-08-09
 visited: false
 ---
 

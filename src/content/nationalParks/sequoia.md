@@ -3,7 +3,7 @@ name: Sequoia
 location: California
 latitude: 36.43°N
 longitude: 118.68°W
-established: September 25, 1890
+established: 1890-09-25
 visited: false
 ---
 

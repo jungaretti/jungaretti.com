@@ -3,7 +3,7 @@ name: Haleakalā
 location: Hawaii
 latitude: 20.72°N
 longitude: 156.17°W
-established: July 1, 1961
+established: 1961-07-01
 visited: false
 ---
 

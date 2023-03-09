@@ -3,7 +3,7 @@ name: Everglades
 location: Florida
 latitude: 25.32°N
 longitude: 80.93°W
-established: May 30, 1934
+established: 1934-05-30
 visited: false
 ---
 

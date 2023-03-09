@@ -3,7 +3,7 @@ name: Guadalupe Mountains
 location: Texas
 latitude: 31.92°N
 longitude: 104.87°W
-established: September 30, 1972
+established: 1972-09-30
 visited: false
 ---
 

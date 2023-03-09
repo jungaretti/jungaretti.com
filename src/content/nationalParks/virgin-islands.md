@@ -3,7 +3,7 @@ name: Virgin Islands
 location: U.S. Virgin Islands
 latitude: 18.33°N
 longitude: 64.73°W
-established: August 2, 1956
+established: 1956-08-02
 visited: false
 ---
 

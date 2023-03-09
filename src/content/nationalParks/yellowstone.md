@@ -3,7 +3,7 @@ name: Yellowstone
 location: Wyoming
 latitude: 44.60°N
 longitude: 110.50°W
-established: March 1, 1872
+established: 1872-03-01
 visited: true
 ---
 

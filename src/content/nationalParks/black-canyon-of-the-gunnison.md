@@ -3,7 +3,7 @@ name: Black Canyon of the Gunnison
 location: Colorado
 latitude: 38.57°N
 longitude: 107.72°W
-established: October 21, 1999
+established: 1999-10-21
 visited: false
 ---
 

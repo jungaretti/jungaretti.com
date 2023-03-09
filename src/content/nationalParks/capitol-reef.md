@@ -3,7 +3,7 @@ name: Capitol Reef
 location: Utah
 latitude: 38.20°N
 longitude: 111.17°W
-established: December 18, 1971
+established: 1971-12-18
 visited: true
 ---
 

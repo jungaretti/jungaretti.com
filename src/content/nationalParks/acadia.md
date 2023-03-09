@@ -3,7 +3,7 @@ name: Acadia
 location: Maine
 latitude: 44.35°N
 longitude: 68.21°W
-established: February 26, 1919
+established: 1919-02-26
 visited: false
 ---
 

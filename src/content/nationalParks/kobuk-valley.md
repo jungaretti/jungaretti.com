@@ -3,7 +3,7 @@ name: Kobuk Valley
 location: Alaska
 latitude: 67.55°N
 longitude: 159.28°W
-established: December 2, 1980
+established: 1980-12-02
 visited: false
 ---
 

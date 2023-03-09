@@ -3,7 +3,7 @@ name: Redwood
 location: California
 latitude: 41.30°N
 longitude: 124.00°W
-established: October 2, 1968
+established: 1968-10-02
 visited: false
 ---
 

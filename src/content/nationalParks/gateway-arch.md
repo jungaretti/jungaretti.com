@@ -3,7 +3,7 @@ name: Gateway Arch
 location: Missouri
 latitude: 38.63°N
 longitude: 90.19°W
-established: February 22, 2018
+established: 2018-02-22
 visited: false
 ---
 

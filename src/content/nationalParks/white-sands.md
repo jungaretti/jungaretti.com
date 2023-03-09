@@ -3,7 +3,7 @@ name: White Sands
 location: New Mexico
 latitude: 32.78°N
 longitude: 106.17°W
-established: December 20, 2019
+established: 2019-12-20
 visited: false
 ---
 

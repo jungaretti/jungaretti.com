@@ -3,7 +3,7 @@ name: Katmai
 location: Alaska
 latitude: 58.50°N
 longitude: 155.00°W
-established: December 2, 1980
+established: 1980-12-02
 visited: false
 ---
 

@@ -3,7 +3,7 @@ name: Hawaii Volcanoes
 location: Hawaii
 latitude: 19.38°N
 longitude: 155.20°W
-established: August 1, 1916
+established: 1916-08-01
 visited: false
 ---
 

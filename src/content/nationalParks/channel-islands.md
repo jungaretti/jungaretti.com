@@ -3,7 +3,7 @@ name: Channel Islands
 location: California
 latitude: 34.01°N
 longitude: 119.42°W
-established: March 5, 1980
+established: 1980-03-05
 visited: false
 ---
 

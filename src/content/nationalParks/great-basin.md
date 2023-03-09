@@ -3,7 +3,7 @@ name: Great Basin
 location: Nevada
 latitude: 38.98°N
 longitude: 114.30°W
-established: October 27, 1986
+established: 1986-10-27
 visited: false
 ---
 

@@ -3,7 +3,7 @@ name: Wrangell-St.Elias
 location: Alaska
 latitude: 61.00°N
 longitude: 142.00°W
-established: December 2, 1980
+established: 1980-12-02
 visited: false
 ---
 

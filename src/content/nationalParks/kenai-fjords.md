@@ -3,7 +3,7 @@ name: Kenai Fjords
 location: Alaska
 latitude: 59.92°N
 longitude: 149.65°W
-established: December 2, 1980
+established: 1980-12-02
 visited: false
 ---
 

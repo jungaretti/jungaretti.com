@@ -3,7 +3,7 @@ name: Death Valley
 location: California
 latitude: 36.24°N
 longitude: 116.82°W
-established: October 31, 1994
+established: 1994-10-31
 visited: false
 ---
 

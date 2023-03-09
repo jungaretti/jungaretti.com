@@ -3,7 +3,7 @@ name: Glacier
 location: Montana
 latitude: 48.80°N
 longitude: 114.00°W
-established: May 11, 1910
+established: 1910-05-11
 visited: true
 ---
 

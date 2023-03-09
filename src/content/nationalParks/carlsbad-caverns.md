@@ -3,7 +3,7 @@ name: Carlsbad Caverns
 location: New Mexico
 latitude: 32.17°N
 longitude: 104.44°W
-established: May 14, 1930
+established: 1930-05-14
 visited: false
 ---
 

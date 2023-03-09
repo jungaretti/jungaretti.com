@@ -3,7 +3,7 @@ name: Isle Royale
 location: Michigan
 latitude: 48.10°N
 longitude: 88.55°W
-established: April 3, 1940
+established: 1940-04-03
 visited: false
 ---
 

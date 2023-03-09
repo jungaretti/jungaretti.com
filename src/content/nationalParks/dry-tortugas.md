@@ -3,7 +3,7 @@ name: Dry Tortugas
 location: Florida
 latitude: 24.63°N
 longitude: 82.87°W
-established: October 26, 1992
+established: 1992-10-26
 visited: false
 ---
 

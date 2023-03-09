@@ -3,7 +3,7 @@ name: Crater Lake
 location: Oregon
 latitude: 42.94°N
 longitude: 122.1°W
-established: May 22, 1902
+established: 1902-05-22
 visited: false
 ---
 

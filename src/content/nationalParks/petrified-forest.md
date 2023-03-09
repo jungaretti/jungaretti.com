@@ -3,7 +3,7 @@ name: Petrified Forest
 location: Arizona
 latitude: 35.07°N
 longitude: 109.78°W
-established: December 9, 1962
+established: 1962-12-09
 visited: false
 ---
 

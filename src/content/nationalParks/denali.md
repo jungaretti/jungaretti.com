@@ -3,7 +3,7 @@ name: Denali
 location: Alaska
 latitude: 63.33°N
 longitude: 150.50°W
-established: February 26, 1917
+established: 1917-02-26
 visited: false
 ---
 

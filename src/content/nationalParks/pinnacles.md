@@ -3,7 +3,7 @@ name: Pinnacles
 location: California
 latitude: 36.48°N
 longitude: 121.16°W
-established: January 10, 2013
+established: 2013-01-10
 visited: false
 ---
 

@@ -3,7 +3,7 @@ name: Mesa Verde
 location: Colorado
 latitude: 37.18°N
 longitude: 108.49°W
-established: June 29, 1906
+established: 1906-06-29
 visited: false
 ---
 

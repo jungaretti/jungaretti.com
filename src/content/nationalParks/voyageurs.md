@@ -3,7 +3,7 @@ name: Voyageurs
 location: Minnesota
 latitude: 48.50°N
 longitude: 92.88°W
-established: April 8, 1975
+established: 1975-04-08
 visited: false
 ---
 

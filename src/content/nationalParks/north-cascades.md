@@ -3,7 +3,7 @@ name: North Cascades
 location: Washington
 latitude: 48.70°N
 longitude: 121.20°W
-established: October 2, 1968
+established: 1968-10-02
 visited: true
 ---
 

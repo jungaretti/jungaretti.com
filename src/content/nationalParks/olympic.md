@@ -3,7 +3,7 @@ name: Olympic
 location: Washington
 latitude: 47.97°N
 longitude: 123.50°W
-established: June 29, 1938
+established: 1938-06-29
 visited: true
 ---
 

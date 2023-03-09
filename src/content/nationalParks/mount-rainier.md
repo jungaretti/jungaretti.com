@@ -3,7 +3,7 @@ name: Mount Rainier
 location: Washington
 latitude: 46.85°N
 longitude: 121.75°W
-established: March 2, 1899
+established: 1899-03-02
 visited: true
 ---
 

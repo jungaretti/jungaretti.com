@@ -3,7 +3,7 @@ name: Grand Teton
 location: Wyoming
 latitude: 43.73°N
 longitude: 110.80°W
-established: February 26, 1929
+established: 1929-02-26
 visited: true
 ---
 

@@ -3,7 +3,7 @@ name: Bryce Canyon
 location: Utah
 latitude: 37.57°N
 longitude: 112.18°W
-established: February 25, 1928
+established: 1928-02-25
 visited: true
 ---
 

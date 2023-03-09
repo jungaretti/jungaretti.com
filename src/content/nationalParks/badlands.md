@@ -3,7 +3,7 @@ name: Badlands
 location: South Dakota
 latitude: 43.75°N
 longitude: 102.50°W
-established: November 10, 1978
+established: 1978-11-10
 visited: true
 ---
 

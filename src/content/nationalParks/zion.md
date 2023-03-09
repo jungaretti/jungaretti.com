@@ -3,7 +3,7 @@ name: Zion
 location: Utah
 latitude: 37.30°N
 longitude: 113.05°W
-established: November 19, 1919
+established: 1919-11-19
 visited: false
 ---
 

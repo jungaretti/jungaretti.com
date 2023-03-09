@@ -3,7 +3,7 @@ name: Great Smoky Mountains
 location: North Carolina
 latitude: 35.68°N
 longitude: 83.53°W
-established: June 15, 1934
+established: 1934-06-15
 visited: false
 ---
 

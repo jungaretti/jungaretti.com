@@ -3,7 +3,7 @@ name: Shenandoah
 location: Virginia
 latitude: 38.53°N
 longitude: 78.35°W
-established: December 26, 1935
+established: 1935-12-26
 visited: false
 ---
 

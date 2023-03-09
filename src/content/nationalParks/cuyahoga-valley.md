@@ -3,7 +3,7 @@ name: Cuyahoga Valley
 location: Ohio
 latitude: 41.24°N
 longitude: 81.55°W
-established: October 11, 2000
+established: 2000-10-11
 visited: false
 ---
 

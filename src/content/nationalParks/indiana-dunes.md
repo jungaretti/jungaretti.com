@@ -3,7 +3,7 @@ name: Indiana Dunes
 location: Indiana
 latitude: 41.6533°N
 longitude: 87.0524°W
-established: February 15, 2019
+established: 2019-02-15
 visited: false
 ---
 

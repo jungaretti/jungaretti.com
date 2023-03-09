@@ -3,7 +3,7 @@ name: Gates of the Arctic
 location: Alaska
 latitude: 67.78°N
 longitude: 153.30°W
-established: December 2, 1980
+established: 1980-12-02
 visited: false
 ---
 
