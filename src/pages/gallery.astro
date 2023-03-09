@@ -1,9 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import type { HeadMeta } from "../types/HeadMeta";
+import type { Metadata } from "../types/Metadata";
 import Section from "../components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const photos = await getCollection("photos");
@@ -11,7 +10,7 @@ photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const art = await getCollection("art");
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: "Gallery - JP Ungaretti",
   description:
     "My photos and artwork. Inspired by mountains, sailboats, stars, and more.",
@@ -19,28 +18,26 @@ const meta: HeadMeta = {
 ---
 
 <BaseLayout meta={meta}>
-  <div class="space-y-8">
-    <Section title="Recent Photos">
-      <Columns>
-        {
-          photos.map((photo) => (
-            <ImagePreview
-              src={photo.data.src.compressed}
-              alt={photo.data.alt}
-              href={`/photos/${photo.slug}`}
-            />
-          ))
-        }
-      </Columns>
-    </Section>
-    <Section title="My Art">
-      <Columns>
-        {
-          art.map((a) => (
-            <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
-          ))
-        }
-      </Columns>
-    </Section>
-  </div>
+  <Section title="Recent Photos">
+    <div class="grid-standard">
+      {
+        photos.map((photo) => (
+          <ImagePreview
+            src={photo.data.src.compressed}
+            alt={photo.data.alt}
+            href={`/photos/${photo.slug}`}
+          />
+        ))
+      }
+    </div>
+  </Section>
+  <Section title="My Art">
+    <div class="grid-standard">
+      {
+        art.map((a) => (
+          <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
+        ))
+      }
+    </div>
+  </Section>
 </BaseLayout>

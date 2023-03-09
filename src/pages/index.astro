@@ -1,10 +1,9 @@
 ---
 import { getEntryBySlug } from "astro:content";
-import type { HeadMeta } from "../types/HeadMeta";
+import type { Metadata } from "../types/Metadata";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
-import Columns from "../components/Columns.astro";
 import ImagePreview from "../components/ImagePreview.astro";
 
 const photos = await Promise.all([
@@ -16,7 +15,7 @@ const photos = await Promise.all([
   getEntryBySlug("photos", "wide-awake"),
 ]);
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: "JP Ungaretti",
   description:
     "Developer, photographer, and cheese curd connoisseur in the Pacific Northwest. Check out my recent work or get in touch with me.",
@@ -24,20 +23,18 @@ const meta: HeadMeta = {
 ---
 
 <BaseLayout meta={meta}>
-  <div>
-    <Hero title="JP Ungaretti" detail="Developer and Photographer" />
-    <Section title="My Photos">
-      <Columns>
-        {
-          photos.map(({ data, slug }) => (
-            <ImagePreview
-              src={data.src.compressed}
-              alt={data.alt}
-              href={`/photos/${slug}`}
-            />
-          ))
-        }
-      </Columns>
-    </Section>
-  </div>
+  <Hero title="JP Ungaretti" detail="Developer and Photographer" />
+  <Section title="My Photos">
+    <div class="grid-standard">
+      {
+        photos.map(({ data, slug }) => (
+          <ImagePreview
+            src={data.src.compressed}
+            alt={data.alt}
+            href={`/photos/${slug}`}
+          />
+        ))
+      }
+    </div>
+  </Section>
 </BaseLayout>

@@ -1,0 +1,63 @@
+---
+import type { NationalPark } from "../content/config";
+
+interface Props {
+  park: NationalPark;
+}
+const { park } = Astro.props;
+---
+
+<style>
+  .mountains {
+    @apply bg-slate-500;
+    @apply border-slate-500;
+  }
+  .pacific {
+    @apply bg-cyan-700;
+    @apply border-cyan-700;
+  }
+  .eastern {
+    @apply bg-green-700;
+    @apply border-green-700;
+  }
+  .desert {
+    @apply bg-amber-700;
+    @apply border-amber-700;
+  }
+  .tropics {
+    @apply bg-teal-700;
+    @apply border-teal-700;
+  }
+  .alaska {
+    @apply bg-fuchsia-700;
+    @apply border-fuchsia-700;
+  }
+  .card {
+    @apply text-center;
+    @apply rounded-lg;
+    @apply border-solid;
+    @apply border-2;
+    @apply py-1;
+    @apply px-3;
+  }
+  .visited {
+    @apply border-transparent;
+  }
+  .unvisited {
+    @apply bg-transparent;
+  }
+</style>
+
+<div class={`card ${park.category} ${park.visited ? "visited" : "unvisited"}`}>
+  <p class="text-lg font-bold leading-snug">{park.name}</p>
+  <p class="text-sm leading-snug">
+    {
+      park.visited &&
+        `Visited ${park.visited.toLocaleString("en-US", {
+          month: "short",
+          year: "numeric",
+        })},`
+    }
+    {park.location}
+  </p>
+</div>

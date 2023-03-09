@@ -1,6 +1,6 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
-import type { HeadMeta } from "../../types/HeadMeta";
+import type { Metadata } from "../../types/Metadata";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/Section.astro";
 
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   }));
 }
 
-const meta: HeadMeta = {
+const meta: Metadata = {
   title: `${photo.data.title} - JP Ungaretti`,
   description: photo.data.description,
   imageSrc: photo.data.src.compressed,
@@ -25,33 +25,35 @@ const meta: HeadMeta = {
 ---
 
 <BaseLayout meta={meta}>
-  <div class="frame">
-    <Section title={photo.data.title}>
-      <div>
-        <img
-          src={photo.data.src.compressed}
-          alt={photo.data.alt}
-          class="w-full rounded-xl"
-        />
-      </div>
-      <div class="my-3 md:flex md:flex-row">
-        <div class="flex-auto space-y-2">
-          <div>
-            <p>{photo.data.location}</p>
-            <p>
-              {photo.data.date.toLocaleString("en-US", { month: "long" })}
-              {photo.data.date.getFullYear()}
-            </p>
-          </div>
-        </div>
-        <div class="mt-3 md:mt-0">
+  <Section title={photo.data.title}>
+    <div>
+      <img
+        src={photo.data.src.compressed}
+        alt={photo.data.alt}
+        class="w-full rounded-xl"
+      />
+    </div>
+    <div class="my-3 md:flex md:flex-row">
+      <div class="flex-auto space-y-2">
+        <div>
+          <p>{photo.data.location}</p>
           <p>
-            <a href={photo.data.src.original} class="underline">
-              Download Original
-            </a>
+            {
+              photo.data.date.toLocaleString("en-US", {
+                month: "long",
+                year: "numeric",
+              })
+            }
           </p>
         </div>
       </div>
-    </Section>
-  </div>
+      <div class="mt-3 md:mt-0">
+        <p>
+          <a href={photo.data.src.original} class="underline">
+            Download Original
+          </a>
+        </p>
+      </div>
+    </div>
+  </Section>
 </BaseLayout>
