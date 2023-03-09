@@ -11,28 +11,13 @@ const meta: Metadata = {
 };
 
 const parks = await getCollection("nationalParks");
-const visited = parks.filter((park) => park.data.visited);
-const unvisited = parks.filter((park) => park.data.visited === false);
 ---
 
 <BaseLayout meta={meta}>
   <Section title="National Parks">
-    <div class="space-y-4">
-      <div>
-        <h3 class="text-xl font-bold">Visited</h3>
-        <div class="mt-2">
-          <div class="grid-standard grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {visited.map(({ data }) => <NationalPark park={data} />)}
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 class="text-xl font-bold">Need to Visit</h3>
-        <div class="mt-2">
-          <div class="grid-standard grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {unvisited.map(({ data }) => <NationalPark park={data} />)}
-          </div>
-        </div>
+    <div class="mt-2">
+      <div class="grid-standard lg:grid-cols-3">
+        {parks.map(({ data }) => <NationalPark park={data} />)}
       </div>
     </div>
   </Section>

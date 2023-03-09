@@ -11,5 +11,7 @@
 
 .grid-standard {
   @apply grid;
+  @apply grid-cols-1;
+  @apply md:grid-cols-2;
   @apply gap-3;
 }
