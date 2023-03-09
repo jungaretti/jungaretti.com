@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import type { Metadata } from "../types/Metadata";
-import NationalPark from "../components/NationalPark.astro";
+import NationalParkCard from "../components/NationalParkCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/Section.astro";
 
@@ -17,7 +17,7 @@ const parks = await getCollection("nationalParks");
   <Section title="National Parks">
     <div class="mt-2">
       <div class="grid-standard lg:grid-cols-3">
-        {parks.map(({ data }) => <NationalPark park={data} />)}
+        {parks.map(({ data }) => <NationalParkCard park={data} />)}
       </div>
     </div>
   </Section>
