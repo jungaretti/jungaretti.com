@@ -23,20 +23,18 @@ const meta: Metadata = {
 ---
 
 <BaseLayout meta={meta}>
-  <div>
-    <Hero title="JP Ungaretti" detail="Developer and Photographer" />
-    <Section title="My Photos">
-      <div class="grid-standard">
-        {
-          photos.map(({ data, slug }) => (
-            <ImagePreview
-              src={data.src.compressed}
-              alt={data.alt}
-              href={`/photos/${slug}`}
-            />
-          ))
-        }
-      </div>
-    </Section>
-  </div>
+  <Hero title="JP Ungaretti" detail="Developer and Photographer" />
+  <Section title="My Photos">
+    <div class="grid-standard">
+      {
+        photos.map(({ data, slug }) => (
+          <ImagePreview
+            src={data.src.compressed}
+            alt={data.alt}
+            href={`/photos/${slug}`}
+          />
+        ))
+      }
+    </div>
+  </Section>
 </BaseLayout>

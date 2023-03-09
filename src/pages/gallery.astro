@@ -18,28 +18,26 @@ const meta: Metadata = {
 ---
 
 <BaseLayout meta={meta}>
-  <div class="space-y-8">
-    <Section title="Recent Photos">
-      <div class="grid-standard">
-        {
-          photos.map((photo) => (
-            <ImagePreview
-              src={photo.data.src.compressed}
-              alt={photo.data.alt}
-              href={`/photos/${photo.slug}`}
-            />
-          ))
-        }
-      </div>
-    </Section>
-    <Section title="My Art">
-      <div class="grid-standard">
-        {
-          art.map((a) => (
-            <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
-          ))
-        }
-      </div>
-    </Section>
-  </div>
+  <Section title="Recent Photos">
+    <div class="grid-standard">
+      {
+        photos.map((photo) => (
+          <ImagePreview
+            src={photo.data.src.compressed}
+            alt={photo.data.alt}
+            href={`/photos/${photo.slug}`}
+          />
+        ))
+      }
+    </div>
+  </Section>
+  <Section title="My Art">
+    <div class="grid-standard">
+      {
+        art.map((a) => (
+          <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
+        ))
+      }
+    </div>
+  </Section>
 </BaseLayout>
