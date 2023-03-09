@@ -32,7 +32,7 @@ const nationalParksSchema = z.object({
   latitude: z.string(),
   longitude: z.string(),
   established: z.date(),
-  visited: z.boolean(),
+  visited: z.optional(z.date()),
 });
 
 const nationalParks = defineCollection({
