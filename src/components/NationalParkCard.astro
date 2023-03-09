@@ -39,9 +39,15 @@ const { park } = Astro.props;
     @apply py-1;
     @apply px-2;
   }
+  .visited {
+    @apply border-transparent;
+  }
+  .unvisited {
+    @apply bg-transparent;
+  }
 </style>
 
-<div class={`${park.category} card ${park.visited || "bg-transparent"}`}>
+<div class={`card ${park.category} ${park.visited ? "visited" : "unvisited"}`}>
   <p class="text-lg font-bold">{park.name}</p>
   <p>
     {
