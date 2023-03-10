@@ -1,4 +1,5 @@
 import { z } from "astro:content";
+import type { CardColor } from "./CardColor";
 import { parkSchema } from "./Park";
 
 export const nationalParkSchema = z
@@ -15,3 +16,20 @@ export const nationalParkSchema = z
   .merge(parkSchema);
 
 export type NationalPark = z.infer<typeof nationalParkSchema>;
+
+export function cardColor(park: NationalPark): CardColor {
+  switch (park.category) {
+    case "mountains":
+      return "slate";
+    case "pacific":
+      return "cyan";
+    case "eastern":
+      return "green";
+    case "desert":
+      return "amber";
+    case "tropics":
+      return "teal";
+    case "alaska":
+      return "fuchsia";
+  }
+}

@@ -1,41 +1,17 @@
 ---
-import type { NationalPark } from "../content/config";
+import { NationalPark, cardColor } from "../types/NationalPark";
+import { cardDetail } from "../types/Park";
 import Card from "./Card.astro";
 
 interface Props {
   park: NationalPark;
 }
 const { park } = Astro.props;
-
-let detail = park.location;
-if (park.visited) {
-  detail = `Visited ${park.visited.toLocaleString("en-US", {
-    month: "short",
-    year: "numeric",
-  })}, ${detail}`;
-}
-
-const color = (park: NationalPark) => {
-  switch (park.category) {
-    case "mountains":
-      return "slate";
-    case "pacific":
-      return "cyan";
-    case "eastern":
-      return "green";
-    case "desert":
-      return "amber";
-    case "tropics":
-      return "teal";
-    case "alaska":
-      return "fuchsia";
-  }
-};
 ---
 
 <Card
   title={park.name}
-  detail={detail}
-  color={color(park)}
+  detail={cardDetail(park)}
+  color={cardColor(park)}
   outline={park.visited === undefined}
 />
