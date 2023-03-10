@@ -5,6 +5,14 @@ interface Props {
   park: NationalPark;
 }
 const { park } = Astro.props;
+
+let detail = park.location;
+if (park.visited) {
+  detail = `Visited ${park.visited.toLocaleString("en-US", {
+    month: "short",
+    year: "numeric",
+  })}, ${detail}`;
+}
 ---
 
 <style>
@@ -50,14 +58,5 @@ const { park } = Astro.props;
 
 <div class={`card ${park.category} ${park.visited ? "visited" : "unvisited"}`}>
   <p class="text-lg font-bold leading-snug">{park.name}</p>
-  <p class="text-sm leading-snug">
-    {
-      park.visited &&
-        `Visited ${park.visited.toLocaleString("en-US", {
-          month: "short",
-          year: "numeric",
-        })},`
-    }
-    {park.location}
-  </p>
+  <p class="text-sm leading-snug">{detail}</p>
 </div>
