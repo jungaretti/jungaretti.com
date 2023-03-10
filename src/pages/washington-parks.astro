@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import type { Metadata } from "../types/Metadata";
+import NationalPark from "../components/NationalPark.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Section from "../components/Section.astro";
+
+const meta: Metadata = {
+  title: "Washington State Parks - JP Ungaretti",
+  description: "",
+};
+
+const visited = await getCollection(
+  "washingtonParks",
+  (park) => park.data.visited
+);
+visited.sort((a, b) => b.data.visited!.valueOf() - a.data.visited!.valueOf());
+const toVisit = await getCollection(
+  "washingtonParks",
+  (park) => !park.data.visited
+);
+toVisit.sort((a, b) => a.data.name.localeCompare(b.data.name));
+const all = [...visited, ...toVisit];
+---
+
+<BaseLayout meta={meta}>
+  <Section title="Washington State Parks">
+    <div class="park-list">
+      {
+        all.map(({ data }) => (
+          <div class="sm:flex-grow">
+            <p>{data.name}</p>
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+</BaseLayout>

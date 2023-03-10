@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
 import { nationalParkSchema } from "../types/NationalPark";
+import { washingtonParkSchema } from "../types/WashingtonPark";
 
 const art = defineCollection({
   schema: z.object({
@@ -31,8 +32,13 @@ const nationalParks = defineCollection({
   schema: nationalParkSchema,
 });
 
+const washingtonParks = defineCollection({
+  schema: washingtonParkSchema,
+});
+
 export const collections = {
   art,
   photos,
   nationalParks,
+  washingtonParks,
 };
