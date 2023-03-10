@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  detail?: string;
+  color?: "slate" | "amber" | "green" | "teal" | "cyan" | "fuchsia";
+  outline?: boolean;
+}
+const { title, detail, color, outline } = Astro.props;
+---
+
+<style>
+  .card {
+    @apply text-center;
+    @apply rounded-lg;
+    @apply border-solid;
+    @apply border-2;
+    @apply py-1;
+    @apply px-3;
+  }
+  .slate {
+    @apply bg-slate-500;
+    @apply border-slate-500;
+  }
+  .amber {
+    @apply bg-amber-700;
+    @apply border-amber-700;
+  }
+  .green {
+    @apply bg-green-700;
+    @apply border-green-700;
+  }
+  .teal {
+    @apply bg-teal-700;
+    @apply border-teal-700;
+  }
+  .cyan {
+    @apply bg-cyan-700;
+    @apply border-cyan-700;
+  }
+  .fuchsia {
+    @apply bg-fuchsia-700;
+    @apply border-fuchsia-700;
+  }
+</style>
+
+<div class={`card ${color ?? "slate"} ${outline && "bg-transparent"}`}>
+  <p class="text-lg font-bold leading-snug">{title}</p>
+  <p class="text-sm leading-snug">{detail}</p>
+</div>
