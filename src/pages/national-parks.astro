@@ -25,7 +25,7 @@ const all = [...visited, ...toVisit];
 
 <BaseLayout meta={meta}>
   <Section title="National Parks">
-    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-2">
+    <div class="park-list">
       {
         all.map(({ data }) => (
           <div class="sm:flex-grow">
