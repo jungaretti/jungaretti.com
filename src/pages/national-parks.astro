@@ -14,10 +14,12 @@ const visited = await getCollection(
   "nationalParks",
   (park) => park.data.visited
 );
+visited.sort((a, b) => b.data.visited!.valueOf() - a.data.visited!.valueOf());
 const toVisit = await getCollection(
   "nationalParks",
   (park) => !park.data.visited
 );
+toVisit.sort((a, b) => a.data.name.localeCompare(b.data.name));
 const all = [...visited, ...toVisit];
 ---
 
