@@ -1,8 +1,10 @@
 ---
+import type { CardColor } from "../types/CardColor";
+
 interface Props {
   title: string;
   detail?: string;
-  color?: "slate" | "amber" | "green" | "teal" | "cyan" | "fuchsia";
+  color?: CardColor;
   outline?: boolean;
 }
 const { title, detail, color, outline } = Astro.props;
