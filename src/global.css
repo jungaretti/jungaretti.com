@@ -15,11 +15,3 @@
   @apply md:grid-cols-2;
   @apply gap-3;
 }
-
-.park-list {
-  @apply flex;
-  @apply flex-col;
-  @apply sm:flex-row;
-  @apply sm:flex-wrap;
-  @apply gap-2;
-}

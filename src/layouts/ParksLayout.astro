@@ -1,0 +1,50 @@
+---
+import type { Metadata } from "../types/Metadata";
+import { cardDetail, Park } from "../types/Park";
+import { categoryColor } from "../types/CardColor";
+import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+  meta: Metadata;
+  scope: string;
+  parks: (Park & { category: string })[];
+}
+const { meta, scope, parks } = Astro.props;
+
+const visited = parks.filter((park) => park.visited);
+visited.sort((a, b) => b.visited!.valueOf() - a.visited!.valueOf());
+const toVisit = parks.filter((park) => !park.visited);
+toVisit.sort((a, b) => a.category.localeCompare(b.category));
+const all = [...visited, ...toVisit];
+---
+
+<style>
+  .park-list {
+    @apply flex;
+    @apply flex-col;
+    @apply sm:flex-row;
+    @apply sm:flex-wrap;
+    @apply gap-2;
+  }
+</style>
+
+<BaseLayout meta={meta}>
+  <Section title={`${scope} Parks`}>
+    <div class="park-list">
+      {
+        all.map((park) => (
+          <div class="sm:flex-grow">
+            <Card
+              title={park.name}
+              detail={cardDetail(park)}
+              color={categoryColor(park.category)}
+              outline={park.visited === undefined}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </Section>
+</BaseLayout>
