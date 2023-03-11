@@ -8,7 +8,6 @@ export const washingtonParkSchema = z
       z.literal("puget"),
       z.literal("cascades"),
       z.literal("eastern"),
-      z.literal("rockies"),
     ]),
   })
   .merge(parkSchema);
