@@ -13,4 +13,4 @@ export const washingtonParkSchema = z
   })
   .merge(parkSchema);
 
-export type NationalPark = z.infer<typeof washingtonParkSchema>;
+export type WashingtonPark = z.infer<typeof washingtonParkSchema>;

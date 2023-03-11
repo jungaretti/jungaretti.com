@@ -1,12 +1,14 @@
 ---
 import { getCollection } from "astro:content";
-import type { Metadata } from "../types/Metadata";
-import NationalPark from "../components/NationalPark.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
+import type { Metadata } from "../../types/Metadata";
+import Section from "../../components/Section.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { cardDetail } from "../../types/Park";
+import { categoryColor } from "../../types/CardColor";
 
 const meta: Metadata = {
-  title: "Washington State Parks - JP Ungaretti",
+  title: "WA State Parks - JP Ungaretti",
   description: "",
 };
 
@@ -24,12 +26,17 @@ const all = [...visited, ...toVisit];
 ---
 
 <BaseLayout meta={meta}>
-  <Section title="Washington State Parks">
+  <Section title="WA State Parks">
     <div class="park-list">
       {
         all.map(({ data }) => (
           <div class="sm:flex-grow">
-            <p>{data.name}</p>
+            <Card
+              title={data.name}
+              detail={cardDetail(data)}
+              color={categoryColor(data.category)}
+              outline={data.visited === undefined}
+            />
           </div>
         ))
       }

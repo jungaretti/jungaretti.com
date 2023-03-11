@@ -14,38 +14,51 @@ const { title, detail, color, outline } = Astro.props;
   .card {
     @apply text-center;
     @apply rounded-lg;
+    @apply border-transparent;
     @apply border-solid;
     @apply border-2;
     @apply py-1;
     @apply px-3;
   }
-  .slate {
+  .slate-solid {
     @apply bg-slate-500;
+  }
+  .amber-solid {
+    @apply bg-amber-700;
+  }
+  .green-solid {
+    @apply bg-green-700;
+  }
+  .teal-solid {
+    @apply bg-teal-700;
+  }
+  .cyan-solid {
+    @apply bg-cyan-700;
+  }
+  .fuchsia-solid {
+    @apply bg-fuchsia-700;
+  }
+  .slate-outline {
     @apply border-slate-500;
   }
-  .amber {
-    @apply bg-amber-700;
+  .amber-outline {
     @apply border-amber-700;
   }
-  .green {
-    @apply bg-green-700;
+  .green-outline {
     @apply border-green-700;
   }
-  .teal {
-    @apply bg-teal-700;
+  .teal-outline {
     @apply border-teal-700;
   }
-  .cyan {
-    @apply bg-cyan-700;
+  .cyan-outline {
     @apply border-cyan-700;
   }
-  .fuchsia {
-    @apply bg-fuchsia-700;
+  .fuchsia-outline {
     @apply border-fuchsia-700;
   }
 </style>
 
-<div class={`card ${color ?? "slate"} ${outline && "bg-transparent"}`}>
+<div class={`card ${color ?? "slate"}-${outline ? "outline" : "solid"}`}>
   <p class="text-lg font-bold leading-snug">{title}</p>
   <p class="text-sm leading-snug">{detail}</p>
 </div>
