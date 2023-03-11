@@ -1,6 +1,6 @@
 ---
 name: Birch Bay
-location: Birch Bay County
+location: Whatcom County
 category: cascades
 ---
 

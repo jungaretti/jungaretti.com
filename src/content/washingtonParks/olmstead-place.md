@@ -1,5 +1,7 @@
 ---
 name: Olmstead Place
-location: Olmstead Place County
+location: Kittitas County
 category: cascades
 ---
+
+

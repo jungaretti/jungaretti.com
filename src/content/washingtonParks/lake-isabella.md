@@ -1,5 +1,7 @@
 ---
 name: Lake Isabella
-location: Lake Isabella County
+location: Mason County
 category: puget
 ---
+
+

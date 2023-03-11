@@ -1,6 +1,6 @@
 ---
 name: Ginkgo Petrified Forest
-location: Ginkgo Petrified Forest County
+location: Kittitas County
 category: cascades
 ---
 

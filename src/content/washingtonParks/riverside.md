@@ -1,5 +1,7 @@
 ---
 name: Riverside
-location: Riverside County
+location: Spokane County
 category: eastern
 ---
+
+

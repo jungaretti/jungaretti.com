@@ -1,6 +1,6 @@
 ---
 name: Bogachiel
-location: Bogachiel County
+location: Clallam County
 category: coast
 ---
 

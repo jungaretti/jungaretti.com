@@ -1,6 +1,6 @@
 ---
 name: Fields Spring
-location: Fields Spring County
+location: Asotin County
 category: eastern
 ---
 

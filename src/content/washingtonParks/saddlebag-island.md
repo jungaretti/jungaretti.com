@@ -1,5 +1,7 @@
 ---
 name: Saddlebag Island
-location: Saddlebag Island County
+location: San Juan County
 category: puget
 ---
+
+

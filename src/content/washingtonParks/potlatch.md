@@ -1,5 +1,7 @@
 ---
 name: Potlatch
-location: Potlatch County
+location: Mason County
 category: puget
 ---
+
+

@@ -1,6 +1,6 @@
 ---
 name: Grayland Beach
-location: Grayland Beach County
+location: Pacific County
 category: coast
 ---
 

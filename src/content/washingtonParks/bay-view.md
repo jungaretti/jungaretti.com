@@ -1,6 +1,6 @@
 ---
 name: Bay View
-location: Bay View County
+location: Skagit County
 category: puget
 ---
 

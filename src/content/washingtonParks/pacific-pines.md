@@ -1,5 +1,7 @@
 ---
 name: Pacific Pines
-location: Pacific Pines County
+location: Pacific County
 category: coast
 ---
+
+

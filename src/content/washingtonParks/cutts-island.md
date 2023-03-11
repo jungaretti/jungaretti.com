@@ -1,6 +1,6 @@
 ---
 name: Cutts Island
-location: Cutts Island County
+location: Pierce County
 category: puget
 ---
 

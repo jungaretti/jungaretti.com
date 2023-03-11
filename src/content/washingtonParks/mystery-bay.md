@@ -1,5 +1,7 @@
 ---
 name: Mystery Bay
-location: Mystery Bay County
+location: Jefferson County
 category: coast
 ---
+
+

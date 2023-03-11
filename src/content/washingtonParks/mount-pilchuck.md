@@ -1,5 +1,7 @@
 ---
 name: Mount Pilchuck
-location: Mount Pilchuck County
+location: Snohomish County
 category: cascades
 ---
+
+

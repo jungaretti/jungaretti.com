@@ -1,5 +1,7 @@
 ---
 name: Steptoe Butte
-location: Steptoe Butte County
+location: Whitman County
 category: eastern
 ---
+
+

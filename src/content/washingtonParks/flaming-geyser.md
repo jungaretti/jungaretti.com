@@ -1,6 +1,6 @@
 ---
 name: Flaming Geyser
-location: Flaming Geyser County
+location: King County
 category: puget
 ---
 

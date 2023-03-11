@@ -1,6 +1,6 @@
 ---
 name: Kopachuck
-location: Kopachuck County
+location: Pierce County
 category: puget
 ---
 

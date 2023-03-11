@@ -1,6 +1,6 @@
 ---
 name: Peace Arch
-location: Peace Arch County
+location: Whatcom County
 category: cascades
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: Jarrell Cove
-location: Jarrell Cove County
+location: Mason County
 category: puget
 ---
 

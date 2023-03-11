@@ -1,5 +1,7 @@
 ---
 name: Rainbow Falls
-location: Rainbow Falls County
+location: Lewis County
 category: cascades
 ---
+
+

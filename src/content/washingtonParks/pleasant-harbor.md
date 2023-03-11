@@ -1,5 +1,7 @@
 ---
 name: Pleasant Harbor
-location: Pleasant Harbor County
+location: Jefferson County
 category: coast
 ---
+
+

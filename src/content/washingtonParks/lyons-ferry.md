@@ -1,6 +1,6 @@
 ---
 name: Lyons Ferry
-location: Lyons Ferry County
+location: Franklin County
 category: eastern
 ---
 

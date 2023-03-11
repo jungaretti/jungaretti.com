@@ -1,5 +1,7 @@
 ---
 name: Obstruction Pass
-location: Obstruction Pass County
+location: San Juan County
 category: puget
 ---
+
+

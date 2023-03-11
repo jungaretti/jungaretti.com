@@ -1,6 +1,6 @@
 ---
 name: Federation Forest
-location: Federation Forest County
+location: King County
 category: puget
 ---
 

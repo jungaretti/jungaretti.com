@@ -1,6 +1,6 @@
 ---
 name: Iron Horse
-location: Iron Horse County
+location: Kittitas County
 category: cascades
 ---
 

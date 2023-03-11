@@ -1,6 +1,6 @@
 ---
 name: James Island
-location: James Island County
+location: San Juan County
 category: puget
 ---
 

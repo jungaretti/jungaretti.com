@@ -1,6 +1,6 @@
 ---
 name: Bridle Trails
-location: Bridle Trails County
+location: King County
 category: puget
 ---
 

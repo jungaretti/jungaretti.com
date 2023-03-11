@@ -1,5 +1,7 @@
 ---
 name: Reed Island
-location: Reed Island County
+location: Clark County
 category: cascades
 ---
+
+

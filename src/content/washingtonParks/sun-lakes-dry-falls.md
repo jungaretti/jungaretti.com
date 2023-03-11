@@ -1,5 +1,7 @@
 ---
 name: Sun Lakes-Dry Falls
-location: Sun Lakes-Dry Falls County
+location: Grant County
 category: eastern
 ---
+
+

@@ -1,6 +1,6 @@
 ---
 name: Joseph Whidbey
-location: Joseph Whidbey County
+location: Island County
 category: puget
 ---
 

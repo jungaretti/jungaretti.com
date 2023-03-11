@@ -1,6 +1,6 @@
 ---
 name: Camano Island
-location: Camano Island County
+location: Island County
 category: puget
 ---
 

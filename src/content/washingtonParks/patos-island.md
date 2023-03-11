@@ -1,5 +1,7 @@
 ---
 name: Patos Island
-location: Patos Island County
+location: San Juan County
 category: puget
 ---
+
+

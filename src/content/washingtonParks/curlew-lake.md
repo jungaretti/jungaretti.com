@@ -1,6 +1,6 @@
 ---
 name: Curlew Lake
-location: Curlew Lake County
+location: Ferry County
 category: eastern
 ---
 

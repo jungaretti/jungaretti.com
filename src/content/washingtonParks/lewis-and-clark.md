@@ -1,5 +1,7 @@
 ---
 name: Lewis and Clark
-location: Lewis and Clark County
+location: Lewis County
 category: cascades
 ---
+
+

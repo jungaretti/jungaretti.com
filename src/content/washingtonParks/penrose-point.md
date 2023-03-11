@@ -1,5 +1,7 @@
 ---
 name: Penrose Point
-location: Penrose Point County
+location: Pierce County
 category: puget
 ---
+
+

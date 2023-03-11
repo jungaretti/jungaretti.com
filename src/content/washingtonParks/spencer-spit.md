@@ -1,5 +1,7 @@
 ---
 name: Spencer Spit
-location: Spencer Spit County
+location: San Juan County
 category: puget
 ---
+
+

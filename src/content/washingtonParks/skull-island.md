@@ -1,5 +1,7 @@
 ---
 name: Skull Island
-location: Skull Island County
+location: San Juan County
 category: puget
 ---
+
+

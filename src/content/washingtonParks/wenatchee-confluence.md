@@ -1,5 +1,7 @@
 ---
 name: Wenatchee Confluence
-location: Wenatchee Confluence County
+location: Chelan County
 category: cascades
 ---
+
+

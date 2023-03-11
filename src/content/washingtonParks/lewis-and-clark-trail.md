@@ -1,5 +1,7 @@
 ---
 name: Lewis and Clark Trail
-location: Lewis and Clark Trail County
+location: Columbia County
 category: eastern
 ---
+
+

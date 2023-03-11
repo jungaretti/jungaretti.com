@@ -1,6 +1,6 @@
 ---
 name: Bridgeport
-location: Bridgeport County
+location: Okanogan County
 category: cascades
 ---
 

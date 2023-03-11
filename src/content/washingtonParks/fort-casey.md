@@ -1,6 +1,6 @@
 ---
 name: Fort Casey
-location: Fort Casey County
+location: Island County
 category: puget
 ---
 

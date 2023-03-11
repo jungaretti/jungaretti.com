@@ -1,5 +1,7 @@
 ---
 name: Manchester
-location: Manchester County
+location: Kitsap County
 category: puget
 ---
+
+

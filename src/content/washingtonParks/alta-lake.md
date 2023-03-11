@@ -1,6 +1,6 @@
 ---
 name: Alta Lake
-location: Alta Lake County
+location: Okanogan County
 category: cascades
 ---
 

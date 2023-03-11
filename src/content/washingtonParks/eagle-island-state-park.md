@@ -1,6 +1,6 @@
 ---
 name: Eagle Island State Park
-location: Eagle Island State Park County
+location: Pierce County
 category: puget
 ---
 

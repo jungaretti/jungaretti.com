@@ -1,5 +1,7 @@
 ---
 name: Stuart Island
-location: Stuart Island County
+location: San Juan County
 category: puget
 ---
+
+

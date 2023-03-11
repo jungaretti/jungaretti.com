@@ -1,5 +1,7 @@
 ---
 name: Spring Creek Hatchery
-location: Spring Creek Hatchery County
+location: Skamania County
 category: cascades
 ---
+
+

@@ -1,6 +1,6 @@
 ---
 name: Cape Disappointment
-location: Cape Disappointment County
+location: Pacific County
 category: coast
 ---
 

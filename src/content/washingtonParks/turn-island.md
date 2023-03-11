@@ -1,6 +1,6 @@
 ---
 name: Turn Island
-location: Turn Island County
+location: San Juan County
 category: puget
 ---
 

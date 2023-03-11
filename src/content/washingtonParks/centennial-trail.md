@@ -1,6 +1,6 @@
 ---
 name: Centennial Trail
-location: Centennial Trail County
+location: Spokane County
 category: eastern
 ---
 

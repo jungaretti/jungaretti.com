@@ -1,5 +1,7 @@
 ---
 name: Schafer
-location: Schafer County
+location: Mason County
 category: puget
 ---
+
+

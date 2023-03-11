@@ -1,6 +1,6 @@
 ---
 name: Anderson Lake
-location: Anderson Lake County
+location: Jefferson County
 category: coast
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: Fort Columbia
-location: Fort Columbia County
+location: Pacific County
 category: coast
 ---
 

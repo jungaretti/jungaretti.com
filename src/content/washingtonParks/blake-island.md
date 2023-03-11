@@ -1,6 +1,6 @@
 ---
 name: Blake Island
-location: Blake Island County
+location: Kitsap County
 category: puget
 ---
 

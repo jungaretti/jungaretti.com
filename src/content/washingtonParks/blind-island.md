@@ -1,6 +1,6 @@
 ---
 name: Blind Island
-location: Blind Island County
+location: San Juan County
 category: puget
 ---
 

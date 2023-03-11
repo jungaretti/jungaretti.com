@@ -1,6 +1,6 @@
 ---
 name: Fort Simcoe
-location: Fort Simcoe County
+location: Yakima County
 category: eastern
 ---
 

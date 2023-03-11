@@ -1,6 +1,6 @@
 ---
 name: Deception Pass
-location: Deception Pass County
+location: Island County
 category: puget
 ---
 

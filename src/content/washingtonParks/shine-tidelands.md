@@ -1,5 +1,7 @@
 ---
 name: Shine Tidelands
-location: Shine Tidelands County
+location: Jefferson County
 category: coast
 ---
+
+

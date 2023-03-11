@@ -1,6 +1,6 @@
 ---
 name: Kanaskat-Palmer
-location: Kanaskat-Palmer County
+location: King County
 category: puget
 ---
 

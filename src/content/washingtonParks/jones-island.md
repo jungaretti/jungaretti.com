@@ -1,6 +1,6 @@
 ---
 name: Jones Island
-location: Jones Island County
+location: San Juan County
 category: puget
 ---
 

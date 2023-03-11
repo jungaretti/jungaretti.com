@@ -1,6 +1,6 @@
 ---
 name: Clark Island
-location: Clark Island County
+location: San Juan County
 category: puget
 ---
 

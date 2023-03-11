@@ -1,5 +1,7 @@
 ---
 name: Scenic Beach
-location: Scenic Beach County
+location: Kitsap County
 category: puget
 ---
+
+

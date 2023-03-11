@@ -1,6 +1,6 @@
 ---
 name: Harstine Island
-location: Harstine Island County
+location: Mason County
 category: puget
 ---
 

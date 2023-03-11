@@ -1,6 +1,6 @@
 ---
 name: Brooks Memorial
-location: Brooks Memorial County
+location: Klickitat County
 category: cascades
 ---
 

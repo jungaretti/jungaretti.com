@@ -1,5 +1,7 @@
 ---
 name: South Whidbey
-location: South Whidbey County
+location: Island County
 category: puget
 ---
+
+

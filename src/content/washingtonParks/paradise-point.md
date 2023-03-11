@@ -1,5 +1,7 @@
 ---
 name: Paradise Point
-location: Paradise Point County
+location: Clark County
 category: cascades
 ---
+
+

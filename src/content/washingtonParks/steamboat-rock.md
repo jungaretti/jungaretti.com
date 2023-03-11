@@ -1,5 +1,7 @@
 ---
 name: Steamboat Rock
-location: Steamboat Rock County
+location: Grant County
 category: eastern
 ---
+
+

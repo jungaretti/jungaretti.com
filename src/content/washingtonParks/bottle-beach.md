@@ -1,6 +1,6 @@
 ---
 name: Bottle Beach
-location: Bottle Beach County
+location: Grays Harbor County
 category: coast
 ---
 

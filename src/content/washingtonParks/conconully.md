@@ -1,6 +1,6 @@
 ---
 name: Conconully
-location: Conconully County
+location: Okanogan County
 category: cascades
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: Lake Chelan
-location: Lake Chelan County
+location: Chelan County
 category: cascades
 ---
 

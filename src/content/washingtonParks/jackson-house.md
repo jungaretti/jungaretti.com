@@ -1,6 +1,6 @@
 ---
 name: Jackson House
-location: Jackson House County
+location: Lewis County
 category: cascades
 ---
 

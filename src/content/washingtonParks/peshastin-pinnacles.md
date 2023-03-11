@@ -1,5 +1,7 @@
 ---
 name: Peshastin Pinnacles
-location: Peshastin Pinnacles County
+location: Chelan County
 category: cascades
 ---
+
+

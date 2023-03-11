@@ -1,5 +1,7 @@
 ---
 name: Westhaven
-location: Westhaven County
+location: Grays Harbor County
 category: coast
 ---
+
+

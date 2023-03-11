@@ -1,5 +1,7 @@
 ---
 name: Pacific Beach
-location: Pacific Beach County
+location: Grays Harbor County
 category: coast
 ---
+
+

@@ -1,6 +1,6 @@
 ---
 name: Dosewallips
-location: Dosewallips County
+location: Jefferson County
 category: coast
 ---
 

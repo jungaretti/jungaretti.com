@@ -1,5 +1,7 @@
 ---
 name: Palouse Falls
-location: Palouse Falls County
+location: Franklin County
 category: eastern
 ---
+
+

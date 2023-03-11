@@ -1,5 +1,7 @@
 ---
 name: Triton Cove
-location: Triton Cove County
+location: Jefferson County
 category: coast
 ---
+
+

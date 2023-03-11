@@ -1,6 +1,6 @@
 ---
 name: Fort Townsend
-location: Fort Townsend County
+location: Jefferson County
 category: coast
 ---
 

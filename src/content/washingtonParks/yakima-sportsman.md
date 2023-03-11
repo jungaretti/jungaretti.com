@@ -1,5 +1,7 @@
 ---
 name: Yakima Sportsman
-location: Yakima Sportsman County
+location: Yakima County
 category: eastern
 ---
+
+

@@ -1,5 +1,7 @@
 ---
 name: Matia Island
-location: Matia Island County
+location: San Juan County
 category: puget
 ---
+
+

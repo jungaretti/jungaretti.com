@@ -1,6 +1,6 @@
 ---
 name: Lime Kiln Point
-location: Lime Kiln Point County
+location: San Juan County
 category: puget
 ---
 

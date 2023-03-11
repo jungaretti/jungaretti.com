@@ -1,6 +1,6 @@
 ---
 name: Crawford
-location: Crawford County
+location: Pend Oreille County
 category: rockies
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: Twin Harbors
-location: Twin Harbors County
+location: Grays Harbor County
 category: coast
 ---
+
+

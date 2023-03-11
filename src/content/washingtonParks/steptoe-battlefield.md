@@ -1,5 +1,7 @@
 ---
 name: Steptoe Battlefield
-location: Steptoe Battlefield County
+location: Whitman County
 category: eastern
 ---
+
+

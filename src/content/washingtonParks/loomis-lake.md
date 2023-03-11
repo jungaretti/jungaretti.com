@@ -1,5 +1,7 @@
 ---
 name: Loomis Lake
-location: Loomis Lake County
+location: Pacific County
 category: coast
 ---
+
+

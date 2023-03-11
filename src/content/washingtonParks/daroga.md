@@ -1,6 +1,6 @@
 ---
 name: Daroga
-location: Daroga County
+location: Douglas County
 category: eastern
 ---
 

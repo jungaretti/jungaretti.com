@@ -1,5 +1,7 @@
 ---
 name: Twenty-Five Mile Creek
-location: Twenty-Five Mile Creek County
+location: Chelan County
 category: cascades
 ---
+
+

@@ -1,5 +1,7 @@
 ---
 name: Lincoln Rock
-location: Lincoln Rock County
+location: Douglas County
 category: eastern
 ---
+
+

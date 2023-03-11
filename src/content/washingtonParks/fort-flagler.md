@@ -1,6 +1,6 @@
 ---
 name: Fort Flagler
-location: Fort Flagler County
+location: Jefferson County
 category: coast
 ---
 

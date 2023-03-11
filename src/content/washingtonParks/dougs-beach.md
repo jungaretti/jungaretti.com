@@ -1,6 +1,6 @@
 ---
 name: Doug's Beach
-location: Doug's Beach County
+location: Klickitat County
 category: cascades
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: Wallace Falls
-location: Wallace Falls County
+location: Snohomish County
 category: cascades
 ---
+
+

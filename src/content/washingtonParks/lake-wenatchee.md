@@ -1,5 +1,7 @@
 ---
 name: Lake Wenatchee
-location: Lake Wenatchee County
+location: Chelan County
 category: cascades
 ---
+
+

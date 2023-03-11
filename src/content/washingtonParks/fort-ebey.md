@@ -1,6 +1,6 @@
 ---
 name: Fort Ebey
-location: Fort Ebey County
+location: Island County
 category: puget
 ---
 

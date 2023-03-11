@@ -1,5 +1,7 @@
 ---
 name: Squilchuck
-location: Squilchuck County
+location: Chelan County
 category: cascades
 ---
+
+

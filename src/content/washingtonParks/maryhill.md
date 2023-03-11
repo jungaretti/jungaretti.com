@@ -1,5 +1,7 @@
 ---
 name: Maryhill
-location: Maryhill County
+location: Klickitat County
 category: cascades
 ---
+
+

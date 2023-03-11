@@ -1,6 +1,6 @@
 ---
 name: Fort Worden
-location: Fort Worden County
+location: Jefferson County
 category: coast
 ---
 

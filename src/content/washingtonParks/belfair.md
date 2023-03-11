@@ -1,6 +1,6 @@
 ---
 name: Belfair
-location: Belfair County
+location: Mason County
 category: puget
 ---
 

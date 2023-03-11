@@ -1,5 +1,7 @@
 ---
 name: Tolmie
-location: Tolmie County
+location: Thurston County
 category: puget
 ---
+
+

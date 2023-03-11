@@ -1,5 +1,7 @@
 ---
 name: Larrabee
-location: Larrabee County
+location: Whatcom County
 category: cascades
 ---
+
+

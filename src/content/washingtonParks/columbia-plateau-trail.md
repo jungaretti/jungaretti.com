@@ -1,6 +1,6 @@
 ---
 name: Columbia Plateau Trail
-location: Columbia Plateau Trail County
+location: Adams County
 category: eastern
 ---
 

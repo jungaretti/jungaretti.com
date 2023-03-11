@@ -1,6 +1,6 @@
 ---
 name: Columbia Hills
-location: Columbia Hills County
+location: Klickitat County
 category: cascades
 ---
 

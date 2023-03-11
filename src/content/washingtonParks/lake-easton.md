@@ -1,6 +1,6 @@
 ---
 name: Lake Easton
-location: Lake Easton County
+location: Kittitas County
 category: cascades
 ---
 

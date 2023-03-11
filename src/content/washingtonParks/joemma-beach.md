@@ -1,6 +1,6 @@
 ---
 name: Joemma Beach
-location: Joemma Beach County
+location: Pierce County
 category: puget
 ---
 

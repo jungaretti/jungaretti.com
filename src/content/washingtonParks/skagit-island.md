@@ -1,5 +1,7 @@
 ---
 name: Skagit Island
-location: Skagit Island County
+location: Skagit County
 category: puget
 ---
+
+

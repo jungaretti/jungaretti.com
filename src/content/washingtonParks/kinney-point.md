@@ -1,6 +1,6 @@
 ---
 name: Kinney Point
-location: Kinney Point County
+location: Jefferson County
 category: coast
 ---
 

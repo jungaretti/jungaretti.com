@@ -1,6 +1,6 @@
 ---
 name: Ike Kinswa
-location: Ike Kinswa County
+location: Lewis County
 category: cascades
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: Cama Beach
-location: Cama Beach County
+location: Island County
 category: puget
 ---
 

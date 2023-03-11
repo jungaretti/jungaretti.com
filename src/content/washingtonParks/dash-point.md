@@ -1,6 +1,6 @@
 ---
 name: Dash Point
-location: Dash Point County
+location: King County
 category: puget
 ---
 

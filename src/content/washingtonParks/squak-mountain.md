@@ -1,5 +1,7 @@
 ---
 name: Squak Mountain
-location: Squak Mountain County
+location: King County
 category: puget
 ---
+
+

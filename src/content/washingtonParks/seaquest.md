@@ -1,5 +1,7 @@
 ---
 name: Seaquest
-location: Seaquest County
+location: Cowlitz County
 category: cascades
 ---
+
+

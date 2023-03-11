@@ -1,6 +1,6 @@
 ---
 name: Battle Ground Lake
-location: Battle Ground Lake County
+location: Clark County
 category: cascades
 ---
 

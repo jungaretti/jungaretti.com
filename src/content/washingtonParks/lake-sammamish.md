@@ -1,5 +1,7 @@
 ---
 name: Lake Sammamish
-location: Lake Sammamish County
+location: King County
 category: puget
 ---
+
+

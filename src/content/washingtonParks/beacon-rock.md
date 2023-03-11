@@ -1,6 +1,6 @@
 ---
 name: Beacon Rock
-location: Beacon Rock County
+location: Skamania County
 category: cascades
 ---
 

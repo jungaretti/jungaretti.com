@@ -1,6 +1,6 @@
 ---
 name: Doe Island
-location: Doe Island County
+location: San Juan County
 category: puget
 ---
 

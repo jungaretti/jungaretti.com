@@ -1,5 +1,7 @@
 ---
 name: Pearrygin Lake
-location: Pearrygin Lake County
+location: Okanogan County
 category: cascades
 ---
+
+

@@ -1,5 +1,7 @@
 ---
 name: Saint Edward
-location: Saint Edward County
+location: King County
 category: puget
 ---
+
+

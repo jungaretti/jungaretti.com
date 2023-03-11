@@ -1,6 +1,6 @@
 ---
 name: Griffiths-Priday
-location: Griffiths-Priday County
+location: Grays Harbor County
 category: coast
 ---
 

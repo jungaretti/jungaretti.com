@@ -1,6 +1,6 @@
 ---
 name: Kitsap Memorial
-location: Kitsap Memorial County
+location: Kitsap County
 category: puget
 ---
 

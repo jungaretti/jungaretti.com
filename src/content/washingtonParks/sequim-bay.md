@@ -1,5 +1,7 @@
 ---
 name: Sequim Bay
-location: Sequim Bay County
+location: Clallam County
 category: coast
 ---
+
+

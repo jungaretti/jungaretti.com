@@ -1,6 +1,6 @@
 ---
 name: Goldendale Observatory
-location: Goldendale Observatory County
+location: Klickitat County
 category: cascades
 ---
 

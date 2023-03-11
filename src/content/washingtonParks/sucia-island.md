@@ -1,5 +1,7 @@
 ---
 name: Sucia Island
-location: Sucia Island County
+location: San Juan County
 category: puget
 ---
+
+

@@ -1,5 +1,7 @@
 ---
 name: Stretch Point
-location: Stretch Point County
+location: Mason County
 category: puget
 ---
+
+

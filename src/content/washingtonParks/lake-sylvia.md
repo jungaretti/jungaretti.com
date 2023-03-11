@@ -1,5 +1,7 @@
 ---
 name: Lake Sylvia
-location: Lake Sylvia County
+location: Grays Harbor County
 category: coast
 ---
+
+

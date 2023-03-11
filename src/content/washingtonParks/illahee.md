@@ -1,6 +1,6 @@
 ---
 name: Illahee
-location: Illahee County
+location: Kitsap County
 category: puget
 ---
 

@@ -1,5 +1,7 @@
 ---
 name: Ocean City
-location: Ocean City County
+location: Grays Harbor County
 category: coast
 ---
+
+
