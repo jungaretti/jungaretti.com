@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import type { Metadata } from "../../types/Metadata";
+import ParksLayout from "../../layouts/ParksLayout.astro";
+
+const meta: Metadata = {
+  title: "WA State Parks - JP Ungaretti",
+  description: "List of state parks in Washington that I want to visit.",
+};
+
+const parks = await getCollection("washingtonParks");
+---
+
+<ParksLayout
+  meta={meta}
+  scope="WA State"
+  parks={parks.map(({ data }) => data)}
+/>
