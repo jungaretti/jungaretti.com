@@ -20,19 +20,9 @@ toVisit.sort((a, b) => a.category.localeCompare(b.category));
 const all = [...visited, ...toVisit];
 ---
 
-<style>
-  .park-list {
-    @apply flex;
-    @apply flex-col;
-    @apply sm:flex-row;
-    @apply sm:flex-wrap;
-    @apply gap-2;
-  }
-</style>
-
 <BaseLayout meta={meta}>
   <Section title={`${scope} Parks`}>
-    <div class="park-list">
+    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-2">
       {
         all.map((park) => (
           <div class="sm:flex-grow">
