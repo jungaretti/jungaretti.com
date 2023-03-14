@@ -1,14 +1,18 @@
 # My Website
 
-My favorite photos and projects.
+My favorite photos and projects. Built with Astro, Tailwind CSS, and Vercel.
 
 ## Getting Started
 
-Clone this repo, install its dependencies, and start a local dev server.
+Clone this repo, install its dependencies, and start a local server.
 
 ```sh
+# Use the version of node from .nvmrc
+fnm use
+
+# Install dependencies and start a server
 npm install
-npm run start
+npm run dev
 ```
 
 ## Built With
