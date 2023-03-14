@@ -1,8 +1,8 @@
 import { defineCollection, z } from "astro:content";
-import { artSchema } from "../types/Art";
-import { photoSchema } from "../types/Photo";
-import { nationalParkSchema } from "../types/NationalPark";
-import { washingtonParkSchema } from "../types/WashingtonPark";
+import { artSchema } from "../lib/Art";
+import { photoSchema } from "../lib/Photo";
+import { nationalParkSchema } from "../lib/NationalPark";
+import { washingtonParkSchema } from "../lib/WashingtonPark";
 
 const art = defineCollection({
   schema: artSchema,
