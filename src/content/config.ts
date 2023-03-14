@@ -1,4 +1,4 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
 import { artSchema } from "../lib/Art";
 import { photoSchema } from "../lib/Photo";
 import { nationalParkSchema } from "../lib/NationalPark";
