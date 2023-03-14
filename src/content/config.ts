@@ -1,31 +1,15 @@
 import { defineCollection, z } from "astro:content";
+import { artSchema } from "../types/Art";
+import { photoSchema } from "../types/Photo";
 import { nationalParkSchema } from "../types/NationalPark";
 import { washingtonParkSchema } from "../types/WashingtonPark";
 
 const art = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    src: z.object({
-      compressed: z.string(),
-      original: z.string(),
-    }),
-    alt: z.string(),
-  }),
+  schema: artSchema,
 });
 
 const photos = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    location: z.string(),
-    date: z.date(),
-    src: z.object({
-      compressed: z.string(),
-      original: z.string(),
-    }),
-    alt: z.string(),
-  }),
+  schema: photoSchema,
 });
 
 const nationalParks = defineCollection({
