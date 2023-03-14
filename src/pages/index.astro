@@ -2,9 +2,9 @@
 import { getEntryBySlug } from "astro:content";
 import type { Metadata } from "../types/Metadata";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
-import Section from "../components/Section.astro";
-import ImagePreview from "../components/ImagePreview.astro";
+import Hero from "@components/Hero.astro";
+import Section from "@components/Section.astro";
+import ImagePreview from "@components/ImagePreview.astro";
 
 const photos = await Promise.all([
   getEntryBySlug("photos", "raggi-del-pianeta"),

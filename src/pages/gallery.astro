@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import type { Metadata } from "../types/Metadata";
-import Section from "../components/Section.astro";
+import Section from "@components/Section.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ImagePreview from "../components/ImagePreview.astro";
+import ImagePreview from "@components/ImagePreview.astro";
 
 const photos = await getCollection("photos");
 photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
