@@ -4,7 +4,8 @@
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
             "version": "18.12.1"
-        }
+        },
+        "ghcr.io/devcontainers/features/github-cli": {}
     },
     "postCreateCommand": "npm install",
     "customizations": {
