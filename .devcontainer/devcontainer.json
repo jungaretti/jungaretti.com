@@ -5,7 +5,8 @@
         "ghcr.io/devcontainers/features/node:1": {
             "version": "18.12.1"
         },
-        "ghcr.io/devcontainers/features/github-cli": {}
+        "ghcr.io/devcontainers/features/github-cli": {},
+        "ghcr.io/jungaretti/features/vim": {}
     },
     "postCreateCommand": "npm install",
     "customizations": {
