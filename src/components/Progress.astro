@@ -9,11 +9,11 @@ const { value, total, valueDetail, totalDetail } = Astro.props;
 ---
 
 <div>
-  <div class="border-flash border-2 rounded h-4">
-    <div class="bg-flash h-full" style={{ width: `${(value / total) * 100}%` }}>
+  <div class="h-4 rounded border-2 border-flash">
+    <div class="h-full bg-flash" style={{ width: `${(value / total) * 100}%` }}>
     </div>
   </div>
-  <div class="flex flex-row mt-1">
+  <div class="mt-1 flex flex-row">
     <div class="flex-grow">
       <p>{valueDetail}</p>
     </div>
