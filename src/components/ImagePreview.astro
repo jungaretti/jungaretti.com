@@ -1,14 +1,18 @@
 ---
+import { Image } from 'astro:assets';
+
 interface Props {
   src: string;
   alt: string;
+  width: number;
+  height: number;
   href?: string;
 }
-const { src, alt, href } = Astro.props;
+const { src, alt, width, height, href } = Astro.props;
 ---
 
 <div>
   <a href={href}>
-    <img src={src} alt={alt} class="w-full rounded-lg" />
+    <Image src={src} alt={alt} width={width} height={height} class="w-full rounded-lg" />
   </a>
 </div>

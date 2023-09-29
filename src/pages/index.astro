@@ -29,8 +29,10 @@ const meta: Metadata = {
       {
         photos.map(({ data, slug }) => (
           <ImagePreview
-            src={data.src.compressed}
+            src={data.compressed.src}
             alt={data.alt}
+            width={data.compressed.width}
+            height={data.compressed.height}
             href={`/photos/${slug}`}
           />
         ))
