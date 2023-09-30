@@ -1,6 +1,6 @@
 import { z } from "astro:content";
 
-export const artSchema = z.object({
+export const imageSchema = z.object({
   title: z.string(),
   description: z.string(),
   src: z.object({
@@ -10,4 +10,4 @@ export const artSchema = z.object({
   alt: z.string(),
 });
 
-export type Art = z.infer<typeof artSchema>;
+export type Image = z.infer<typeof imageSchema>;
