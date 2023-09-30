@@ -8,7 +8,7 @@ const imageFileSchema = z.object({
 export const imageSchema = z.object({
   alt: z.string(),
   original: imageFileSchema,
-  compressed: z.optional(imageFileSchema),
+  compressed: imageFileSchema,
   title: z.string(),
   description: z.string(),
 });
