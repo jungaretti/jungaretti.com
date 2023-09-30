@@ -1,10 +1,11 @@
 ---
 title: Mendota Mind
 description: A chilly night on Lake Mendota
-src:
+original:
+  { src: https://jungaretti.blob.core.windows.net/gallery/mendota-mind.jpg }
+compressed:
   {
-    compressed: https://jungaretti.blob.core.windows.net/gallery/mendota-mind-preview.jpg,
-    original: https://jungaretti.blob.core.windows.net/gallery/mendota-mind.jpg,
+    src: https://jungaretti.blob.core.windows.net/gallery/mendota-mind-preview.jpg,
   }
 alt: A chilly night on Lake Mendota
 ---
