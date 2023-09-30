@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 const meta: Metadata = {
   title: `${photo.data.title} - JP Ungaretti`,
   description: photo.data.description,
-  imageSrc: photo.data.src.compressed,
+  imageSrc: photo.data.compressed?.src || photo.data.original.src,
 };
 ---
 
@@ -28,7 +28,7 @@ const meta: Metadata = {
   <Section title={photo.data.title}>
     <div>
       <img
-        src={photo.data.src.compressed}
+        src={photo.data.compressed?.src || photo.data.original.src}
         alt={photo.data.alt}
         class="w-full rounded-xl"
       />
@@ -49,7 +49,7 @@ const meta: Metadata = {
       </div>
       <div class="mt-3 md:mt-0">
         <p>
-          <a href={photo.data.src.original} class="underline">
+          <a href={photo.data.original.src} class="underline">
             Download Original
           </a>
         </p>

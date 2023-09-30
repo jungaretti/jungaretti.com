@@ -23,7 +23,7 @@ const meta: Metadata = {
       {
         photos.map((photo) => (
           <ImagePreview
-            src={photo.data.src.compressed}
+            src={photo.data.compressed?.src || photo.data.original.src}
             alt={photo.data.alt}
             href={`/photos/${photo.slug}`}
           />
@@ -35,7 +35,7 @@ const meta: Metadata = {
     <div class="grid-standard">
       {
         art.map((a) => (
-          <ImagePreview src={a.data.src.compressed} alt={a.data.alt} />
+          <ImagePreview src={a.data.compressed?.src || a.data.original.src} alt={a.data.alt} />
         ))
       }
     </div>

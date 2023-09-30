@@ -4,9 +4,12 @@ description: Boat sailing in front of sunset over the Olympic Peninsula
 location: Golden Gardens Park
 date: 2021-09-24
 alt: Boat sailing in front of sunset over the Olympic Peninsula
-src:
+original:
   {
-    compressed: https://jungaretti.blob.core.windows.net/gallery/new-horizons-preview.jpg,
-    original: https://jungaretti.blob.core.windows.net/gallery/new-horizons.jpg,
+    src: https://jungaretti.blob.core.windows.net/gallery/new-horizons.jpg,
+  }
+compressed:
+  {
+    src: https://jungaretti.blob.core.windows.net/gallery/new-horizons-preview.jpg,
   }
 ---
