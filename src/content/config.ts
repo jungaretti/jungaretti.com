@@ -1,6 +1,6 @@
 import { defineCollection } from "astro:content";
-import { imageSchema } from "../lib/Art";
 import { photoSchema } from "../lib/Photo";
+import { imageSchema } from "../lib/Image";
 import { nationalParkSchema } from "../lib/NationalPark";
 import { washingtonParkSchema } from "../lib/WashingtonPark";
 

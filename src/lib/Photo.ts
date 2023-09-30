@@ -1,5 +1,5 @@
 import { z } from "astro:content";
-import { imageSchema } from "./Art";
+import { imageSchema } from "./Image";
 
 export const photoSchema = z
   .object({
