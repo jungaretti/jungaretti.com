@@ -35,7 +35,10 @@ const meta: Metadata = {
     <div class="grid-standard">
       {
         art.map((a) => (
-          <ImagePreview src={a.data.compressed?.src || a.data.original.src} alt={a.data.alt} />
+          <ImagePreview
+            src={a.data.compressed?.src || a.data.original.src}
+            alt={a.data.alt}
+          />
         ))
       }
     </div>

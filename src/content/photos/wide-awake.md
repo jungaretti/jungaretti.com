@@ -5,9 +5,7 @@ location: Yellowstone National Park
 date: 2022-07-03
 alt: The Milky Way floating over a lake at Yellowstone National Park
 original:
-  {
-    src: https://jungaretti.blob.core.windows.net/gallery/wide-awake.jpg,
-  }
+  { src: https://jungaretti.blob.core.windows.net/gallery/wide-awake.jpg }
 compressed:
   {
     src: https://jungaretti.blob.core.windows.net/gallery/wide-awake-preview.jpg,
