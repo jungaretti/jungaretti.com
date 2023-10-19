@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import type { Metadata } from "@lib/Metadata";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Section from "@components/Section.astro";
+import ImagePreview from "@components/ImagePreview.astro";
+
+const meta: Metadata = {
+  title: "Daily Italian",
+  description:
+    "Learn Italian with a widget on your iPhone's home screen.",
+};
+---
+
+<BaseLayout meta={meta}>
+  <Section title="Daily Italian">
+    <div class="space-y-2">
+        <p>Learn Italian with a widget on your iPhone's home screen.</p>
+        <p><span class="font-bold">Privacy Policy:</span> Daily Italian does not collect, store, or share any personal information. No third-party integrations access personal data. Use with peace of mind.</p>
+    </div>
+  </Section>
+</BaseLayout>
