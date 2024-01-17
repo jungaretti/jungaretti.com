@@ -1,10 +1,8 @@
 ---
 import type { Metadata } from "@lib/Metadata";
-import { cardDetail, type Park } from "@lib/Park";
-import { categoryColor } from "@lib/CardColor";
+import type { Park } from "@lib/Park";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Section from "@components/Section.astro";
-import Card from "@components/Card.astro";
 import Progress from "@components/Progress.astro";
 
 interface Props {
@@ -15,10 +13,9 @@ interface Props {
 const { meta, scope, parks } = Astro.props;
 
 const visited = parks.filter((park) => park.visited);
-visited.sort((a, b) => b.visited!.valueOf() - a.visited!.valueOf());
 const toVisit = parks.filter((park) => !park.visited);
-toVisit.sort((a, b) => a.category.localeCompare(b.category));
 const all = [...visited, ...toVisit];
+all.sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <BaseLayout meta={meta}>
@@ -31,16 +28,24 @@ const all = [...visited, ...toVisit];
         totalDetail={`${all.length} total`}
       />
     </div>
-    <div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
       {
-        all.map((park) => (
-          <div class="sm:flex-grow">
-            <Card
-              title={park.name}
-              detail={cardDetail(park)}
-              color={categoryColor(park.category)}
-              outline={park.visited === undefined}
-            />
+        parks.map((park) => (
+          <div class="flex flex-row items-center gap-3">
+            <div>
+              <p class="text-lg">{park.visited ? "✅" : "📍"}</p>
+            </div>
+            <div>
+              <p class="text-lg font-bold">{park.name}</p>
+              <p>
+                {park.visited
+                  ? `Visited ${park.visited.toLocaleString("en-US", {
+                      month: "short",
+                      year: "numeric",
+                    })}, ${park.location}`
+                  : park.location}
+              </p>
+            </div>
           </div>
         ))
       }

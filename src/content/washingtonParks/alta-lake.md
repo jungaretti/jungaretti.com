@@ -1,0 +1,4 @@
+---
+name: Alta Lake
+location: Okanogan County
+---

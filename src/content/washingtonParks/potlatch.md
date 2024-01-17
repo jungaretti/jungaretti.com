@@ -1,0 +1,4 @@
+---
+name: Potlatch
+location: Mason County
+---

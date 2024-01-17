@@ -1,0 +1,4 @@
+---
+name: Bridgeport
+location: Okanogan County
+---

@@ -1,0 +1,4 @@
+---
+name: Lake Easton
+location: Kittitas County
+---

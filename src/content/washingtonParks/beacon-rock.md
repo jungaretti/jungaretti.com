@@ -1,0 +1,4 @@
+---
+name: Beacon Rock
+location: Skamania County
+---

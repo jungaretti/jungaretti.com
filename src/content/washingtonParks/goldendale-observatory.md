@@ -1,0 +1,4 @@
+---
+name: Goldendale Observatory
+location: Klickitat County
+---

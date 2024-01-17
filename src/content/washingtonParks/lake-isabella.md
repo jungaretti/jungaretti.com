@@ -1,0 +1,4 @@
+---
+name: Lake Isabella
+location: Mason County
+---

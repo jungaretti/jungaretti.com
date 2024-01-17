@@ -1,0 +1,4 @@
+---
+name: Leadbetter Point
+location: Pacific County
+---

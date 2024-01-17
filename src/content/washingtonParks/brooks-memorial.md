@@ -1,0 +1,4 @@
+---
+name: Brooks Memorial
+location: Klickitat County
+---

@@ -1,0 +1,4 @@
+---
+name: Ike Kinswa
+location: Lewis County
+---

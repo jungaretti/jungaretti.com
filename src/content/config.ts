@@ -12,17 +12,17 @@ const photos = defineCollection({
   schema: photoSchema,
 });
 
-const national = defineCollection({
+const nationalParks = defineCollection({
   schema: nationalParkSchema,
 });
 
-const washington = defineCollection({
+const washingtonParks = defineCollection({
   schema: washingtonParkSchema,
 });
 
 export const collections = {
   art,
   photos,
-  national,
-  washington,
+  national: nationalParks,
+  washington: washingtonParks,
 };

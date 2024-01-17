@@ -1,0 +1,4 @@
+---
+name: Birch Bay
+location: Whatcom County
+---

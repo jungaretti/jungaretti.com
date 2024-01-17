@@ -1,0 +1,5 @@
+---
+name: Cape Disappointment
+location: Pacific County
+visited: 2023-07-17
+---

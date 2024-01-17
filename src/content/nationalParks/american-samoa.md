@@ -1,0 +1,4 @@
+---
+name: American Samoa
+location: American Samoa
+---
