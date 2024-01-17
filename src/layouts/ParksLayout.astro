@@ -4,6 +4,7 @@ import type { Park } from "@lib/Park";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Section from "@components/Section.astro";
 import Progress from "@components/Progress.astro";
+import ParkGrid from "@components/ParkGrid.astro";
 
 interface Props {
   meta: Metadata;
@@ -28,27 +29,8 @@ all.sort((a, b) => a.name.localeCompare(b.name));
         totalDetail={`${all.length} total`}
       />
     </div>
-    <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
-      {
-        parks.map((park) => (
-          <div class="flex flex-row items-center gap-3">
-            <div>
-              <p class="text-lg">{park.visited ? "✅" : "📍"}</p>
-            </div>
-            <div>
-              <p class="text-lg font-bold">{park.name}</p>
-              <p>
-                {park.visited
-                  ? `Visited ${park.visited.toLocaleString("en-US", {
-                      month: "short",
-                      year: "numeric",
-                    })}, ${park.location}`
-                  : park.location}
-              </p>
-            </div>
-          </div>
-        ))
-      }
+    <div>
+      <ParkGrid parks={all} />
     </div>
   </Section>
 </BaseLayout>
