@@ -1,8 +1,7 @@
 import { defineCollection } from "astro:content";
 import { photoSchema } from "../lib/Photo";
 import { imageSchema } from "../lib/Image";
-import { nationalParkSchema } from "../lib/NationalPark";
-import { washingtonParkSchema } from "../lib/WashingtonPark";
+import { parkSchema } from "@lib/Park";
 
 const art = defineCollection({
   schema: imageSchema,
@@ -13,16 +12,16 @@ const photos = defineCollection({
 });
 
 const nationalParks = defineCollection({
-  schema: nationalParkSchema,
+  schema: parkSchema,
 });
 
 const washingtonParks = defineCollection({
-  schema: washingtonParkSchema,
+  schema: parkSchema,
 });
 
 export const collections = {
   art,
   photos,
-  national: nationalParks,
-  washington: washingtonParks,
+  nationalParks,
+  washingtonParks,
 };
