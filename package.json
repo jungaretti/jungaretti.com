@@ -7,7 +7,7 @@
     "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier --write README.md src src/**/*.astro"
+    "format": "prettier --write README.md src"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
