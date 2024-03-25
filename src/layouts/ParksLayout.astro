@@ -3,7 +3,7 @@ import type { Metadata } from "@lib/Metadata";
 import type { Park } from "@lib/Park";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Section from "@components/Section.astro";
-import ParkDashboard from "@components/ParkDashboard.astro";
+import ParksDashboard from "@components/ParksDashboard.astro";
 
 interface Props {
   meta: Metadata;
@@ -20,6 +20,6 @@ all.sort((a, b) => a.name.localeCompare(b.name));
 
 <BaseLayout meta={meta}>
   <Section title={`${scope} Parks`}>
-    <ParkDashboard parks={parks} />
+    <ParksDashboard parks={parks} />
   </Section>
 </BaseLayout>
