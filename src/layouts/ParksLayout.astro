@@ -7,14 +7,14 @@ import ParksDashboard from "@components/ParksDashboard.astro";
 
 interface Props {
   meta: Metadata;
-  scope: string;
+  title: string;
   parks: Park[];
 }
-const { meta, scope, parks } = Astro.props;
+const { meta, title, parks } = Astro.props;
 ---
 
 <BaseLayout meta={meta}>
-  <Section title={`${scope} Parks`}>
+  <Section title={title}>
     <ParksDashboard parks={parks} />
   </Section>
 </BaseLayout>

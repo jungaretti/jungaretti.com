@@ -4,7 +4,7 @@ import type { Metadata } from "@lib/Metadata";
 import ParksLayout from "@layouts/ParksLayout.astro";
 
 const meta: Metadata = {
-  title: "WA State Parks - JP Ungaretti",
+  title: "Washington State Parks - JP Ungaretti",
   description: "List of state parks in Washington that I want to visit.",
 };
 
@@ -13,6 +13,6 @@ const parks = await getCollection("washingtonParks");
 
 <ParksLayout
   meta={meta}
-  scope="WA State"
+  title="Washington State"
   parks={parks.map(({ data }) => data)}
 />
