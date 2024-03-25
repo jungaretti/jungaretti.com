@@ -1,32 +1,13 @@
 ---
 import type { Park } from "@lib/Park";
+import ParkGridCell from "./ParkGridCell.astro";
 
 interface Props {
   parks: Park[];
 }
 const { parks } = Astro.props;
-
-const parkDetail = (park: Park) =>
-  park.visited
-    ? `Visited ${park.visited.toLocaleString("en-US", {
-        month: "short",
-        year: "numeric",
-      })}, ${park.location}`
-    : park.location;
 ---
 
 <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
-  {
-    parks.map((park) => (
-      <div class="flex flex-row items-center gap-3">
-        <div>
-          <p class="text-lg">{park.visited ? "✅" : "📍"}</p>
-        </div>
-        <div>
-          <p class="text-lg font-bold">{park.name}</p>
-          <p>{parkDetail(park)}</p>
-        </div>
-      </div>
-    ))
-  }
+  {parks.map((park) => <ParkGridCell park={park} />)}
 </div>
