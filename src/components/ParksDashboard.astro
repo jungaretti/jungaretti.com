@@ -1,0 +1,27 @@
+---
+import type { Park } from "@lib/Park";
+import ParkGrid from "./ParkGrid.astro";
+import Progress from "./Progress.astro";
+
+interface Props {
+  parks: Park[];
+}
+const { parks } = Astro.props;
+
+const visited = parks.filter((park) => park.visited);
+visited.sort((a, b) => b.visited!.getTime() - a.visited!.getTime());
+const unvisited = parks.filter((park) => !park.visited);
+unvisited.sort((a, b) => a.name.localeCompare(b.name));
+const all = [...visited, ...unvisited];
+---
+
+<div class="space-y-3">
+  <Progress
+    value={visited.length}
+    total={all.length}
+    valueDetail={`${visited.length} visited`}
+    totalDetail={`${all.length} total`}
+  />
+  <ParkGrid parks={visited} />
+  <ParkGrid parks={unvisited} />
+</div>

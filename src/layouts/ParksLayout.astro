@@ -3,34 +3,18 @@ import type { Metadata } from "@lib/Metadata";
 import type { Park } from "@lib/Park";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Section from "@components/Section.astro";
-import Progress from "@components/Progress.astro";
-import ParkGrid from "@components/ParkGrid.astro";
+import ParksDashboard from "@components/ParksDashboard.astro";
 
 interface Props {
   meta: Metadata;
-  scope: string;
-  parks: (Park & { category: string })[];
+  title: string;
+  parks: Park[];
 }
-const { meta, scope, parks } = Astro.props;
-
-const visited = parks.filter((park) => park.visited);
-const toVisit = parks.filter((park) => !park.visited);
-const all = [...visited, ...toVisit];
-all.sort((a, b) => a.name.localeCompare(b.name));
+const { meta, title, parks } = Astro.props;
 ---
 
 <BaseLayout meta={meta}>
-  <Section title={`${scope} Parks`}>
-    <div>
-      <Progress
-        value={visited.length}
-        total={all.length}
-        valueDetail={`${visited.length} visited`}
-        totalDetail={`${all.length} total`}
-      />
-    </div>
-    <div class="mt-3">
-      <ParkGrid parks={all} />
-    </div>
+  <Section title={title}>
+    <ParksDashboard parks={parks} />
   </Section>
 </BaseLayout>

@@ -1,0 +1,25 @@
+---
+import type { Park } from "@lib/Park";
+
+interface Props {
+  park: Park;
+}
+const { park } = Astro.props;
+
+const detail = park.visited
+  ? `Visited ${park.visited.toLocaleString("en-US", {
+      month: "short",
+      year: "numeric",
+    })}, ${park.location}`
+  : park.location;
+---
+
+<div class="flex flex-row items-center gap-3">
+  <div>
+    <p class="text-lg">{park.visited ? "✅" : "📍"}</p>
+  </div>
+  <div>
+    <p class="text-lg font-bold">{park.name}</p>
+    <p>{detail}</p>
+  </div>
+</div>
