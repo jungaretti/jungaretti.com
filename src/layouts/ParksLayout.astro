@@ -8,14 +8,9 @@ import ParksDashboard from "@components/ParksDashboard.astro";
 interface Props {
   meta: Metadata;
   scope: string;
-  parks: (Park & { category: string })[];
+  parks: Park[];
 }
 const { meta, scope, parks } = Astro.props;
-
-const visited = parks.filter((park) => park.visited);
-const toVisit = parks.filter((park) => !park.visited);
-const all = [...visited, ...toVisit];
-all.sort((a, b) => a.name.localeCompare(b.name));
 ---
 
 <BaseLayout meta={meta}>
