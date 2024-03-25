@@ -8,12 +8,10 @@ interface Props {
 }
 const { parks } = Astro.props;
 
-const visited = parks
-  .filter((park) => park.visited)
-  .toSorted((a, b) => b.visited!.getTime() - a.visited!.getTime());
-const unvisited = parks
-  .filter((park) => !park.visited)
-  .toSorted((a, b) => a.name.localeCompare(b.name));
+const visited = parks.filter((park) => park.visited);
+visited.sort((a, b) => b.visited!.getTime() - a.visited!.getTime());
+const unvisited = parks.filter((park) => !park.visited);
+unvisited.sort((a, b) => a.name.localeCompare(b.name));
 const all = [...visited, ...unvisited];
 ---
 
