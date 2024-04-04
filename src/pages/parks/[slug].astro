@@ -7,6 +7,9 @@ import type { Park } from "@lib/Park";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
+  const nationalParksCollection = await getCollection("nationalParks");
+  const washingtonStateParksCollection = await getCollection("washingtonParks");
+
   return [
     {
       params: { slug: "national" },
@@ -16,7 +19,7 @@ export async function getStaticPaths() {
           description: "List of national parks that I want to visit.",
         },
         title: "National Parks",
-        parks: (await getCollection("nationalParks")).map(({ data }) => data),
+        parks: nationalParksCollection.map(({ data }) => data),
       },
     },
     {
@@ -28,7 +31,7 @@ export async function getStaticPaths() {
             "List of state parks in Washington that I want to visit.",
         },
         title: "Washington State",
-        parks: (await getCollection("washingtonParks")).map(({ data }) => data),
+        parks: washingtonStateParksCollection.map(({ data }) => data),
       },
     },
   ];
