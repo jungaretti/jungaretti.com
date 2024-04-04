@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.3.5"
+    "astro": "^4.5.15"
   },
   "devDependencies": {
     "prettier": "3.2.5",
