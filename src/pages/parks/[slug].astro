@@ -1,0 +1,49 @@
+---
+import ParksDashboard from "@components/ParksDashboard.astro";
+import Section from "@components/Section.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import type { Metadata } from "@lib/Metadata";
+import type { Park } from "@lib/Park";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  return [
+    {
+      params: { slug: "national" },
+      props: {
+        meta: {
+          title: "National Parks - JP Ungaretti",
+          description: "List of national parks that I want to visit.",
+        },
+        title: "National Parks",
+        parks: (await getCollection("nationalParks")).map(({ data }) => data),
+      },
+    },
+    {
+      params: { slug: "washington" },
+      props: {
+        meta: {
+          title: "Washington State Parks - JP Ungaretti",
+          description:
+            "List of state parks in Washington that I want to visit.",
+        },
+        title: "Washington State",
+        parks: (await getCollection("washingtonParks")).map(({ data }) => data),
+      },
+    },
+  ];
+}
+
+interface Props {
+  meta: Metadata;
+  title: string;
+  parks: Park[];
+}
+const { meta, title, parks } = Astro.props;
+---
+
+<BaseLayout meta={meta}>
+  <Section title={title}>
+    <ParksDashboard parks={parks} />
+  </Section>
+</BaseLayout>
