@@ -1,4 +1,3 @@
-import { optional } from "astro/zod";
 import { z } from "astro:content";
 
 const imageFileSchema = z.object({
