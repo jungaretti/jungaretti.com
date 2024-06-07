@@ -19,49 +19,51 @@ const { meta } = Astro.props;
   }
 </style>
 
-<BaseHead meta={meta} />
-<body class="bg-griko text-cultured">
-  <header>
-    <div class="frame my-8">
-      <Navbar
-        links={[
-          { text: "Home", href: "/" },
-          { text: "Gallery", href: "/gallery" },
-        ]}
-      />
-    </div>
-  </header>
-  <main>
-    <div class="frame space-y-8">
-      <slot />
-    </div>
-  </main>
-  <footer>
-    <div class="frame my-6 md:my-8">
-      <hr class="mb-3 opacity-20" />
-      <div
-        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-      >
-        <div>
-          <h5 class="footer-header">Here</h5>
-          <ul class="footer-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="footer-header">There</h5>
-          <ul class="footer-list">
-            <li><a href="https://github.com/jungaretti">GitHub</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5 class="footer-header">Everywhere</h5>
-          <ul class="footer-list">
-            <li><p>Photography © 2023 JP Ungaretti.</p></li>
-          </ul>
+<html transition:animate="none">
+  <BaseHead meta={meta} />
+  <body class="bg-griko text-cultured">
+    <header>
+      <div class="frame my-8">
+        <Navbar
+          links={[
+            { text: "Home", href: "/" },
+            { text: "Gallery", href: "/gallery" },
+          ]}
+        />
+      </div>
+    </header>
+    <main>
+      <div class="frame space-y-8">
+        <slot />
+      </div>
+    </main>
+    <footer>
+      <div class="frame my-6 md:my-8">
+        <hr class="mb-3 opacity-20" />
+        <div
+          class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <div>
+            <h5 class="footer-header">Here</h5>
+            <ul class="footer-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer-header">There</h5>
+            <ul class="footer-list">
+              <li><a href="https://github.com/jungaretti">GitHub</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="footer-header">Everywhere</h5>
+            <ul class="footer-list">
+              <li><p>Photography © 2023 JP Ungaretti.</p></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
+</html>
