@@ -1,5 +1,5 @@
 ---
 name: Voyageurs
 location: Minnesota
-visited: 2023-06-30
+visited: 2024-06-30
 ---
