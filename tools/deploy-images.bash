@@ -14,33 +14,32 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-function upload_to_azure {
-    for file in "$@"; do
-        local name="${file##*/}"
-        az storage blob upload \
-            --account-name "$account_name" \
-            --container-name "$container_name" \
-            --name "$name" \
-            --file "$file" \
-            --overwrite \
-            --auth-mode login
-    done
-}
-
 for file in "$@"; do
     base="${file%.*}"
 
     original="$base.jpg"
     echo "Converting: $file to $original"
-    [ -e "$original" ] && echo "$original already exists" || magick convert "$file" -quality 60 "$jpg"
+    [ -e "$original" ] && echo "$original already exists" || magick "$file" -quality 60 "$original"
 
     echo "Uploading: $original"
-    upload_to_azure "$original"
+    az storage blob upload \
+        --account-name "$account_name" \
+        --container-name "$container_name" \
+        --name "${original##*/}" \
+        --file "$original" \
+        --overwrite \
+        --auth-mode login
 
     preview="$base-preview.jpg"
-    echo "Converting: $file to $jpg"
-    [ -e "$preview" ] && echo "$preview already exists" || magick convert "$file" -quality 60 -resize 1600x1600 "$original"
+    echo "Converting: $file to $preview"
+    [ -e "$preview" ] && echo "$preview already exists" || magick "$file" -quality 60 -resize 1600x1600 "$preview"
 
     echo "Uploading: $preview"
-    upload_to_azure "$preview"
+    az storage blob upload \
+        --account-name "$account_name" \
+        --container-name "$container_name" \
+        --name "${preview##*/}" \
+        --file "$preview" \
+        --overwrite \
+        --auth-mode login
 done
