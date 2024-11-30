@@ -9,10 +9,10 @@ import ImagePreview from "@components/ImagePreview.astro";
 const photos = await Promise.all([
   getEntryBySlug("photos", "raggi-del-pianeta"),
   getEntryBySlug("photos", "new-horizons"),
-  getEntryBySlug("photos", "riveder-le-stelle"),
+  getEntryBySlug("photos", "toadstool"),
   getEntryBySlug("photos", "lone-moose"),
+  getEntryBySlug("photos", "riveder-le-stelle"),
   getEntryBySlug("photos", "mio-gatto"),
-  getEntryBySlug("photos", "wide-awake"),
 ]);
 
 const meta: Metadata = {
