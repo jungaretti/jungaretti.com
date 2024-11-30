@@ -2,48 +2,44 @@
 
 set -e
 
-function upload_to_azure {
-    local account_name="badger"
-    local container_name="gallery"
-    
-    for file in "$@"; do
-        local name="${file##*/}"
-        az storage blob upload \
-            --account-name "$account_name" \
-            --container-name "$container_name" \
-            --name "$name" \
-            --file "$file" \
-            --overwrite \
-            --auth-mode login
-    done
-}
+account_name="jungaretti"
+container_name="gallery"
 
-function deploy_original {
-    for file in "$@"; do
-        local base="${file%.*}"
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        --account-name) account_name="$2"; shift ;;
+        --container-name) container_name="$2"; shift ;;
+        *) break ;;
+    esac
+    shift
+done
 
-        local jpg="$base.jpg"
-        echo "Converting: $file to $jpg"
-        [ -e "$jpg" ] && echo "$jpg already exists" || convert "$file" -quality 60 "$jpg"
+for file in "$@"; do
+    base="${file%.*}"
 
-        echo "Uploading: $jpg"
-        upload_to_azure "$jpg"
-    done
-}
+    original="$base.jpg"
+    echo "Converting: $file to $original"
+    [ -e "$original" ] && echo "$original already exists" || magick "$file" -quality 60 "$original"
 
-function deploy_preview {
-    for file in "$@"; do
-        local base="${file%.*}"
+    echo "Uploading: $original"
+    az storage blob upload \
+        --account-name "$account_name" \
+        --container-name "$container_name" \
+        --name "${original##*/}" \
+        --file "$original" \
+        --overwrite \
+        --auth-mode login
 
-        local jpg="$base-preview.jpg"
-        echo "Converting: $file to $jpg"
-        [ -e "$jpg" ] && echo "$jpg already exists" || convert "$file" -quality 60 -resize 1600x1600 "$jpg"
+    preview="$base-preview.jpg"
+    echo "Converting: $file to $preview"
+    [ -e "$preview" ] && echo "$preview already exists" || magick "$file" -quality 60 -resize 1600x1600 "$preview"
 
-        echo "Uploading: $jpg"
-        upload_to_azure "$jpg"
-    done
-}
-
-az login
-deploy_original "$@"
-deploy_preview "$@"
+    echo "Uploading: $preview"
+    az storage blob upload \
+        --account-name "$account_name" \
+        --container-name "$container_name" \
+        --name "${preview##*/}" \
+        --file "$preview" \
+        --overwrite \
+        --auth-mode login
+done
