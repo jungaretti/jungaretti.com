@@ -1,4 +1,5 @@
 ---
 name: Moran
 location: San Juan County
+visited: 2025-02-08
 ---
