@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-griko: #27292b;
+  --color-cultured: #f9f9f9;
+  --color-flash: #ffc24f;
+  --font-inter: "Inter", sans-serif;
+}
+
+.frame {
+  @apply max-w-screen-lg;
+  @apply mx-auto;
+  @apply px-4;
+  @apply md:px-6;
+}
+
+.grid-standard {
+  @apply grid;
+  @apply grid-cols-1;
+  @apply md:grid-cols-2;
+  @apply gap-3;
+}
+
+.footer-header {
+  @apply font-bold;
+}
+.footer-list {
+  @apply space-y-0.5;
+  @apply mt-1;
+}
