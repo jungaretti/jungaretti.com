@@ -1,4 +1,0 @@
----
-name: Posey Island
-location: San Juan County
----

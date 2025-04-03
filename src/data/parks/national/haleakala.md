@@ -1,4 +1,0 @@
----
-name: Haleakalā
-location: Hawai'i
----

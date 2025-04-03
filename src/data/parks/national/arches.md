@@ -1,5 +1,0 @@
----
-name: Arches
-location: Utah
-visited: 2021-01-12
----

@@ -1,4 +1,0 @@
----
-name: Battle Ground Lake
-location: Clark County
----

@@ -1,4 +1,0 @@
----
-name: Mount Spokane
-location: Spokane County
----

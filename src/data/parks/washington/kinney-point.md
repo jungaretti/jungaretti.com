@@ -1,4 +1,0 @@
----
-name: Kinney Point
-location: Jefferson County
----

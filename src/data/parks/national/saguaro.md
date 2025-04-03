@@ -1,4 +1,0 @@
----
-name: Saguaro
-location: Arizona
----

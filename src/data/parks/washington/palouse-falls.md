@@ -1,4 +1,0 @@
----
-name: Palouse Falls
-location: Franklin County
----

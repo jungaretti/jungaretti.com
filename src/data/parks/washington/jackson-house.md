@@ -1,4 +1,0 @@
----
-name: Jackson House
-location: Lewis County
----

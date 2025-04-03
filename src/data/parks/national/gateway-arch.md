@@ -1,4 +1,0 @@
----
-name: Gateway Arch
-location: Missouri
----

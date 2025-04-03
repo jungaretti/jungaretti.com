@@ -1,4 +1,0 @@
----
-name: Lyons Ferry
-location: Franklin County
----

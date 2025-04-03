@@ -1,4 +1,0 @@
----
-name: Riverside
-location: Spokane County
----

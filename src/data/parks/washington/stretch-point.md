@@ -1,4 +1,0 @@
----
-name: Stretch Point
-location: Mason County
----

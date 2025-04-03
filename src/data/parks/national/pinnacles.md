@@ -1,4 +1,0 @@
----
-name: Pinnacles
-location: California
----

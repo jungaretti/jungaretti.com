@@ -1,5 +1,0 @@
----
-name: Bryce Canyon
-location: Utah
-visited: 2021-01-19
----

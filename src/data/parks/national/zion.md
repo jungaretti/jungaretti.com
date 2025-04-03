@@ -1,4 +1,0 @@
----
-name: Zion
-location: Utah
----

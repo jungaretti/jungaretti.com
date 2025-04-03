@@ -1,5 +1,0 @@
----
-name: Olympic
-location: Washington
-visited: 2021-08-04
----

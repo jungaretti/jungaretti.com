@@ -1,4 +1,0 @@
----
-name: Death Valley
-location: California
----

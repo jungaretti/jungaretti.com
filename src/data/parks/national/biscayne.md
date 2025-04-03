@@ -1,4 +1,0 @@
----
-name: Biscayne
-location: Florida
----

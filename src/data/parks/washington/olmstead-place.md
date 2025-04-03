@@ -1,4 +1,0 @@
----
-name: Olmstead Place
-location: Kittitas County
----

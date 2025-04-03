@@ -1,4 +1,0 @@
----
-name: Spring Creek Hatchery
-location: Skamania County
----

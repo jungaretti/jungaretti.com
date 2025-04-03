@@ -1,4 +1,0 @@
----
-name: Shenandoah
-location: Virginia
----

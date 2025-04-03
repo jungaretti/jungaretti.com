@@ -1,4 +1,0 @@
----
-name: Everglades
-location: Florida
----

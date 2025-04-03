@@ -1,4 +1,0 @@
----
-name: Mount Pilchuck
-location: Snohomish County
----

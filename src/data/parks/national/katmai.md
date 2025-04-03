@@ -1,4 +1,0 @@
----
-name: Katmai
-location: Alaska
----

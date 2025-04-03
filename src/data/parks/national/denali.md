@@ -1,4 +1,0 @@
----
-name: Denali
-location: Alaska
----

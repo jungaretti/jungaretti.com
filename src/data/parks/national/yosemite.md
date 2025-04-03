@@ -1,4 +1,0 @@
----
-name: Yosemite
-location: California
----

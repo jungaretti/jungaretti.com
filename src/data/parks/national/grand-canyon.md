@@ -1,5 +1,0 @@
----
-name: Grand Canyon
-location: Arizona
-visited: 2021-01-17
----

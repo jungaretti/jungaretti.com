@@ -1,4 +1,0 @@
----
-name: Manchester
-location: Kitsap County
----

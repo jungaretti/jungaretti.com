@@ -1,4 +1,0 @@
----
-name: Petrified Forest
-location: Arizona
----

@@ -1,5 +1,0 @@
----
-name: Obstruction Pass
-location: San Juan County
-visited: 2025-02-09
----

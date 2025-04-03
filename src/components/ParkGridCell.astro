@@ -7,7 +7,7 @@ interface Props {
 const { park } = Astro.props;
 
 const detail = park.visited
-  ? `Visited ${park.visited.toLocaleString("en-US", {
+  ? `Visited ${new Date(park.visited).toLocaleString("en-US", {
       month: "short",
       year: "numeric",
     })}, ${park.location}`

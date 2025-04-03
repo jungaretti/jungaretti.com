@@ -1,5 +1,0 @@
----
-name: Lake Wenatchee
-location: Chelan County
-visited: 2023-10-08
----

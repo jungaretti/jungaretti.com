@@ -1,5 +1,0 @@
----
-name: Glacier
-location: Montana
-visited: 2022-07-05
----

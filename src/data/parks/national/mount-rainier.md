@@ -1,5 +1,0 @@
----
-name: Mount Rainier
-location: Washington
-visited: 2022-09-28
----

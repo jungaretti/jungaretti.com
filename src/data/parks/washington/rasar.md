@@ -1,5 +1,0 @@
----
-name: Rasar
-location: Skagit County
-visited: 2023-03-25
----

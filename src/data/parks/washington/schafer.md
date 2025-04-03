@@ -1,4 +1,0 @@
----
-name: Schafer
-location: Mason County
----

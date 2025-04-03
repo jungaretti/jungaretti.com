@@ -1,4 +1,0 @@
----
-name: Virgin Islands
-location: U.S. Virgin Islands
----

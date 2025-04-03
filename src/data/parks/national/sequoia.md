@@ -1,4 +1,0 @@
----
-name: Sequoia
-location: California
----

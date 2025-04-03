@@ -1,5 +1,0 @@
----
-name: Crater Lake
-location: Oregon
-visited: 2023-07-20
----

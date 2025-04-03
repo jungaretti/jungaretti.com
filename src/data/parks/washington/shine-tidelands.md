@@ -1,4 +1,0 @@
----
-name: Shine Tidelands
-location: Jefferson County
----

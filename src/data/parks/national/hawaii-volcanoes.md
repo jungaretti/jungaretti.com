@@ -1,4 +1,0 @@
----
-name: Hawai'i Volcanoes
-location: Hawai'i
----

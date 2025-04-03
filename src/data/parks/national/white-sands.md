@@ -1,4 +1,0 @@
----
-name: White Sands
-location: New Mexico
----

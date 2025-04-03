@@ -1,4 +1,0 @@
----
-name: Peshastin Pinnacles
-location: Chelan County
----

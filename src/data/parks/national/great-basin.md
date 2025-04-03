@@ -1,4 +1,0 @@
----
-name: Great Basin
-location: Nevada
----

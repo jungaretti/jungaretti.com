@@ -1,4 +1,0 @@
----
-name: Fort Flagler
-location: Jefferson County
----

@@ -1,4 +1,0 @@
----
-name: Fort Columbia
-location: Pacific County
----

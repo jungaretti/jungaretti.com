@@ -1,4 +1,0 @@
----
-name: Carlsbad Caverns
-location: New Mexico
----

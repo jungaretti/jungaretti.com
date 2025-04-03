@@ -1,5 +1,0 @@
----
-name: Lake Sammamish
-location: King County
-visited: 2024-03-31
----

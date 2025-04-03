@@ -1,4 +1,0 @@
----
-name: Jarrell Cove
-location: Mason County
----

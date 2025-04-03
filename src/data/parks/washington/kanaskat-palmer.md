@@ -1,4 +1,0 @@
----
-name: Kanaskat-Palmer
-location: King County
----

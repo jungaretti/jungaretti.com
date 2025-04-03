@@ -1,4 +1,0 @@
----
-name: Daroga
-location: Douglas County
----

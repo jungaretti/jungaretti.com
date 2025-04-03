@@ -1,4 +1,0 @@
----
-name: Kenai Fjords
-location: Alaska
----

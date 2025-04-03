@@ -5,20 +5,20 @@ import { z, defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 
 const nationalParks = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/data/parks/national" }),
+  loader: glob({ pattern: "**/*.json", base: "./src/data/parks/national" }),
   schema: z.object({
     name: z.string(),
     location: z.string(),
-    visited: z.date().optional(),
+    visited: z.string().date().optional(),
   }),
 });
 
 const washingtonParks = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/data/parks/washington" }),
+  loader: glob({ pattern: "**/*.json", base: "./src/data/parks/washington" }),
   schema: z.object({
     name: z.string(),
     location: z.string(),
-    visited: z.date().optional(),
+    visited: z.string().date().optional(),
   }),
 });
 
