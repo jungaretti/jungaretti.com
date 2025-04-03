@@ -6,7 +6,11 @@ import Section from "@components/Section.astro";
 import ImagePreview from "@components/ImagePreview.astro";
 
 const photos = await getCollection("photos");
-photos.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+photos.sort((first, second) => {
+  const firstDate = new Date(first.data.date).getTime();
+  const secondDate = new Date(second.data.date).getTime();
+  return secondDate - firstDate;
+});
 
 const art = await getCollection("art");
 

@@ -38,10 +38,10 @@ const art = defineCollection({
 });
 
 const photos = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/data/photos" }),
+  loader: glob({ pattern: "**/*.json", base: "./src/data/photos" }),
   schema: z.object({
     location: z.string(),
-    date: z.date(),
+    date: z.string().date(),
     alt: z.string(),
     original: z.object({
       src: z.string(),
