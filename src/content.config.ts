@@ -1,0 +1,62 @@
+import { z, defineCollection } from "astro:content";
+// import { photoSchema } from "../lib/Photo";
+// import { imageSchema } from "../lib/Image";
+// import { parkSchema } from "@lib/Park";
+import { glob } from "astro/loaders";
+
+const nationalParks = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/parks/national" }),
+  schema: z.object({
+    name: z.string(),
+    location: z.string(),
+    visited: z.date().optional(),
+  }),
+});
+
+const washingtonParks = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/parks/washington" }),
+  schema: z.object({
+    name: z.string(),
+    location: z.string(),
+    visited: z.date().optional(),
+  }),
+});
+
+const art = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/art" }),
+  schema: z.object({
+    alt: z.string(),
+    original: z.object({
+      src: z.string(),
+    }),
+    compressed: z.object({
+      src: z.string(),
+    }),
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+const photos = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/photos" }),
+  schema: z.object({
+    location: z.string(),
+    date: z.date(),
+    alt: z.string(),
+    original: z.object({
+      src: z.string(),
+    }),
+    compressed: z.object({
+      src: z.string(),
+    }),
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+export const collections = {
+  art: art,
+  photos: photos,
+  nationalParks: nationalParks,
+  washingtonParks: washingtonParks,
+};

@@ -11,9 +11,9 @@ const { photo } = Astro.props;
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
-  return photos.map((p) => ({
-    params: { slug: p.slug },
-    props: { photo: p },
+  return photos.map((photo) => ({
+    params: { slug: photo.id },
+    props: { photo: photo },
   }));
 }
 

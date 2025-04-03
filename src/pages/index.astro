@@ -1,18 +1,18 @@
 ---
-import { getEntryBySlug } from "astro:content";
 import type { Metadata } from "@lib/Metadata";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import Hero from "@components/Hero.astro";
 import Section from "@components/Section.astro";
 import ImagePreview from "@components/ImagePreview.astro";
+import { getEntry } from "astro:content";
 
 const photos = await Promise.all([
-  getEntryBySlug("photos", "raggi-del-pianeta"),
-  getEntryBySlug("photos", "new-horizons"),
-  getEntryBySlug("photos", "toadstool"),
-  getEntryBySlug("photos", "lone-moose"),
-  getEntryBySlug("photos", "riveder-le-stelle"),
-  getEntryBySlug("photos", "mio-gatto"),
+  getEntry("photos", "raggi-del-pianeta")!,
+  getEntry("photos", "new-horizons")!,
+  getEntry("photos", "toadstool")!,
+  getEntry("photos", "lone-moose")!,
+  getEntry("photos", "riveder-le-stelle")!,
+  getEntry("photos", "mio-gatto")!,
 ]);
 
 const meta: Metadata = {
@@ -27,11 +27,11 @@ const meta: Metadata = {
   <Section title="My Photos">
     <div class="grid-standard">
       {
-        photos.map(({ data, slug }) => (
+        photos.map((photo) => (
           <ImagePreview
-            src={data.compressed.src}
-            alt={data.alt}
-            href={`/photos/${slug}`}
+            src={photo.data.compressed.src}
+            alt={photo.data.alt}
+            href={`/photos/${photo.id}`}
           />
         ))
       }
