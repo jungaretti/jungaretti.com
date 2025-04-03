@@ -23,7 +23,7 @@ const washingtonParks = defineCollection({
 });
 
 const art = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/data/art" }),
+  loader: glob({ pattern: "**/*.json", base: "./src/data/art" }),
   schema: z.object({
     alt: z.string(),
     original: z.object({
