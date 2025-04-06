@@ -8,6 +8,7 @@ interface Props {
   photo: CollectionEntry<"photos">;
 }
 const { photo } = Astro.props;
+const photoDate = new Date(photo.data.date);
 
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
@@ -44,12 +45,7 @@ const meta: Metadata = {
             {photo.data.location}
           </p>
           <p>
-            {
-              photo.data.date.toLocaleString("en-US", {
-                month: "long",
-                year: "numeric",
-              })
-            }
+            {photoDate.toLocaleString("en-US", { month: "long", year: "numeric" })}
           </p>
         </div>
       </div>
