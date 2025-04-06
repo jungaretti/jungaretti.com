@@ -12,8 +12,12 @@ const { photo } = Astro.props;
 export async function getStaticPaths() {
   const photos = await getCollection("photos");
   return photos.map((photo) => ({
-    params: { slug: photo.id },
-    props: { photo: photo },
+    params: {
+      slug: photo.id,
+    },
+    props: {
+      photo: photo,
+    },
   }));
 }
 
@@ -36,7 +40,9 @@ const meta: Metadata = {
     <div class="my-3 md:flex md:flex-row">
       <div class="flex-auto space-y-2">
         <div>
-          <p>{photo.data.location}</p>
+          <p>
+            {photo.data.location}
+          </p>
           <p>
             {
               photo.data.date.toLocaleString("en-US", {

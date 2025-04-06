@@ -16,10 +16,16 @@ const detail = park.visited
 
 <div class="flex flex-row items-center gap-3">
   <div>
-    <p class="text-lg">{park.visited ? "✅" : "📍"}</p>
+    <p class="text-lg">
+      {park.visited ? "✅" : "📍"}
+    </p>
   </div>
   <div>
-    <p class="text-lg font-bold">{park.name}</p>
-    <p>{detail}</p>
+    <p class="text-lg font-bold">
+      {park.name}
+    </p>
+    <p>
+      {detail}
+    </p>
   </div>
 </div>

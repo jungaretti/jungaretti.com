@@ -1,1 +1,4 @@
-{ "name": "Great Sand Dunes", "location": "Colorado" }
+{
+  "name": "Great Sand Dunes",
+  "location": "Colorado"
+}

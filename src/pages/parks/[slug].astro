@@ -12,7 +12,9 @@ export async function getStaticPaths() {
 
   return [
     {
-      params: { slug: "national" },
+      params: {
+        slug: "national",
+      },
       props: {
         meta: {
           title: "National Parks - JP Ungaretti",
@@ -23,7 +25,9 @@ export async function getStaticPaths() {
       },
     },
     {
-      params: { slug: "washington" },
+      params: {
+        slug: "washington",
+      },
       props: {
         meta: {
           title: "Washington State Parks - JP Ungaretti",
