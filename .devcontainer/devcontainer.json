@@ -13,7 +13,8 @@
         "vscode": {
             "extensions": [
                 "astro-build.astro-vscode",
-                "csstools.postcss"
+                "bradlc.vscode-tailwindcss",
+                "esbenp.prettier-vscode"
             ]
         }
     }
