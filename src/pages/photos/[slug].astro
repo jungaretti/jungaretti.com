@@ -45,7 +45,12 @@ const meta: Metadata = {
             {photo.data.location}
           </p>
           <p>
-            {photoDate.toLocaleString("en-US", { month: "long", year: "numeric" })}
+            {
+              photoDate.toLocaleString("en-US", {
+                month: "long",
+                year: "numeric",
+              })
+            }
           </p>
         </div>
       </div>
