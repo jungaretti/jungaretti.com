@@ -23,7 +23,7 @@ const meta: Metadata = {
 
 <BaseLayout meta={meta}>
   <Section title="Recent Photos">
-    <div class="grid-standard">
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
       {
         photos.map((photo) => (
           <ImagePreview
@@ -36,7 +36,7 @@ const meta: Metadata = {
     </div>
   </Section>
   <Section title="My Art">
-    <div class="grid-standard">
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
       {
         art.map((a) => (
           <ImagePreview src={a.data.compressed.src} alt={a.data.alt} />
