@@ -13,7 +13,7 @@ const { meta } = Astro.props;
   <BaseHead meta={meta} />
   <body>
     <header>
-      <div class="frame my-8">
+      <div class="mx-auto my-8 max-w-screen-lg px-4 md:px-6">
         <Navbar
           links={[
             {
@@ -29,12 +29,12 @@ const { meta } = Astro.props;
       </div>
     </header>
     <main>
-      <div class="frame space-y-8">
+      <div class="mx-auto max-w-screen-lg space-y-8 px-4 md:px-6">
         <slot />
       </div>
     </main>
     <footer>
-      <div class="frame my-6 md:my-8">
+      <div class="mx-auto my-6 max-w-screen-lg px-4 md:my-8 md:px-6">
         <hr class="mb-3 opacity-20" />
         <div
           class="flex flex-col space-y-3 md:flex-row md:space-x-6 md:space-y-0"
