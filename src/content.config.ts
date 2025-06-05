@@ -1,7 +1,4 @@
 import { z, defineCollection } from "astro:content";
-// import { photoSchema } from "../lib/Photo";
-// import { imageSchema } from "../lib/Image";
-// import { parkSchema } from "@lib/Park";
 import { glob } from "astro/loaders";
 
 const nationalParks = defineCollection({
