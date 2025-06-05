@@ -4,15 +4,15 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import Hero from "@components/Hero.astro";
 import Section from "@components/Section.astro";
 import ImagePreview from "@components/ImagePreview.astro";
-import { getEntry } from "astro:content";
+import { getEntries } from "astro:content";
 
-const photos = await Promise.all([
-  getEntry("photos", "raggi-del-pianeta")!,
-  getEntry("photos", "new-horizons")!,
-  getEntry("photos", "toadstool")!,
-  getEntry("photos", "lone-moose")!,
-  getEntry("photos", "riveder-le-stelle")!,
-  getEntry("photos", "mio-gatto")!,
+const photos = await getEntries([
+  { collection: "photos", id: "raggi-del-pianeta" },
+  { collection: "photos", id: "new-horizons" },
+  { collection: "photos", id: "toadstool" },
+  { collection: "photos", id: "lone-moose" },
+  { collection: "photos", id: "riveder-le-stelle" },
+  { collection: "photos", id: "mio-gatto" },
 ]);
 
 const meta: Metadata = {
